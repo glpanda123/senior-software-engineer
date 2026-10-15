@@ -7,7 +7,7 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
-| Senior FullStack Developer (NodeJS/ReactJS) | SOFTFLEX | Văn phòng Hà Nội; NodeJS, Redis, Microservices, Kafka, PostgreSQL, English | itviec.com | saved |
+| Senior FullStack Developer (NodeJS/ReactJS) | SOFTFLEX | Văn phòng Hà Nội; NodeJS, Redis, Microservices, Kafka, PostgreSQL, English | itviec.com | rejected (đã phỏng vấn trước đây) |
 | Senior Fullstack Developer (NodeJS, ReactJS, English) | Koala Digital | Remote, nhận HCM/ĐN/HN | itviec.com | saved |
 | Lead / Senior Fullstack Developer (ReactJS, NodeJS) | Gradion | Ứng viên ở Hà Nội được remote; AI-first, TypeScript, English | itviec.com | saved |
 | Applied AI Engineer | Không rõ | Đà Nẵng / Hà Nội; NodeJS, TypeScript, Python, English | itviec.com | saved |
