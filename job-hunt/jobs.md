@@ -16,3 +16,17 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Backend Engineer (Nodejs) | Everfit | Đà Nẵng / Hà Nội; AWS, Microservices, AI | itviec.com | saved |
 | Fullstack (NodeJS, NestJS, Angular, MongoDB) | IONAH | Văn phòng Hà Nội | itviec.com | saved |
 | Fullstack NodeJS AWS Developer | FPT Software | Hà Nội; serverless Node/TS trên AWS Lambda | vn.indeed.com | saved |
+
+## 2026-10-15
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| [HN] Senior ReactJS Engineer | NAB Innovation Centre Vietnam | Hà Nội; yêu cầu kinh nghiệm dùng Claude, Cursor; tin ~77 ngày trước | [itviec](https://itviec.com/it-jobs/hn-senior-reactjs-engineer-nab-innovation-centre-vietnam-1421) | saved |
+| Senior Fullstack Developer (Nodejs + React), Good at English, upto 3000$ | Powergate Software | Cầu Giấy; 2.000–3.000 USD; ngày đăng chưa rõ | [topcv](https://www.topcv.vn/viec-lam/senior-fullstack-developer-nodejs-react-good-at-english-offer-upto-3000/917903.html) | saved |
+| Jr/Mid/Sr Fullstack Developer (NodeJS) | Nami Technology | Hà Nội; tag AI; đăng ~3 ngày trước | [itviec HN list](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
+| Senior/Leader Fullstack Developer (Nodejs + Reactjs) | Med247 | Hai Bà Trưng; 20–40 triệu; English reading; ngày đăng chưa rõ | [topcv](https://www.topcv.vn/brand/med247/tuyen-dung/senior-leader-fullstack-developer-nodejs-reactjs-j842187.html) | saved |
+| Senior/Lead Fullstack Engineer (Reactjs base) | NAB Innovation Centre Vietnam | Ba Đình, hybrid; 5+ năm, TypeScript, AWS; tin ~156 ngày trước, có thể đã đóng | [itviec](https://itviec.com/it-jobs/senior-lead-fullstack-engineer-reactjs-base-nab-innovation-centre-vietnam-5448) | saved |
+| Senior Fullstack Developer / Tech Lead (NodeJS/ReactJS) | TQC Solution | Hà Nội, tại văn phòng; NextJS, software architecture | [itviec HN list](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
+| Fullstack Engineer (Fintech, Prompt Engineer) | NoBlex | Hà Nội; TypeScript, NodeJS, AI | [itviec HN list](https://itviec.com/it-jobs/full-stack/ha-noi) | saved |
+| Fullstack Developer (NodeJS & ReactJS) | Eastgate Software | Hà Nội; đăng ~11 ngày trước | [itviec HN list](https://itviec.com/it-jobs/full-stack-developer/ha-noi) | saved |
+| Fullstack Engineer (strong in AI Engineer & AI Tools) | Money Forward Vietnam | Hà Nội / HCM, hybrid; ReactJS + Java/Golang (backend không phải Node) | [itviec HN list](https://itviec.com/it-jobs/full-stack-developer/ha-noi) | saved |
