@@ -12,3 +12,11 @@ https://itviec.com/viec-lam-it/sr-fullstack-developer-nodejs-reactjs-up-to-3000-
 https://jobs.insightpartners.com/companies/optimizely/jobs/76540275-senior-frontend-engineer-hanoi-vn
 https://jobs.lever.co/gradion/1c9fb0e2-e9f9-49fb-b260-cdb4633df2d1/apply
 https://jointaro.com/jobs/qode/senior-frontend-typescript-and-react-developer-0a2f2b51
+https://itviec.com/viec-lam-it/remote-senior-fullstack-dev-reactjs-nodejs-ai-nosql-xenia-tech-5739
+https://itviec.com/viec-lam-it/hanoi-senior-front-end-engineer-reactjs-money-forward-vietnam-co-ltd-0847
+https://itviec.com/viec-lam-it/mid-sr-fullstack-developer-typescript-nodejs-reactjs-fastrak-ai-5131
+https://itviec.com/viec-lam-it/sr-fullstack-engineer-reactjs-typescript-postgresql-caddi-vietnam-co-ltd-0423
+https://itviec.com/it-jobs/senior-expert-frontend-engineer-reactjs-javascript-one-mount-group-4117
+https://itviec.com/viec-lam-it/senior-fullstack-engineer-reactjs-node-ai-xenia-tech-2317
+https://adausa.it.com/careers/senior-react-developer
+https://itviec.com/viec-lam-it/remote-senior-backend-node-js-typescript-jedi-technology-1040
