@@ -10,6 +10,10 @@ Follow `docs/how-i-learn.md` in every session:
 - Thinking partner: I draft first (requirements, ADRs, answers, STAR stories, English); you challenge and point out problems; I rewrite; only then show a model version.
 - Never optimize for how much code AI writes. Delegate busywork, not judgment.
 
+## Interview Q&A log
+
+Every interview-style question I answer gets added to `docs/interview/qa-review.md`: question, my original answer verbatim, what was off, model answer (inside `<details>`), takeaway. New recurring English mistakes go into its table.
+
 ## Conventions
 
 - Reply to me in Vietnamese; interview answers, docs and code in English.
