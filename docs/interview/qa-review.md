@@ -80,8 +80,40 @@ console.log('F');
 
 ---
 
+## Q5. Estimation: "A system gets 5 million requests a day. What's the average QPS? And at peak?"
+
+**My answer (16/10):**
+> 50 QPS, cao điểm khoảng 150-250 QPS
+
+**What was off:** nothing. ✅
+
+<details><summary>Model answer</summary>
+
+> "A day is about 100k seconds, so 5 million a day is roughly 50 QPS on average. Traffic isn't flat, so I'd plan for 3 to 5 times that at peak, around 150 to 250 QPS."
+
+**Takeaway:** 1 day ≈ 100k s → 1M/day ≈ 10 QPS; peak ≈ 3–5× average.
+</details>
+
+---
+
+## Q6. Consistency: "In TaskFlow, which data must be strongly consistent, and which can be eventually consistent?"
+
+**My answer (16/10):**
+> Theo t thì dữ liệu buộc nhất quán ngay là task, khi sửa hoặc xóa task thì nên đồng nhất về dữ liệu để tránh làm sai lệch thông tin. status của task có thể để stale, vì n chỉ ảnh hưởng việc hiển thị, data có thể sync up sau
+
+**What was off:** right instinct, wrong example. A task's **status is part of the task record**: changing it is a write that must be consistent (two people dragging the same task → the 409 check depends on it). What can be stale is the **copies/views** of data: other users' screens updated via realtime, cached reads, dashboard counters, activity feed, search index. Also missing: **permissions** must be strongly consistent (a removed member must lose access immediately).
+
+<details><summary>Model answer</summary>
+
+> "The source of truth has to be strongly consistent: every write to a task, including status and position, goes to a single Postgres primary in a transaction, with a version check so concurrent edits get a 409 instead of silently overwriting. Memberships and roles too, because revoking access must take effect immediately. What can be eventually consistent are derived views: the realtime push to other people's boards, cached task lists, the 'Today' counters, the activity feed and the search index. If those are a second or two behind, nobody is harmed, and it lets us use caching and async updates."
+
+**Takeaway:** strongly consistent = **source of truth + permissions**; eventually consistent = **copies and derived views** (realtime fan-out, cache, counters, search).
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Notes |
-| --- | --- | --- | --- | --- | --- |
-| | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | |
