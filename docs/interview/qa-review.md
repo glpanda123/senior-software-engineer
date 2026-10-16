@@ -80,26 +80,6 @@ console.log('F');
 
 ---
 
-## My recurring English mistakes
-
-| ❌ I wrote | ✅ Say instead | Rule |
-| --- | --- | --- |
-| 7 years experiment on | 7 years **of experience in** | experiment = thí nghiệm |
-| i | **I** | always capital |
-| enough resource / stakeholder can view | enough **resources** / **stakeholders** can view | countable nouns → plural |
-| on mobile device | on **a** mobile device / on **their phones** | singular countable needs an article |
-| At that time (about a current decision) | **For v1** | "at that time" = in the past |
-| hand-ons on infrastructure | **hands-on** experience **with** infrastructure | |
-| oppoturnity | **opportunity** | spelling |
-| how many task that near the deadline | how many tasks **are close to** their deadline | missing verb |
-| stake holder is viewed-only | stakeholders **have view-only access** | |
-| About B, | **As for** B, | |
-| sync jobs / async jobs | **synchronous code** / **asynchronous callbacks** | Node vocabulary |
-| all thread pool is exhausted | **the whole** thread pool is exhausted | |
-| mobility abilities | people check status **on the go** | |
-
----
-
 ## Review log
 
 | Date | Q1 | Q2 | Q3 | Q4 | Notes |

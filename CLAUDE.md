@@ -12,7 +12,7 @@ Follow `docs/how-i-learn.md` in every session:
 
 ## Interview Q&A log
 
-Every interview-style question I answer gets added to `docs/interview/qa-review.md`: question, my original answer verbatim, what was off, model answer (inside `<details>`), takeaway. New recurring English mistakes go into its table.
+Every interview-style question I answer gets added to `docs/interview/qa-review.md`: question, my original answer verbatim, what was off, model answer (inside `<details>`), takeaway.
 
 ## Conventions
 
