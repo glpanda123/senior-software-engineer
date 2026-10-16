@@ -1,6 +1,6 @@
 # UI acceptance criteria & usability test
 
-Mockup (source of truth for UI): https://claude.ai/artifact/Mzv1XZ55ggk23C2jCtP7YG — page "Hi-fi mockup v1" (private; share before sending to testers).
+Mockup (source of truth for UI): https://claude.ai/artifact/Mzv1XZ55ggk23C2jCtP7YG — page "Hi-fi mockup v2" (private; share before sending to testers).
 Big UI changes go into the mockup first, then into code.
 
 ## Acceptance criteria (UI passes → move to prototype on Day 4)
@@ -11,7 +11,7 @@ Big UI changes go into the mockup first, then into code.
 | 2 | Every screen has empty, loading, error, success states | ⚠️ Defined for the task list (States board, incl. 409 conflict). Still needed for Today and Members |
 | 3 | Contrast WCAG AA, every input has a label, usable by keyboard | ✅ In the mockup: text ≥ 4.5:1 (muted #5B6470 = 6.1:1), labels on all inputs, keyboard alternative for drag documented. Re-check in code with axe |
 | 4 | Works at 375px width | ✅ Mobile Today, Project list, Task detail at 390px; desktop pages stack below ~760px |
-| 5 | 3 people tried the mockup; issues hit by ≥ 2/3 are fixed | ⏳ Not run yet |
+| 5 | 3 people tried the mockup; issues hit by ≥ 2/3 are fixed | ⚠️ Substituted by an AI persona walkthrough (persona-walkthrough-v1.md); 7 issues hit by ≥ 2/3 fixed in v2. Real-user check moves to the live prototype (Day 14: invite friends to use TaskFlow) |
 
 ## Usability test script (15 min per person)
 

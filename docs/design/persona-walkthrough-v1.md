@@ -4,7 +4,7 @@ Method: cognitive walkthrough by 3 AI subagents, each playing one persona throug
 
 Personas: **Chi** (agency owner, non-technical, impatient) · **Tuan** (member, Trello/Linear power user, keyboard + mobile) · **Mr. Binh** (client viewer, 52, slow English reader, phone).
 
-## Findings hit by ≥ 2 of 3 personas (must fix before Day 4)
+## Findings hit by ≥ 2 of 3 personas (must fix before Day 4) — all fixed in mockup v2 (16/10)
 
 | # | Issue | Hit by | Fix |
 | --- | --- | --- | --- |
@@ -25,3 +25,13 @@ Personas: **Chi** (agency owner, non-technical, impatient) · **Tuan** (member, 
 - "Overdue" counter card should be clickable as a filter (Chi, Tuan mentioned in passing).
 - Keyboard shortcuts (C new task, / search, ⌘K) (Tuan).
 - Tokens board misses overdue text #8F330C and in-review #7A4FD0 (Tuan).
+
+## What changed in mockup v2
+
+1. Toast with Undo after moving a task (Project screen).
+2. Rows are focusable buttons that open the detail; row "⋯ → Move to" menu; 44px drag handle; hint text matches real behaviour.
+3. `role` tweak (team / viewer) on Today, Project and all mobile screens: viewers get plain-text fields, no create/move/comment controls, and a banner naming who to contact.
+4. Viewers are scoped to chosen projects: invite form has a project checklist; viewer sidebar shows only their project. PRD updated.
+5. New Sign-up screen; onboarding is 3 steps (workspace → project → first task); first task has empty due date with a date picker and defaults to "Me".
+6. "Assignee" everywhere; roles are Owner/Admin/Member/Viewer only.
+7. "1 day late · due Oct 13" everywhere; plus single-persona fixes: project status ("At risk · 2 of 8 done · launch Oct 30"), "Late or due soon", "See all tasks", newest comments first, mobile text ≥ 14px, invite role labels explain each role, token board shows overdue text + in-review colors.

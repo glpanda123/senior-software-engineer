@@ -1,6 +1,6 @@
 # TaskFlow — Product Requirements (v1)
 
-Status: Draft · Owner: Ly · Last updated: 2026-10-14
+Status: Draft v1.1 · Owner: Ly · Last updated: 2026-10-16
 
 ## 1. Problem
 
@@ -17,7 +17,7 @@ Small teams (3–15 people) coordinate work across chat (Zalo, Slack), spreadshe
 | --- | --- | --- |
 | Team lead | owner / admin | Creates projects, assigns tasks, checks what is late |
 | Team member | member | Picks up tasks, moves them across the board, comments |
-| Client / stakeholder | viewer | Checks progress, never edits |
+| Client / stakeholder | viewer | Checks progress of **their own project(s)**, never edits |
 
 ## 3. Job to be done
 
@@ -27,7 +27,7 @@ Small teams (3–15 people) coordinate work across chat (Zalo, Slack), spreadshe
 
 1. A new team gets from sign-up to its first assigned task in **under 3 minutes**, with no guide.
 2. Everyone on a board sees the same state: a task moved in one tab appears in every other open tab in **under 1 second**.
-3. A viewer can follow progress **without any ability to change data**.
+3. A viewer can follow progress **without any ability to change data**, and sees **only the projects they were invited to** (an agency's client never sees another client's work).
 4. A workspace's data is **never visible to another workspace**.
 
 ## 5. Non-goals (v1)
@@ -44,7 +44,7 @@ Small teams (3–15 people) coordinate work across chat (Zalo, Slack), spreadshe
 | Area | Included |
 | --- | --- |
 | Accounts | Register, log in, stay logged in (refresh token rotation), log out |
-| Workspaces | Create a workspace, invite members by email, 4 roles: owner, admin, member, viewer |
+| Workspaces | Create a workspace, invite members by email, 4 roles: owner, admin, member, viewer. Owner/admin/member see every project in the workspace; viewers are invited to specific projects |
 | Projects & board | Projects inside a workspace; a board per project with status columns |
 | Tasks | Title, description, status, assignee, priority, due date, labels; comments; file attachments |
 | Board interaction | Drag and drop to reorder / change status; live updates for everyone on the board |
@@ -84,4 +84,5 @@ Every screen in these flows must define its **empty, loading, error and success*
 - **Concurrent edits:** two people edit the same task at once → decision: reject the later write with a conflict (409) instead of silently overwriting.
 - **Ordering at scale:** reordering must not rewrite every task in a column → fractional indexing (see ADR).
 - **AI output is untrusted:** drafts are validated against a schema and always reviewed by a human before saving.
+- **Viewer scope (decided 16/10 after persona walkthrough):** workspace-wide viewers would let a client see other clients' projects. Viewers get per-project access → needs a `project_members` table and a project-level check in RBAC.
 - **Open:** do viewers need comments? (v1 answer: no — read-only.)
