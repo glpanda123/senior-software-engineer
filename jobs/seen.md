@@ -20,3 +20,13 @@ https://itviec.com/it-jobs/senior-expert-frontend-engineer-reactjs-javascript-on
 https://itviec.com/viec-lam-it/senior-fullstack-engineer-reactjs-node-ai-xenia-tech-2317
 https://adausa.it.com/careers/senior-react-developer
 https://itviec.com/viec-lam-it/remote-senior-backend-node-js-typescript-jedi-technology-1040
+https://itviec.com/viec-lam-it/remote-senior-frontend-react-js-typescript-jedi-technology-5227
+https://itviec.com/it-jobs/remote-senior-frontend-react-js-typescript-jedi-technology-5227
+https://epam.com/careers/job-listings/job.epamgdo_bltb542adaa3f0a9082_en-us_Hanoi_VietNam
+https://themuse.com/jobs/epamsystems/senior-fullstack-js-engineer-nodejs-reactjs-29ab80
+https://itviec.com/it-jobs/sign-on-bonus-frontend-technical-lead-70k-year-crossian-5356
+https://itviec.com/viec-lam-it/sign-on-bonus-frontend-technical-lead-70k-year-crossian-3955
+https://navigossearch.com/front-end-lead-reactjs-nextjs
+https://navigossearch.com/vi-VN/front-end-lead-reactjs-nextjs-1
+https://itviec.com/viec-lam-it/front-end-focused-fullstack-dev-react-typescript-aviation-software-innovation-4749
+https://itviec.com/viec-lam-it/senior-full-stack-developer/ha-noi
