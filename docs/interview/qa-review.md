@@ -135,8 +135,30 @@ Spoken version (~60 s):
 
 ---
 
+## Q8. Follow-ups on the TaskFlow estimate
+
+**Questions:** (a) One Node instance can hold 4,000 connections — why run two? (b) Reads are 6:1 — why no cache yet? (c) At 10× scale, what changes first?
+
+**My answer (17/10):**
+> 1. cần 2 instance để đạt 99.9% và deploy không gián đoạn
+> 2. vì 35 QPS là nhỏ với postgres
+> 3. thêm read replica db
+
+**What was off:** (a) ✅ (b) ✅ — could add that a cache brings invalidation complexity, so add it only when measured. (c) partly: a read replica is one option, but the first thing to hit limits is the **realtime layer** (~40k connections → more instances); the database is still fine with good indexes.
+
+<details><summary>Model answer</summary>
+
+> (a) "Not for load — for availability. With one instance, a crash or a deploy drops every connection. Two instances behind a load balancer give 99.9% and rolling deploys; Redis pub/sub keeps events flowing between them."
+> (b) "30 read QPS on a small dataset is easy for Postgres with the right indexes. A cache adds invalidation bugs and stale data, so I'd add it only for a hot path I've actually measured."
+> (c) "At 10× we'd have ~40k concurrent connections, so the realtime tier scales out first. The database is still one primary at ~350 QPS; I'd check slow queries and maybe add a read replica for the heavy Today overview queries."
+
+**Takeaway:** every component you add has a cost; justify it with a number or a requirement.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | |
