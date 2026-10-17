@@ -40,3 +40,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | [Sign-on Bonus] Frontend Technical Lead | Không rõ | Hà Nội; NextJS, ReactJS, AWS, quản lý team; ~70K USD/năm | [itviec nextjs](https://itviec.com/it-jobs/nextjs) | saved |
 | Senior Fullstack Developer (React JS + Nodejs/NestJS) | VCI | Nam Từ Liêm; 35–100 triệu; TypeScript, PostgreSQL; tin ~4 tháng trước, có thể đã đóng | [vietnamworks](https://www.vietnamworks.com/senior-fullstack-developer-react-js-nodejs-nestjs-2065876-jv) | saved |
 | AI-native developer (TypeScript, NestJS), remote | Không rõ | Remote; tới 4K USD | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+
+## 2026-10-17
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Mid/Senior Fullstack Developer (ReactJS, NodeJS) | AlphaSphere | Văn phòng HCM (cần hỏi có nhận remote từ HN không); TypeScript; yêu cầu dùng AI coding assistant (Claude Code, Copilot) hằng ngày; tin ~36 ngày trước | [itviec](https://itviec.com/it-jobs/mid-senior-fullstack-developer-reactjs-nodejs-alphasphere-0137) | saved |
+| Backend Lead (Express/Node, Postgres), remote | Không rõ | Remote, nhận HCM/ĐN/HN; thiên backend | [itviec nodejs](https://itviec.com/it-jobs/nodejs) | saved |
