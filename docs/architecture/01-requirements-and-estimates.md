@@ -1,6 +1,6 @@
 # TaskFlow — Requirements & capacity estimates
 
-Step 1–2 of the system design. Source of product scope: [`docs/PRD.md`](../PRD.md).
+Step 1–2 of the system design. Source of product scope: [`docs/PRD.md`](../PRD.md). Vietnamese version: [`01-requirements-and-estimates.vi.md`](01-requirements-and-estimates.vi.md).
 
 ## Functional requirements
 
