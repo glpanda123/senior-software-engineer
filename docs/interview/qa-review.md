@@ -112,8 +112,31 @@ console.log('F');
 
 ---
 
+## Q7. System design: "Design TaskFlow." — Step 1 (requirements) and step 2 (estimates)
+
+**My answer v1 (16/10):**
+> 1.1 Functional: Leader can create workspace · Leader can create task, set due date · Leader can invite and remove member · Leader and member can assign task · Member can change task status
+> 1.2 Non-functional: Scale: 2k workspace, 50k user · Latency: open board less than 2s, realtime in 300ms · availability: 99.9% · Consistency: all data related to workspace, project and task must be strong consistency, data in cache and use to display can be stale · Security: leader and member cannot view other project that not involve, viewer can only view project that they are invited
+> 2. Estimate: 100 workspace, 1000 each, 10% · each user can write 30, read 60 · QPS for write is 100 * 1000 * 10 % * 30 / 86400, for read is 100 * 1000 * 10 % * 60 / 86400, r/w ratio is 2/1. memory i assume is 15gb
+
+**What was off:** numbers contradicted each other (50k vs 100k users, 1,000 people per workspace vs PRD's 3–15); "Leader" isn't a role; missed drag-and-drop + realtime (the hardest part); missed tenant isolation; latency as page load instead of API p95; estimate stopped at formulas (no results, no conclusion); "memory" should be storage, with a calculation; no WebSocket connection estimate.
+
+<details><summary>Model answer</summary>
+
+See [`docs/architecture/01-requirements-and-estimates.md`](../architecture/01-requirements-and-estimates.md).
+
+Spoken version (~60 s):
+> "Functionally: accounts, workspaces with four roles, tasks with comments and attachments, drag-and-drop with live updates for everyone on the board, a Today overview, search, and AI task drafts. Out of scope: sprints, billing, native apps.
+> Year one: 2,000 workspaces of about ten people, so 20k users, half active daily. Sixty reads and ten writes each gives about 6 read QPS and 1 write QPS on average, maybe 30 and 5 at peak, plus around 4,000 concurrent WebSocket connections and 25 GB of data a year.
+> So scale isn't the problem: one Postgres primary is plenty. But I still need at least two API instances for 99.9% availability, which means Redis pub/sub so realtime events reach users on either instance. The real challenges are correctness: tenant isolation, concurrent edits, and ordering — that's where I'd go deep."
+
+**Takeaway:** assumptions → calculation → number → **conclusion**. The conclusion is what gets you points.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | |
