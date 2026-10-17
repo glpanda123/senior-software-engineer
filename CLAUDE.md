@@ -14,6 +14,11 @@ Follow `docs/how-i-learn.md` in every session:
 
 Every interview-style question I answer gets added to `docs/interview/qa-review.md`: question, my original answer verbatim, what was off, model answer (inside `<details>`), takeaway.
 
+## Plan adjustments (decided by me)
+
+- 17/10: DSA paused until further notice. Don't schedule or remind DSA.
+- 17/10: Applications (and CV/LinkedIn polish) move to week 4, from Day 22 (04/11). Keep scanning jobs daily; don't remind me to apply before 04/11.
+
 ## Conventions
 
 - Reply to me in Vietnamese; interview answers, docs and code in English.
