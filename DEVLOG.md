@@ -25,6 +25,12 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - System design: khung 7 bước, LB, scale ngang, CAP; requirements + estimate bản 1 (số liệu mâu thuẫn, estimate chưa ra số) → đang sửa.
 - Dời sang Ngày 4: OpenAPI, monorepo, C4/ERD, budget alert. Dời cuối tuần: sequences, AI phản biện thiết kế, ADR-001/002.
 
+## Ngày 4 — T7 17/10/2026
+
+- TaskFlow repo: scaffold monorepo pnpm + Turborepo + Next 16 (PR #1) và OpenAPI contract + types sinh tự động + Swagger UI (PR #2); CI xanh, đã merge cả hai.
+- Đọc contract, trả lời 3 câu (Q9): 409 → phải cho người dùng quyết định, không tự thử lại; cursor ✅; fractional indexing là chủ đề mới (đã giải thích).
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.

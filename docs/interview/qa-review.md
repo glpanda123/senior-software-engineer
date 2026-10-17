@@ -157,8 +157,30 @@ Spoken version (~60 s):
 
 ---
 
+## Q9. API design: three questions on the TaskFlow contract
+
+**Questions:** (a) Two people edit the same task and the second one saves. What do they get, and what should the UI do? (b) How does the client fetch the next page, and how does it know it has reached the end? (c) Why does `POST /tasks/{id}/move` take `afterId`/`beforeId` instead of an index?
+
+**My answer (17/10):**
+> 1. người lưu sau sẽ bị báo lỗi là đã có người chỉnh sửa dữ liệu này rồi. UI nên lấy version từ lỗi trả ra và thử update lại
+> 2. Client lấy trang tiếp theo bằng nextCursor. Dữ liệu hết khi không còn nextCursor (hoặc nextCursor không trả về)
+> 3. cái số 3 thì t không biết, giải thích cho t với
+
+**What was off:** (a) first half right (409 + the current task). But **retrying automatically with the new version overwrites the other person's change without anyone noticing**: the exact lost update the 409 exists to prevent. Show the latest data and let the user decide; auto-merge only when the two edits touch different fields. (b) ✅ One detail: in our contract `nextCursor` is always present and is `null` on the last page ("missing" and "null" are different things). (c) new topic (fractional indexing), explained, no redo needed.
+
+<details><summary>Model answer</summary>
+
+> (a) "They get a 409 Conflict with the current version of the task. The UI shouldn't just retry with the new version: that would silently overwrite the other person's change, which is exactly what the check is for. Instead it says 'Someone else updated this task', shows the latest values, and lets the user re-apply their edit on top. If the two edits touch different fields we could merge automatically, but in v1 I'd keep it explicit."
+> (b) "The response has `items` and a `nextCursor`. The client sends `nextCursor` back as the `cursor` parameter, and a `null` cursor means the last page. The cursor is opaque, so the client never builds or parses it and the server can change how it encodes the position. With TanStack Query this maps directly to `getNextPageParam` in `useInfiniteQuery`."
+> (c) "An index is fragile. The client may have loaded only part of the list, and other people may be reordering at the same time, so 'position 3' can mean different things on the client and on the server. Neighbour IDs are stable: 'put it between task X and task Y' still means the same thing. It also keeps the write cheap: the server reads X's and Y's position keys and generates a key between them, which is fractional indexing, so a move updates one row instead of renumbering the whole column."
+
+**Takeaway:** a 409 means *show the conflict*, never auto-overwrite. Send intent with stable IDs, not indexes (same reason React `key` shouldn't be the array index).
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | |

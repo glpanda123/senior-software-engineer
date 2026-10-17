@@ -192,3 +192,32 @@ Vậy quy mô không phải vấn đề: một Postgres primary là quá đủ. 
 
 **Bài học:** mỗi thành phần thêm vào đều có cái giá; hãy biện minh bằng một con số hoặc một yêu cầu.
 </details>
+
+---
+
+## Q9. Thiết kế API: ba câu hỏi về contract TaskFlow
+
+*"(a) Two people edit the same task and the second one saves. What do they get, and what should the UI do? (b) How does the client fetch the next page, and how does it know it has reached the end? (c) Why does `POST /tasks/{id}/move` take `afterId`/`beforeId` instead of an index?"*
+
+**Câu hỏi:** (a) Hai người cùng sửa một task, người thứ hai bấm lưu. Họ nhận được gì, UI nên làm gì? (b) Client lấy trang tiếp theo bằng cách nào, làm sao biết đã hết dữ liệu? (c) Vì sao `move` nhận `afterId`/`beforeId` mà không nhận số thứ tự?
+
+**Câu trả lời của mình (17/10):**
+> 1. người lưu sau sẽ bị báo lỗi là đã có người chỉnh sửa dữ liệu này rồi. UI nên lấy version từ lỗi trả ra và thử update lại
+> 2. Client lấy trang tiếp theo bằng nextCursor. Dữ liệu hết khi không còn nextCursor (hoặc nextCursor không trả về)
+> 3. cái số 3 thì t không biết, giải thích cho t với
+
+**Chỗ chưa ổn:** (a) nửa đầu đúng (409 kèm task mới nhất). Nhưng **tự động thử lại với version mới sẽ ghi đè thay đổi của người kia mà không ai hay biết**, đúng cái lỗi mất dữ liệu mà 409 sinh ra để chặn. Phải hiện dữ liệu mới nhất và để người dùng quyết định; chỉ tự gộp khi hai bên sửa các field khác nhau. (b) ✅ Một chi tiết: trong contract của mình, `nextCursor` luôn có mặt và bằng `null` ở trang cuối ("không có field" và "bằng null" là hai chuyện khác nhau). (c) chủ đề mới (fractional indexing), đã giải thích, không cần làm lại.
+
+<details><summary>Đáp án mẫu</summary>
+
+> (a) "They get a 409 Conflict with the current version of the task. The UI shouldn't just retry with the new version: that would silently overwrite the other person's change, which is exactly what the check is for. Instead it says 'Someone else updated this task', shows the latest values, and lets the user re-apply their edit on top. If the two edits touch different fields we could merge automatically, but in v1 I'd keep it explicit."
+> (b) "The response has `items` and a `nextCursor`. The client sends `nextCursor` back as the `cursor` parameter, and a `null` cursor means the last page. The cursor is opaque, so the client never builds or parses it and the server can change how it encodes the position. With TanStack Query this maps directly to `getNextPageParam` in `useInfiniteQuery`."
+> (c) "An index is fragile. The client may have loaded only part of the list, and other people may be reordering at the same time, so 'position 3' can mean different things on the client and on the server. Neighbour IDs are stable: 'put it between task X and task Y' still means the same thing. It also keeps the write cheap: the server reads X's and Y's position keys and generates a key between them, which is fractional indexing, so a move updates one row instead of renumbering the whole column."
+
+**Nghĩa:**
+(a) Họ nhận 409 Conflict kèm phiên bản hiện tại của task. UI không nên tự thử lại với version mới, vì như vậy sẽ âm thầm ghi đè thay đổi của người kia, đúng cái mà bước kiểm tra version sinh ra để chặn. UI nên báo "Ai đó vừa sửa task này", hiện giá trị mới nhất và để người dùng áp lại thay đổi của mình lên đó. Nếu hai bên sửa các field khác nhau thì có thể tự gộp, nhưng ở v1 mình giữ cho rõ ràng.
+(b) Response có `items` và `nextCursor`. Client gửi lại `nextCursor` làm tham số `cursor`; `nextCursor` bằng `null` nghĩa là trang cuối. Cursor là chuỗi "mờ" (opaque): client không tự tạo hay giải mã nó, nhờ vậy server đổi cách mã hóa vị trí lúc nào cũng được. Với TanStack Query, nó khớp thẳng với `getNextPageParam` của `useInfiniteQuery`.
+(c) Số thứ tự rất dễ sai. Client có thể mới tải một phần danh sách, và người khác có thể đang sắp xếp lại cùng lúc, nên "vị trí 3" ở client và ở server có thể là hai chỗ khác nhau. ID của task hàng xóm thì không đổi: "đặt nó giữa task X và task Y" vẫn mang đúng một nghĩa. Cách này còn giúp việc ghi rẻ: server đọc khóa vị trí của X và Y rồi sinh một khóa nằm giữa (fractional indexing), nên mỗi lần di chuyển chỉ cập nhật một dòng thay vì đánh số lại cả cột.
+
+**Bài học:** 409 nghĩa là *cho người dùng thấy xung đột*, không bao giờ tự ghi đè. Gửi ý định bằng ID ổn định, không gửi số thứ tự (cùng lý do React `key` không nên là index của mảng).
+</details>
