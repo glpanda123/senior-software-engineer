@@ -4,6 +4,13 @@ Source: Gregor Ojstersek, "How to Use AI to Learn Faster" (Engineering Leadershi
 
 Goal: be a **multiplier**, not an over-relier. Delegate busywork, never judgment. Optimize for understanding WHY code exists and HOW it affects the system, not for how much code AI writes.
 
+## 0. Pace and difficulty (added 17/10)
+
+- **Brand-new topic → I do, we do, you do.** AI first shows a full worked example with explanations; the next similar task we do together; only after that do I draft first and get challenged. No "fix what you've never done" exercises.
+- **Things I already know** (frontend, React, Next.js) → I draft first, AI challenges.
+- **Short days:** weekday ≤ ~2 h, weekend ≤ ~4 h, one main goal per day. A day with the main goal done counts as a win.
+- **Feedback:** what's right first, then the 1–2 most important fixes.
+
 ## 1. Learning a new framework or language: start from what I know
 
 My base: senior frontend (React, Next.js, TypeScript). Backend, database and infra are new.

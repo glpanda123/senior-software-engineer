@@ -3,7 +3,7 @@
 Every question I've answered so far, with my original answer, what was wrong, and a model answer.
 **How to review:** read the question, answer out loud first (60–90 s), then open "Model answer" and compare. Mark ✅ / 🔁 in the Review log.
 
-Story-type answers (Tell me about yourself, STAR stories) live in [`stories.md`](stories.md).
+Story-type answers (Tell me about yourself, STAR stories) live in [`stories.md`](stories.md). Vietnamese version: [`qa-review.vi.md`](qa-review.vi.md).
 
 ---
 
