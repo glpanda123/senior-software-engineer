@@ -34,3 +34,20 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
+
+## Điều chỉnh plan — 17/10 (lịch Ngày 5–8+)
+
+Tính đến Ngày 4: còn nợ ~1,5 ngày khối lượng (nửa Ngày 3: C4, ERD, sequence, ADR-001/002, budget alert; gần trọn Ngày 4: prototype + deploy). Với nhịp ngày ngắn (ngày thường ~2 h) và "I do → we do → you do", phần nợ + hàng rào chất lượng dàn ra 7 buổi → backend bắt đầu 25/10 thay vì 19/10.
+
+| Ngày | Mục tiêu chính | Ai viết |
+| --- | --- | --- |
+| CN 18/10 (4 h) | Khung prototype lên production: MSW, theme từ `tokens.json`, deploy Vercel | AI làm mẫu |
+| T2 19/10 (2 h) | openapi-fetch + TanStack Query; màn Login / Signup / Onboarding | Nối dữ liệu: AI làm mẫu; màn: mình viết trước |
+| T3 20/10 (2 h) | Today + Project list / task detail, UI xử lý 409 | Mình viết, AI review |
+| T4 21/10 (2 h) | Members, trạng thái empty/loading/error, mobile → prototype xong | Mình viết, AI review |
+| T5 22/10 (2 h) | C4 (mức 1–2) + ADR-001 (NestJS + Prisma) | AI làm mẫu |
+| T6 23/10 (2 h) | Sequence "kéo thả realtime" + ADR-002 (hạ tầng) + AI phản biện thiết kế | Làm cùng |
+| T7 24/10 (4 h) | Hàng rào chất lượng. **Chốt cắt scope** cho tuần 2–3 (ứng viên: thu gọn P2, bỏ đính kèm file / full-text search) | AI làm mẫu |
+| CN 25/10 → | Backend TDD: auth → workspace/RBAC → task/409/move → realtime…; ERD vẽ cùng Prisma schema | AI làm mẫu → làm cùng |
+
+Chen vào lúc nào cũng được: budget alert AWS (trước 28/10), SD URL shortener (một buổi cuối tuần). Giữ nhịp ngày ngắn; bù chậm bằng cắt scope, không kéo dài ngày học.
