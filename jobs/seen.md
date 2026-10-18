@@ -40,3 +40,13 @@ https://itviec.com/it-jobs/remote-senior-fullstack-engineer-fmg-suite-4839
 https://freehire.me/jobs/senior-fullstack-engineer-typescript-api-reactjs-reclub-vietnam-67tbtjia
 https://itviec.com/viec-lam-it/principal-frontend-engineer-reactjs-micro-fe-money-forward-vietnam-co-ltd-3411
 https://careers.techvify.com/tuyen-dung-it/senior-fullstack-software-engineer
+https://itviec.com/viec-lam-it/principal-frontend-engineer-reactjs-vuejs-andpad-vietnam-co-ltd-0055
+https://itviec.com/it-jobs/principal-frontend-engineer-reactjs-vuejs-andpad-vietnam-co-ltd-0055
+https://itviec.com/viec-lam-it/senior-frontend-developer-reactjs-vuejs-andpad-vietnam-co-ltd-3819
+https://careers-page.com/dikshatek-3/job/L886795R
+https://himalayas.app/companies/dikshatek-co/jobs/senior-nodejs
+https://itviec.com/viec-lam-it/remote-senior-full-stack-developer-svtek-technology-corporation-5646
+https://itviec.com/it-jobs/remote-senior-full-stack-developer-svtek-technology-corporation-5646
+https://itviec.com/viec-lam-it/fullstack-developer-reactjs-nodejs-typescript-cong-ty-tnhh-socotec-viet-nam-4318
+https://itviec.com/it-jobs/lead-senior-fullstack-developer-reactjs-nodejs-gradion-4415
+https://itviec.com/it-jobs/lead-principal-front-end-engineer-reactjs-nextjs-money-forward-vietnam-co-ltd-3536
