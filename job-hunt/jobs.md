@@ -47,3 +47,15 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Mid/Senior Fullstack Developer (ReactJS, NodeJS) | AlphaSphere | Văn phòng HCM (cần hỏi có nhận remote từ HN không); TypeScript; yêu cầu dùng AI coding assistant (Claude Code, Copilot) hằng ngày; tin ~36 ngày trước | [itviec](https://itviec.com/it-jobs/mid-senior-fullstack-developer-reactjs-nodejs-alphasphere-0137) | saved |
 | Backend Lead (Express/Node, Postgres), remote | Không rõ | Remote, nhận HCM/ĐN/HN; thiên backend | [itviec nodejs](https://itviec.com/it-jobs/nodejs) | saved |
+
+## 2026-10-18
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Developer (NodeJS, ReactJS) | SmartDev | Cầu Giấy, HN; React + NestJS/Node/TypeScript + AWS; ngày đăng chưa rõ | [builtin](https://builtin.com/job/senior-fullstack-developer-nodejs-reactjs/3598653) | saved |
+| Full-Stack Software Engineer (NestJS, TypeScript) | SMT AX Vietnam | Hà Nội, tại văn phòng; tag AI, API; chưa rõ level | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| Tech Lead (AI Project — Backend, AI Agent, LLM) | Không rõ | Hà Nội; NodeJS, LLM; level lead | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| Full-stack Developer (NodeJS/Java/Python) — AI adoption | Panasonic R&D Center Vietnam | Lotte Tower, HN; REST API + LLM (chatbot, RAG); yêu cầu 5+ năm, 2+ năm dự án AI; có bản đăng hạn cũ | [itviec](https://itviec.com/it-jobs/full-stack-developer-nodejs-java-python-panasonic-vietnam-group-panasonic-r-d-center-vietnam-prdcv-3956) · [bản "basic AI skills"](https://itviec.com/viec-lam-it/full-stack-engineer-basic-ai-skills-panasonic-vietnam-group-panasonic-r-d-center-vietnam-prdcv-5730) | saved |
+| Fullstack (NodeJS & ReactJS) | LatteHub | Thanh Xuân, HN; 25–40 triệu; 4 năm; NestJS; ngày đăng chưa rõ | [topcv](https://www.topcv.vn/viec-lam/fullstack-nodejs-reactjs/1537836.html) | saved |
+| Fullstack Developer (NodeJS, ReactJS) | Positive Thinking Company | Hà Nội / HCM | [topdev](https://topdev.vn/viec-lam/fullstack-developer-nodejs-reactjs-positive-thinking-company-2028546) | saved |
+| Senior Fullstack Developer (AI/GenAI/AI Agent/LLM/RAG) | ITviec Recruitment Consulting (khách hàng ẩn) | Hà Nội; 5+ năm; backend Python/Java (không phải Node) | [itviec](https://itviec.com/it-jobs/senior-fullstack-developer-ai-genai-ai-agent-llm-rag-itviec-recruitment-consulting-3712) | saved |
