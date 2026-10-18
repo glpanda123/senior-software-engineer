@@ -31,6 +31,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Đọc contract, trả lời 3 câu (Q9): 409 → phải cho người dùng quyết định, không tự thử lại; cursor ✅; fractional indexing là chủ đề mới (đã giải thích).
 - Tự chấm:
 
+## Ngày 5 — CN 18/10/2026
+
+- TaskFlow: API giả bằng MSW 3 + openapi-msw, có type lấy từ contract (PR #3, đã merge): PATCH 409, move fractional index, RBAC, dev panel giả lập chậm / lỗi / sửa đồng thời; trang `/dev` để thử luồng 409.
+- Theme từ `tokens.json` (Tailwind v4, tên biến theo shadcn), font IBM Plex (PR #4).
+- Deploy Vercel: https://taskflow-blond-gamma.vercel.app (tự deploy khi merge master, có preview cho mỗi PR).
+- Bất ngờ: MSW 3 đổi `onUnhandledRequest` thành `onUnhandledFrame`; `msw/browser` không chạy ở server → `next/dynamic({ ssr: false })`. AI viết sai logic move khi chỉ có `beforeId`, phát hiện lúc tự review → cần test ở ngày hàng rào.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
