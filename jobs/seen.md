@@ -50,3 +50,12 @@ https://itviec.com/it-jobs/remote-senior-full-stack-developer-svtek-technology-c
 https://itviec.com/viec-lam-it/fullstack-developer-reactjs-nodejs-typescript-cong-ty-tnhh-socotec-viet-nam-4318
 https://itviec.com/it-jobs/lead-senior-fullstack-developer-reactjs-nodejs-gradion-4415
 https://itviec.com/it-jobs/lead-principal-front-end-engineer-reactjs-nextjs-money-forward-vietnam-co-ltd-3536
+https://employmenthero.com/jobs/position/employment-hero-frontend-engineer-remote-vietnam-vwwd1
+https://nodeflair.com/jobs/smartdev-senior-software-developer-front-end-strong-reactjs-next-js-504606
+https://nodeflair.com/jobs/smartdev-senior-software-developer-front-end-strong-reactjs-next-js-502601
+https://www.enclave.vn/?p=4008
+https://careers.smartdev.com/?p=9360
+https://itviec.com/viec-lam-it/senior-fullstack-engineer-nestjs-react-claude-codex-digital-unicorn-0141
+https://itviec.com/it-jobs/senior-fullstack-engineer-nestjs-react-claude-codex-digital-unicorn-0141
+https://apply.workable.com/covergo/jobs/view/DCD768D956.md
+https://hello.cv/jobs/share/400242392896454656
