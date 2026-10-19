@@ -54,8 +54,17 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Fullstack Developer (NodeJS, ReactJS) | SmartDev | Cầu Giấy, HN; React + NestJS/Node/TypeScript + AWS; ngày đăng chưa rõ | [builtin](https://builtin.com/job/senior-fullstack-developer-nodejs-reactjs/3598653) | saved |
 | Full-Stack Software Engineer (NestJS, TypeScript) | SMT AX Vietnam | Hà Nội, tại văn phòng; tag AI, API; chưa rõ level | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
-| Tech Lead (AI Project — Backend, AI Agent, LLM) | Không rõ | Hà Nội; NodeJS, LLM; level lead | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| Tech Lead (AI Project — Backend, AI Agent, LLM) | Không rõ (có thể là SAVA META, TopDev 19/10) | Hà Nội; NodeJS, LLM; level lead | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
 | Full-stack Developer (NodeJS/Java/Python) — AI adoption | Panasonic R&D Center Vietnam | Lotte Tower, HN; REST API + LLM (chatbot, RAG); yêu cầu 5+ năm, 2+ năm dự án AI; có bản đăng hạn cũ | [itviec](https://itviec.com/it-jobs/full-stack-developer-nodejs-java-python-panasonic-vietnam-group-panasonic-r-d-center-vietnam-prdcv-3956) · [bản "basic AI skills"](https://itviec.com/viec-lam-it/full-stack-engineer-basic-ai-skills-panasonic-vietnam-group-panasonic-r-d-center-vietnam-prdcv-5730) | saved |
 | Fullstack (NodeJS & ReactJS) | LatteHub | Thanh Xuân, HN; 25–40 triệu; 4 năm; NestJS; ngày đăng chưa rõ | [topcv](https://www.topcv.vn/viec-lam/fullstack-nodejs-reactjs/1537836.html) | saved |
 | Fullstack Developer (NodeJS, ReactJS) | Positive Thinking Company | Hà Nội / HCM | [topdev](https://topdev.vn/viec-lam/fullstack-developer-nodejs-reactjs-positive-thinking-company-2028546) | saved |
 | Senior Fullstack Developer (AI/GenAI/AI Agent/LLM/RAG) | ITviec Recruitment Consulting (khách hàng ẩn) | Hà Nội; 5+ năm; backend Python/Java (không phải Node) | [itviec](https://itviec.com/it-jobs/senior-fullstack-developer-ai-genai-ai-agent-llm-rag-itviec-recruitment-consulting-3712) | saved |
+
+## 2026-10-19
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Remote — Fullstack Engineer (Claude, NodeJS, React) | Không rõ | Remote; tag NextJS, NestJS; dùng Claude; chưa rõ level | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| Senior NodeJS/TypeScript (Shopify integrations) | Không rõ | Hà Nội, tại văn phòng; NodeJS, TypeScript, GraphQL, ReactJS, English; ghi "urgent" | [itviec nodejs HN](https://itviec.com/it-jobs/nodejs/ha-noi) | saved |
+| Senior Full Stack Developer (Next.js, Nest.js, MongoDB, Google Cloud) | APT Global Enterprise | Remote, Việt Nam; cần kinh nghiệm lead/mentor; ID tin có vẻ cũ, cần mở kiểm tra | [linkedin](https://vn.linkedin.com/jobs/view/senior-full-stack-developer-next-js-nest-js-mongodb-google-cloud-at-apt-global-enterprise-3853482926) | saved |
+| Frontend Leader / Principal Engineer (ReactJS/TypeScript) | NEC Vietnam | Hà Nội / HCM; thuần frontend; yêu cầu 10 năm | [topdev](https://topdev.vn/detail-jobs/frontend-leader-principal-engineer-reactjs-typescript-nec-vietnam-2058150) | saved |
