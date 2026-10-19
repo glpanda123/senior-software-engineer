@@ -221,3 +221,38 @@ Vậy quy mô không phải vấn đề: một Postgres primary là quá đủ. 
 
 **Bài học:** 409 nghĩa là *cho người dùng thấy xung đột*, không bao giờ tự ghi đè. Gửi ý định bằng ID ổn định, không gửi số thứ tự (cùng lý do React `key` không nên là index của mảng).
 </details>
+
+---
+
+## Q10. Backend cơ bản: phân quyền, ghi đồng thời, token
+
+*"(a) Why return 404, not 403, for a resource you can't see? (b) The mock checks the version, then writes. What can go wrong in a real backend, and how do you fix it? (c) Why keep the access token in memory, not localStorage? Where does the refresh token go, and why? (d) What is refresh token rotation, and what does the server do when an already-used refresh token comes back? (e) The UI already hides "Edit" for viewers. Why must the API still check permissions?"*
+
+**Câu hỏi:** (a) Vì sao trả 404 chứ không phải 403 cho tài nguyên không được xem? (b) Mock kiểm tra version rồi mới ghi; ở backend thật điều gì có thể sai, sửa thế nào? (c) Vì sao access token để trong bộ nhớ chứ không phải localStorage; refresh token để đâu, vì sao? (d) Refresh token rotation là gì; server làm gì khi một refresh token đã dùng bị gửi lên lại? (e) UI đã ẩn nút "Sửa" với viewer, vì sao API vẫn phải kiểm tra quyền?
+
+**Câu trả lời của mình (19/10):**
+> 1. vì nếu trả 403 thay vì 404 thì user sẽ biết data có tồn tại, chỉ là không có quyền xem
+> 2. câu này t không biết
+> 3. vì nếu web bị hack, token sẽ bị get mà không thể thu hồi. refresh token để trong cookie, khi gọi api refresh thì trình duyệt sẽ tự đính vào request
+> 4. đó là access token sẽ để thời gian expire ngắn, trong khi session token thì dài hơn.  nếu 1 refresh token đã dùng bị gửi lên lần nữa, tức là có khả năng client có refresh token đó bị lộ thông tin, cần phải cho refresh token đó vào blacklist
+> 5. Vì các action phải tuân theo RBAC. User với role của mình không được phép thực hiện các action của role khác
+
+**Chỗ chưa ổn:** (a) ✅. (b) chủ đề mới: race condition khi "kiểm tra rồi mới ghi" (xem đáp án mẫu). (c) đúng hướng; từ khóa là **XSS**: mọi script trên trang đều đọc được localStorage. Thiếu ý cookie refresh là **HttpOnly** (JS không đọc được) và SameSite (chống CSRF). (d) đang tả thời hạn của access và refresh token chứ chưa phải rotation; và chỉ blacklist token bị dùng lại là chưa đủ, vì kẻ tấn công có thể đã giữ token mới hơn → **thu hồi cả họ token**. (e) đúng nhưng thiếu lý do cốt lõi: **client có thể bỏ qua UI** (curl/DevTools), nên UI không phải hàng rào bảo mật.
+
+<details><summary>Đáp án mẫu</summary>
+
+> (a) "If I return 403, I've confirmed the resource exists, which leaks information across tenants, for example that another company has a project with that ID. So anything outside your scope is a 404, exactly like something that doesn't exist."
+> (b) "Two requests can read the same version at the same time, both pass the check, and the second write silently overwrites the first. The fix is to make the check and the write one atomic statement: `UPDATE tasks SET …, version = version + 1 WHERE id = $1 AND version = $2`. If zero rows were updated, someone else got there first, so I return 409. Same idea for unique emails: a UNIQUE constraint in the database, not a lookup in code."
+> (c) "Anything in localStorage can be read by any script running on the page, so one XSS bug leaks a token the attacker can use from anywhere. An in-memory access token is still exposed while the page is open, but it isn't persisted and it expires in 15 minutes, because a JWT can't be revoked before it expires. The refresh token lives in an HttpOnly, Secure, SameSite cookie: JavaScript can't read it at all, the browser sends it automatically, and SameSite protects against CSRF."
+> (d) "Rotation means every refresh returns a new refresh token and invalidates the old one. If an old token is used again, two parties hold the same token, and we can't tell which one is the attacker. So we don't just block that one token: we revoke the whole token family for that login and force the user to sign in again."
+> (e) "The UI is not a security boundary. Anyone can call the API directly with curl or DevTools and skip our buttons. Hiding the button is UX; the API must enforce the role on every request."
+
+**Nghĩa:**
+(a) Trả 403 là xác nhận tài nguyên có tồn tại, làm lộ thông tin giữa các tenant (ví dụ một công ty khác có project mang ID đó). Nên mọi thứ ngoài phạm vi của bạn đều trả 404, y như thứ không tồn tại.
+(b) Hai request có thể cùng đọc một version, cùng qua bước kiểm tra, và lần ghi thứ hai âm thầm đè lên lần thứ nhất. Cách sửa là gộp kiểm tra và ghi thành một câu lệnh nguyên tử: `UPDATE … WHERE id = $1 AND version = $2`. Không dòng nào bị sửa nghĩa là người khác đã ghi trước, trả 409. Email trùng cũng vậy: dùng UNIQUE constraint trong database, không tra cứu bằng code.
+(c) Mọi thứ trong localStorage đều bị bất kỳ script nào trên trang đọc được, nên chỉ một lỗi XSS là lộ token và kẻ tấn công dùng được từ bất cứ đâu. Access token trong bộ nhớ vẫn lộ khi trang đang mở, nhưng không được lưu lại và hết hạn sau 15 phút, vì JWT không thu hồi được trước khi hết hạn. Refresh token nằm trong cookie HttpOnly, Secure, SameSite: JavaScript không đọc được, trình duyệt tự gửi kèm, và SameSite chống CSRF.
+(d) Rotation nghĩa là mỗi lần refresh trả về refresh token mới và vô hiệu token cũ. Token cũ bị dùng lại nghĩa là có hai bên cùng giữ nó, và mình không biết bên nào là kẻ tấn công. Nên không chỉ chặn token đó mà thu hồi cả "họ" token của lần đăng nhập ấy, bắt người dùng đăng nhập lại.
+(e) UI không phải là hàng rào bảo mật. Ai cũng gọi thẳng API bằng curl hoặc DevTools mà không cần bấm nút. Ẩn nút là trải nghiệm; API phải kiểm tra role ở mọi request.
+
+**Bài học:** client không đáng tin (e); kiểm tra và ghi phải nguyên tử (b); refresh token bị dùng lại nghĩa là bị đánh cắp → thu hồi cả họ (d).
+</details>
