@@ -1,6 +1,6 @@
 # TaskFlow — Product Requirements (v1)
 
-Status: Draft v1.1 · Owner: Ly · Last updated: 2026-10-16
+Status: Draft v1.2 · Owner: Ly · Last updated: 2026-10-19
 
 ## 1. Problem
 
@@ -86,3 +86,4 @@ Every screen in these flows must define its **empty, loading, error and success*
 - **AI output is untrusted:** drafts are validated against a schema and always reviewed by a human before saving.
 - **Viewer scope (decided 16/10 after persona walkthrough):** workspace-wide viewers would let a client see other clients' projects. Viewers get per-project access → needs a `project_members` table and a project-level check in RBAC.
 - **Open:** do viewers need comments? (v1 answer: no — read-only.)
+- **Password policy (decided 19/10):** minimum 8 characters, as in the API contract (`RegisterRequest.password.minLength`). Lower friction for a small-team product; strength comes from hashing (argon2) and login rate limiting on the backend. The mockup's "12 characters" hint is superseded.
