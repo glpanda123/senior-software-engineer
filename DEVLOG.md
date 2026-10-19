@@ -59,3 +59,18 @@ Tính đến Ngày 4: còn nợ ~1,5 ngày khối lượng (nửa Ngày 3: C4, E
 | CN 25/10 → | Backend TDD: auth → workspace/RBAC → task/409/move → realtime…; ERD vẽ cùng Prisma schema | AI làm mẫu → làm cùng |
 
 Chen vào lúc nào cũng được: budget alert AWS (trước 28/10), SD URL shortener (một buổi cuối tuần). Giữ nhịp ngày ngắn; bù chậm bằng cắt scope, không kéo dài ngày học.
+
+## Điều chỉnh plan — 19/10 (đổi vai ở phần màn hình)
+
+Frontend là thế mạnh (7 năm), tự viết thêm màn hình không giúp lấp khoảng trống backend. Từ nay: **AI dựng các màn hình frontend, mình review như senior FE** (15–20 phút/lần, cũng là luyện review code AI). Giờ tự học dồn sang backend; backend kéo lên sớm 1 ngày.
+
+| Ngày | Mục tiêu chính |
+| --- | --- |
+| T2 19/10 | AI dựng màn auth + onboarding; mình học lại toàn bộ phần backend đã có (contract, vòng đời request, authn/authz, 409, auth token) |
+| T3 20/10 | AI dựng Today / Project / Members, mình review → prototype xong |
+| T4 21/10 | C4 (mức 1–2) + ADR-001 |
+| T5 22/10 | Sequence "kéo thả realtime" + ADR-002 + AI phản biện thiết kế |
+| T6 23/10 | Hàng rào chất lượng |
+| T7 24/10 | Backend TDD bắt đầu (auth). Chốt cắt scope tuần 2–3 |
+| CN 25/10 → | Backend tiếp: workspace/RBAC → task/409/move → realtime… |
+
