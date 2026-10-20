@@ -59,3 +59,17 @@ https://itviec.com/viec-lam-it/senior-fullstack-engineer-nestjs-react-claude-cod
 https://itviec.com/it-jobs/senior-fullstack-engineer-nestjs-react-claude-codex-digital-unicorn-0141
 https://apply.workable.com/covergo/jobs/view/DCD768D956.md
 https://hello.cv/jobs/share/400242392896454656
+https://itviec.com/viec-lam-it/sr-fullstack-developer-nodejs-vuejs-reactjs-english-powergate-software-4035
+https://itviec.com/it-jobs/sr-fullstack-developer-nodejs-vuejs-reactjs-english-powergate-software-4035
+https://vn.joboko.com/viec-lam-senior-full-stack-engineer-react-strength-xvi6700801
+https://itviec.com/viec-lam-it/senior-frontend-developer-reactjs-ha-noi-travala-com-5557
+https://itviec.com/viec-lam-it/senior-lead-fullstack-engineer-itviec-recruitment-consulting-4044
+https://itviec.com/it-jobs/senior-lead-fullstack-engineer-itviec-recruitment-consulting-4044
+https://itviec.com/it-jobs/senior-frontend-developer-reactjs-nextjs-english-ekino-vietnam-4233
+https://itviec.com/viec-lam-it/senior-front-end-developer-reactjs-english-ekino-vietnam-5843
+https://app.semesteria.com/jobs/frontend-engineer-hanoi-capital-region-one-mount-61264e3d-5d80-430e-aa3b-915571400445
+https://www.monroeconsulting.com/job/senior-frontend-engineer-5
+https://itviec.com/viec-lam-it/senior-fullstack-developer-ai-genai-ai-agent-llm-rag-itviec-recruitment-consulting-3712
+https://itviec.com/it-jobs/senior-fullstack-developer-ai-genai-ai-agent-llm-rag-itviec-recruitment-consulting-3712
+https://itviec.com/it-jobs/principal-senior-frontend-engineer-reactjs-micro-fe-money-forward-vietnam-co-ltd-5903
+https://itviec.com/it-jobs/principal-frontend-engineer-reactjs-vuejs-andpad-vietnam-co-ltd-4152
