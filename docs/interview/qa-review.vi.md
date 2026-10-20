@@ -256,3 +256,29 @@ Vậy quy mô không phải vấn đề: một Postgres primary là quá đủ. 
 
 **Bài học:** client không đáng tin (e); kiểm tra và ghi phải nguyên tử (b); refresh token bị dùng lại nghĩa là bị đánh cắp → thu hồi cả họ (d).
 </details>
+
+---
+
+## Q11. Câu hỏi vặn system design: URL shortener
+
+*"(a) Why not just use the auto-increment ID from the database as the short code? It's simple and never collides. (b) The marketing team wants to know how many times each link is clicked. Does that change anything in your design?"*
+
+**Câu hỏi:** (a) Vì sao không dùng luôn ID tự tăng của database làm short code, vừa đơn giản vừa không bao giờ trùng? (b) Marketing muốn biết mỗi link được click bao nhiêu lần, thiết kế có thay đổi gì không?
+
+**Câu trả lời của mình (20/10):**
+> 1. không dùng ID tự tăng vì bot có thể đoán ra và dò ra được các short link khác
+> 2. khi marketing muốn đếm click thì nên để BE trả về status code là 302
+
+**Chỗ chưa ổn:** (a) ✅ đúng lý do chính (bị dò ra). Thêm lý do thứ hai: một bộ đếm chung là **nút thắt / điểm hỏng duy nhất** khi có nhiều server, và nói luôn mình dùng gì thay thế. (b) 302 ✅, đó là một trong hai thay đổi. Còn thiếu thay đổi thứ hai: **đếm click bất đồng bộ** (queue → consumer → bảng đếm) để analytics không làm chậm redirect.
+
+<details><summary>Đáp án mẫu</summary>
+
+> (a) "Two reasons. Sequential IDs are guessable: anyone can walk through every code and find links people thought were private. And one global counter is a bottleneck and a single point of failure when many servers create links. So I use random 7-character base62 codes with a conditional insert, and retry on the rare collision. If the interviewer wants zero retries, I'd lease ID ranges per server and scramble them."
+> (b) "Two changes. First, redirect with 302 instead of 301: a 301 is cached by the browser, so repeat clicks never reach us. Second, count clicks off the hot path: the redirect publishes a click event to a queue and returns immediately, and a consumer aggregates counts into a separate table. Counts can lag a few seconds, which is fine for analytics, and a slow analytics system never slows down a redirect."
+
+**Nghĩa:**
+(a) Hai lý do. ID tăng dần thì đoán được: ai cũng duyệt hết các code và tìm ra những link người ta tưởng là riêng tư. Và một bộ đếm chung là nút thắt cổ chai, đồng thời là điểm hỏng duy nhất khi nhiều server cùng tạo link. Nên tôi dùng code base62 ngẫu nhiên 7 ký tự, insert có điều kiện, trùng (hiếm) thì thử lại. Nếu interviewer muốn không bao giờ phải thử lại, tôi cấp cho mỗi server một dải ID và xáo trộn chúng.
+(b) Hai thay đổi. Một: chuyển hướng bằng 302 thay vì 301, vì 301 bị trình duyệt cache nên các lần click lặp lại không bao giờ đến được server. Hai: đếm click ngoài đường xử lý chính: redirect đẩy một sự kiện click vào queue rồi trả về ngay, một consumer cộng dồn vào bảng riêng. Số đếm có thể trễ vài giây, chấp nhận được cho analytics, và hệ thống analytics chậm không bao giờ làm chậm redirect.
+
+**Bài học:** với mỗi yêu cầu mới, hỏi "nó thay đổi gì trên **đường xử lý chính (hot path)**?". Giữ hot path (redirect) nhanh, đẩy phần còn lại sang bất đồng bộ.
+</details>

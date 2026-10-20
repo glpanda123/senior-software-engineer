@@ -205,8 +205,28 @@ Spoken version (~60 s):
 
 ---
 
+## Q11. System design follow-ups: URL shortener
+
+**Questions:** (a) "Why not just use the auto-increment ID from the database as the short code? It's simple and never collides." (b) "The marketing team wants to know how many times each link is clicked. Does that change anything in your design?"
+
+**My answer (20/10):**
+> 1. không dùng ID tự tăng vì bot có thể đoán ra và dò ra được các short link khác
+> 2. khi marketing muốn đếm click thì nên để BE trả về status code là 302
+
+**What was off:** (a) ✅ main reason right (enumeration). Add the second reason: a single global counter is a **bottleneck / single point of failure** across servers, and name what you use instead. (b) 302 ✅, that's one of the two changes. Missing the second: **count clicks asynchronously** (queue → consumer → counts table) so analytics never slows the redirect.
+
+<details><summary>Model answer</summary>
+
+> (a) "Two reasons. Sequential IDs are guessable: anyone can walk through every code and find links people thought were private. And one global counter is a bottleneck and a single point of failure when many servers create links. So I use random 7-character base62 codes with a conditional insert, and retry on the rare collision. If the interviewer wants zero retries, I'd lease ID ranges per server and scramble them."
+> (b) "Two changes. First, redirect with 302 instead of 301: a 301 is cached by the browser, so repeat clicks never reach us. Second, count clicks off the hot path: the redirect publishes a click event to a queue and returns immediately, and a consumer aggregates counts into a separate table. Counts can lag a few seconds, which is fine for analytics, and a slow analytics system never slows down a redirect."
+
+**Takeaway:** for every requirement, ask "what does it change on the **hot path**?" Keep the hot path (redirect) fast; push the rest to async.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | |
