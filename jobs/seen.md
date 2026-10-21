@@ -73,3 +73,13 @@ https://itviec.com/viec-lam-it/senior-fullstack-developer-ai-genai-ai-agent-llm-
 https://itviec.com/it-jobs/senior-fullstack-developer-ai-genai-ai-agent-llm-rag-itviec-recruitment-consulting-3712
 https://itviec.com/it-jobs/principal-senior-frontend-engineer-reactjs-micro-fe-money-forward-vietnam-co-ltd-5903
 https://itviec.com/it-jobs/principal-frontend-engineer-reactjs-vuejs-andpad-vietnam-co-ltd-4152
+https://nodeflair.com/jobs/hcltech-anz-project-senior-frontend-engineer-reactjs-nextjs-237544
+https://vietnamworks.com/senior-full-stack-developer-node-js-react-js-1868250-jv
+https://itviec.com/viec-lam-it/mid-senior-frontend-react-typescript-graphql-acceleratorapp-5045
+https://itviec.com/it-jobs/mid-senior-frontend-react-typescript-graphql-acceleratorapp-5045
+https://itviec.com/viec-lam-it/senior-typescript-dev-react-express-frontend-focus-unifiedpost-4035
+https://itviec.com/it-jobs/senior-typescript-dev-react-express-frontend-focus-unifiedpost-4035
+https://www.itjobswatch.co.uk/jv/Robert-Half/Senior-Frontend-Engineer-React-Nextjs-VIETNAM-Job-London-South-East-England-UK-518e72
+https://dynamic.jobgether.com/offer/6734ce704a6b7352f3c845a7-senior-full-stack-engineer
+https://itviec.com/viec-lam-it/senior-fullstack-engineer-larion-5925
+https://itviec.com/it-jobs/senior-fullstack-engineer-larion-5925
