@@ -179,8 +179,54 @@ Spoken version (~60 s):
 
 ---
 
+## Q10. Backend basics: authorization, concurrency, tokens
+
+**Questions:** (a) Why return 404, not 403, for a resource you can't see? (b) The mock checks the version, then writes. What can go wrong in a real backend, and how do you fix it? (c) Why keep the access token in memory, not localStorage? Where does the refresh token go, and why? (d) What is refresh token rotation, and what does the server do when an already-used refresh token comes back? (e) The UI already hides "Edit" for viewers. Why must the API still check permissions?
+
+**My answer (19/10):**
+> 1. vì nếu trả 403 thay vì 404 thì user sẽ biết data có tồn tại, chỉ là không có quyền xem
+> 2. câu này t không biết
+> 3. vì nếu web bị hack, token sẽ bị get mà không thể thu hồi. refresh token để trong cookie, khi gọi api refresh thì trình duyệt sẽ tự đính vào request
+> 4. đó là access token sẽ để thời gian expire ngắn, trong khi session token thì dài hơn.  nếu 1 refresh token đã dùng bị gửi lên lần nữa, tức là có khả năng client có refresh token đó bị lộ thông tin, cần phải cho refresh token đó vào blacklist
+> 5. Vì các action phải tuân theo RBAC. User với role của mình không được phép thực hiện các action của role khác
+
+**What was off:** (a) ✅. (b) new topic: the check-then-write race (see model answer). (c) right direction; the key word is **XSS**: any script on the page can read localStorage. Missing that the refresh cookie is **HttpOnly** (JS can't read it) and SameSite (CSRF). (d) described access vs refresh lifetimes, not rotation; and blacklisting only the reused token isn't enough, because the attacker may already hold the newer one → **revoke the whole token family**. (e) right but missing the core reason: **the client can bypass the UI** (curl/DevTools), so the UI is not a security boundary.
+
+<details><summary>Model answer</summary>
+
+> (a) "If I return 403, I've confirmed the resource exists, which leaks information across tenants, for example that another company has a project with that ID. So anything outside your scope is a 404, exactly like something that doesn't exist."
+> (b) "Two requests can read the same version at the same time, both pass the check, and the second write silently overwrites the first. The fix is to make the check and the write one atomic statement: `UPDATE tasks SET …, version = version + 1 WHERE id = $1 AND version = $2`. If zero rows were updated, someone else got there first, so I return 409. Same idea for unique emails: a UNIQUE constraint in the database, not a lookup in code."
+> (c) "Anything in localStorage can be read by any script running on the page, so one XSS bug leaks a token the attacker can use from anywhere. An in-memory access token is still exposed while the page is open, but it isn't persisted and it expires in 15 minutes, because a JWT can't be revoked before it expires. The refresh token lives in an HttpOnly, Secure, SameSite cookie: JavaScript can't read it at all, the browser sends it automatically, and SameSite protects against CSRF."
+> (d) "Rotation means every refresh returns a new refresh token and invalidates the old one. If an old token is used again, two parties hold the same token, and we can't tell which one is the attacker. So we don't just block that one token: we revoke the whole token family for that login and force the user to sign in again."
+> (e) "The UI is not a security boundary. Anyone can call the API directly with curl or DevTools and skip our buttons. Hiding the button is UX; the API must enforce the role on every request."
+
+**Takeaway:** the client is untrusted (e); make check-and-write atomic (b); a reused refresh token means theft → revoke the family (d).
+</details>
+
+---
+
+## Q11. System design follow-ups: URL shortener
+
+**Questions:** (a) "Why not just use the auto-increment ID from the database as the short code? It's simple and never collides." (b) "The marketing team wants to know how many times each link is clicked. Does that change anything in your design?"
+
+**My answer (20/10):**
+> 1. không dùng ID tự tăng vì bot có thể đoán ra và dò ra được các short link khác
+> 2. khi marketing muốn đếm click thì nên để BE trả về status code là 302
+
+**What was off:** (a) ✅ main reason right (enumeration). Add the second reason: a single global counter is a **bottleneck / single point of failure** across servers, and name what you use instead. (b) 302 ✅, that's one of the two changes. Missing the second: **count clicks asynchronously** (queue → consumer → counts table) so analytics never slows the redirect.
+
+<details><summary>Model answer</summary>
+
+> (a) "Two reasons. Sequential IDs are guessable: anyone can walk through every code and find links people thought were private. And one global counter is a bottleneck and a single point of failure when many servers create links. So I use random 7-character base62 codes with a conditional insert, and retry on the rare collision. If the interviewer wants zero retries, I'd lease ID ranges per server and scramble them."
+> (b) "Two changes. First, redirect with 302 instead of 301: a 301 is cached by the browser, so repeat clicks never reach us. Second, count clicks off the hot path: the redirect publishes a click event to a queue and returns immediately, and a consumer aggregates counts into a separate table. Counts can lag a few seconds, which is fine for analytics, and a slow analytics system never slows down a redirect."
+
+**Takeaway:** for every requirement, ask "what does it change on the **hot path**?" Keep the hot path (redirect) fast; push the rest to async.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | |

@@ -2,6 +2,57 @@
 
 Oct 13, 2026 · @Hoang Nguyen Duong · bản rút gọn từ plan 60 ngày
 
+## Cập nhật 22/10: làm theo công đoạn, hướng business
+
+Góp ý của mentor (22/10): prototype còn đơn sơ; phải làm **đúng công đoạn**: bài toán → ý tưởng → **present prototype** → system design → **viết code sau cùng**, không làm lắt nhắt mỗi thứ một ít rồi sửa. Và phải **track tiến độ hằng ngày**, có trang status công khai (kiểu status.claude.com) để show.
+
+Phần này **thay cho lịch từ Ngày 9 trở đi** ở các bảng tuần bên dưới. Các bảng cũ giữ lại để tham khảo nội dung từng chủ đề.
+
+### Nguyên tắc
+
+1. **Mỗi giai đoạn có cổng (gate)**: chưa qua gate thì không sang giai đoạn sau. Không quay lại sửa giai đoạn trước, trừ khi gate sau phát hiện lỗi (ghi lý do vào DEVLOG).
+2. **Mỗi giai đoạn trả lời một câu hỏi**: *có đáng làm không?* → *người dùng có muốn không?* → *xây thế nào?* → *xây cho chạy được*.
+3. **Track hằng ngày**: cuối mỗi buổi cập nhật `DEVLOG.md` (riêng tư) và trang **/status** (công khai, chỉ thông tin trình bày được).
+4. Vai trò giữ nguyên: frontend do AI dựng, mình review; chủ đề mới thì AI làm mẫu → làm cùng → mình tự làm.
+
+### Giai đoạn và lịch
+
+| Giai đoạn | Ngày | Mục tiêu chính | Output | Gate |
+| --- | --- | --- | --- | --- |
+| **1. Bài toán & ý tưởng** | T5 22/10 (2 h) | Vì sao TaskFlow đáng làm | Business brief 1 trang: vấn đề có bằng chứng, nhóm khách hàng, đối thủ, điểm khác biệt, mô hình kinh doanh giả định, chỉ số thành công, rủi ro. **Trang /status v1** | Nói được pitch 60 giây bằng tiếng Anh |
+| **2. Prototype "hoành tráng" + present** | T6 23/10 (2 h) | Nâng cấp hình ảnh | Visual v2 (shadcn/ui, minh hoạ, chuyển động nhẹ) + **landing page** (vấn đề → giải pháp → "Try the demo") | |
+| | T7 24/10 (4 h) | Tính năng "wow" chạy trên mock | **Board Kanban kéo thả** (có cách dùng bàn phím) · **realtime giả lập** (đồng đội ảo kéo task, avatar online, toast) · **AI soạn task từ đoạn văn** (mock) | |
+| | CN 25/10 (4 h) | Present | Dữ liệu demo đẹp, kịch bản demo, **pitch deck 6–8 slide**, video demo 2 phút; mình tập thuyết trình 5 phút bằng tiếng Anh | Mentor + 2–3 người xem, góp ý ≥ 2 người trùng nhau thì sửa |
+| **3. System design** | T2 26/10 (2 h) | Kiến trúc tổng thể | C4 mức 1–2 + ERD | |
+| | T3 27/10 (2 h) | Luồng khó | Sequence: kéo thả realtime nhiều instance, AI soạn task; AI phản biện thiết kế | |
+| | T4 28/10 (2 h) | Quyết định | ADR-001 (NestJS + Prisma), ADR-002 (hạ tầng); cập nhật contract cho tính năng mới (AI draft, sự kiện realtime) | Design review: tự trình bày 10 phút không cần đọc |
+| **4. Code** | T5 29/10 | Hàng rào chất lượng | Lint/hook/CI chặn agent "phá rào" | |
+| | T6 30/10 → T3 03/11 | Backend TDD lõi | Auth → workspace/RBAC + test cách ly tenant → task/409/move → realtime (Redis pub/sub) → nối FE, tắt MSW từng phần, deploy API | Màn chính chạy API thật trên production |
+| **5. Tuần 4** | 04/11 → 10/11 | Phỏng vấn | Nộp 1–2 đơn/ngày, mock interview, STAR; backend làm tiếp nhẹ (AI draft gọi LLM thật) | |
+
+### Phạm vi: xếp hàng ưu tiên, không cắt (chốt 22/10)
+
+Backend bắt đầu 29/10. Không xoá phần nào của plan cũ; phần chưa kịp làm trước 04/11 được **xếp hàng ưu tiên**, làm tiếp song song với nộp đơn:
+
+1. Redis: cache, rate limit login, BullMQ gửi email mời, outbox (~3 buổi)
+2. AI soạn task gọi LLM thật + eval trong CI (~3 buổi)
+3. P2 rút gọn: MCP tự viết + 1 skill (~4 buổi)
+4. Deploy AWS đơn giản → Terraform (~4 buổi)
+5. Nếu còn thời gian: bảo mật + mutation test, P2 phần còn lại, P3
+
+**Hai điều kiện để không làm lắt nhắt:**
+
+1. **Chốt phạm vi và thiết kế trọn vẹn từ đầu.** Giai đoạn 1 chốt **phạm vi v1** và **roadmap v1.1**. Giai đoạn 3 thiết kế **toàn bộ v1**, kể cả phần code sau 03/11 (Redis/hàng đợi, AI thật, deploy). Sau đó chỉ code theo thiết kế, không quay lại thiết kế. Thứ ngoài v1 (đính kèm file, full-text search…) nằm trong roadmap, không làm.
+2. **Khóa UI sau giai đoạn 2.** Prototype có sẵn giao diện mọi tính năng v1; code backend chỉ thay mock bằng API thật. Ý tưởng mới giữa chừng ghi vào backlog v1.1.
+
+Mục tiêu thời gian của toàn bộ hàng đợi: ~31 buổi (~3,5 tuần ở nhịp hiện tại) nếu làm hết.
+
+### Trang /status
+
+- Địa chỉ: `/status` trên prototype (https://taskflow-blond-gamma.vercel.app/status).
+- Hiển thị: % hoàn thành từng giai đoạn và tổng, giai đoạn hiện tại, việc hôm nay, nhật ký ngắn các ngày gần nhất, link repo / prototype / tài liệu.
+- Dữ liệu: file `progress.json` trong repo taskflow (công khai), cập nhật cuối mỗi buổi. Không đưa job tracker, tự chấm hay ghi chú cá nhân lên đó.
+
 ## Mục tiêu
 
 Trong 28 ngày (Thứ Tư 14/10 – Thứ Ba 10/11/2026), tự học cường độ cao để chuyển từ **Senior React Developer** thành **Senior Software Engineer** (JS/TS, ứng dụng AI).

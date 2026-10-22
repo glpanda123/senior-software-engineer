@@ -68,3 +68,32 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior NodeJS/TypeScript (Shopify integrations) | Không rõ | Hà Nội, tại văn phòng; NodeJS, TypeScript, GraphQL, ReactJS, English; ghi "urgent" | [itviec nodejs HN](https://itviec.com/it-jobs/nodejs/ha-noi) | saved |
 | Senior Full Stack Developer (Next.js, Nest.js, MongoDB, Google Cloud) | APT Global Enterprise | Remote, Việt Nam; cần kinh nghiệm lead/mentor; ID tin có vẻ cũ, cần mở kiểm tra | [linkedin](https://vn.linkedin.com/jobs/view/senior-full-stack-developer-next-js-nest-js-mongodb-google-cloud-at-apt-global-enterprise-3853482926) | saved |
 | Frontend Leader / Principal Engineer (ReactJS/TypeScript) | NEC Vietnam | Hà Nội / HCM; thuần frontend; yêu cầu 10 năm | [topdev](https://topdev.vn/detail-jobs/frontend-leader-principal-engineer-reactjs-typescript-nec-vietnam-2058150) | saved |
+
+## 2026-10-20
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| [Remote] Senior Full-Stack Developer | SVTEK Technology | Remote, freelance cho khách Singapore; Node.js + TypeScript, React; hiểu MCP, AI agent, dùng AI coding tools; tin ~139 ngày, cần kiểm tra còn mở | [itviec](https://itviec.com/it-jobs/remote-senior-full-stack-developer-svtek-technology-corporation-5646) | saved |
+| NodeJS (Senior/Lead) | Synodus | Hà Nội; tới 55 triệu; 5 năm; tin từ tháng 7, có thể đã đóng | [topcv nodejs](https://www.topcv.vn/tim-viec-lam-nodejs) | saved |
+| Senior Developer (NodeJS, ReactJS, AI) | Không rõ | Chưa rõ địa điểm; có đủ Node + React + AI | [topcv reactjs](https://www.topcv.vn/tim-viec-lam-reactjs) | saved |
+| Senior Frontend Engineer (React.JS) | Money Forward Vietnam | Hà Nội / HCM; 5+ năm; TypeScript; thuần frontend | [topcv](https://www.topcv.vn/viec-lam/senior-frontend-engineer-react-js/1295714.html) | saved |
+| Full-Stack Developer (ReactJS + NodeJS + TypeScript) | Agile Lab Pte Ltd | Remote (gốc HCM); chưa rõ level; tin ~82 ngày | [itviec](https://itviec.com/it-jobs/full-stack-developer-reactjs-nodejs-typescript-agile-lab-pte-ltd-5255) | saved |
+
+## 2026-10-21
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Software Engineer (AI) | NAB Innovation Centre Vietnam | Hybrid HN / HCM; tag Generative & Agentic AI; stack NAB có TS/Node/React, cần xác nhận yêu cầu riêng của vị trí | [itviec NAB](https://itviec.com/companies/nab-innovation-centre-vietnam) | saved |
+| Full Stack Engineer (NextJS NestJS) +ENG | GEM Corporation | HN / HCM; yêu cầu tiếng Anh | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| Sr Fullstack Engineer (ReactJS, TypeScript, PostgreSQL) | CADDI Vietnam | HN / HCM; có NextJS | [itviec fullstack HN](https://itviec.com/it-jobs/full-stack/ha-noi) | saved |
+| Senior Fullstack Developer (NestJS, VueJS, TypeScript) | Không rõ | Remote, nhận HN; frontend là Vue; tin "hot" | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| NodeJS Dev (+ ReactJS/NestJS/NextJS) | Offspring Digital | Hà Nội, tại văn phòng; không ghi senior | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
+| Senior AI Native Engineer (React, Next.js, Flutter) | DatVietVAC | Chưa rõ địa điểm; AI-native, thiên frontend/mobile | [itviec](https://itviec.com/it-jobs/senior-ai-native-engineer-react-next-js-flutter-datvietvac-3240) | saved |
+
+## 2026-10-22
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Software Engineer (Javascript, NodeJS) | Không rõ | Hà Nội; tên công ty không hiện trong kết quả | [linkedin node jobs](https://vn.linkedin.com/jobs/node-js-developer-jobs) | saved |
+| Senior Fullstack Developer (Java / TypeScript) | LG CNS Việt Nam | Hà Nội; backend Java, có lead/coach team | [itviec senior fullstack](https://itviec.com/it-jobs/senior-full-stack-developer) | saved |
+| NodeJS Developer | Savvycom | Hà Nội; công ty product development; không ghi senior; đăng ~1 tuần | [linkedin node jobs](https://vn.linkedin.com/jobs/node-js-developer-jobs) | saved |
