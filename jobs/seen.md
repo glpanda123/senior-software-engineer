@@ -83,3 +83,9 @@ https://www.itjobswatch.co.uk/jv/Robert-Half/Senior-Frontend-Engineer-React-Next
 https://dynamic.jobgether.com/offer/6734ce704a6b7352f3c845a7-senior-full-stack-engineer
 https://itviec.com/viec-lam-it/senior-fullstack-engineer-larion-5925
 https://itviec.com/it-jobs/senior-fullstack-engineer-larion-5925
+https://itviec.com/viec-lam-it/full-stack-developer-reactjs-nodejs-typescript-agile-lab-pte-ltd-5255
+https://itviec.com/it-jobs/full-stack-developer-reactjs-nodejs-typescript-agile-lab-pte-ltd-5255
+https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-agile-car-from-japan-5215
+https://topdev.vn/detail-jobs/hcm-senior-fullstack-developer-nodejs-reactjs-vuejs-ts041602-srfullstackjs-talent-success-2034209
+https://topdev.vn/detail-jobs/hcm-senior-fullstack-developer-nodejs-reactjs-vuejs-ts041602-srfullstackjs-talent-success-2033809
+https://itviec.com/it-jobs/fullstack-developer-nodejs-nestjs-reactjs-nextjs-midu-menaq7-jsc-1452
