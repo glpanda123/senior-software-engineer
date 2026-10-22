@@ -20,6 +20,7 @@ Every interview-style question I answer gets added to `docs/interview/qa-review.
 
 - 17/10: DSA paused until further notice. Don't schedule or remind DSA.
 - 17/10: Applications (and CV/LinkedIn polish) move to week 4, from Day 22 (04/11). Keep scanning jobs daily; don't remind me to apply before 04/11.
+- 22/10 (mentor feedback): work in stages with gates — problem → prototype + present → system design → code last; no back-and-forth between stages. Schedule: section "Cập nhật 22/10" in `docs/plan-4-tuan.md`. End every session by updating `DEVLOG.md` and the public `/status` page data (`progress.json` in the taskflow repo).
 
 ## Conventions
 

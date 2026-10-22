@@ -87,3 +87,9 @@ Frontend là thế mạnh (7 năm), tự viết thêm màn hình không giúp l�
 | T7 24/10 | Backend TDD bắt đầu (auth). Chốt cắt scope tuần 2–3 |
 | CN 25/10 → | Backend tiếp: workspace/RBAC → task/409/move → realtime… |
 
+## Điều chỉnh plan — 22/10 (góp ý mentor: làm theo công đoạn)
+
+Mentor: prototype còn đơn sơ; làm theo hướng business: bài toán → ý tưởng → present prototype → system design → code sau cùng; track hằng ngày, có trang status để show. Lịch mới: mục "Cập nhật 22/10" trong `docs/plan-4-tuan.md`.
+
+Tóm tắt: GĐ1 bài toán + /status (22/10) → GĐ2 prototype "hoành tráng" + pitch (23–25/10) → GĐ3 system design (26–28/10) → GĐ4 code backend lõi (29/10–03/11) → tuần 4 phỏng vấn. Đổi lại: thu gọn P2, bỏ P3, bỏ S3/FTS/Terraform đầy đủ.
+

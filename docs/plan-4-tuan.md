@@ -2,6 +2,47 @@
 
 Oct 13, 2026 · @Hoang Nguyen Duong · bản rút gọn từ plan 60 ngày
 
+## Cập nhật 22/10: làm theo công đoạn, hướng business
+
+Góp ý của mentor (22/10): prototype còn đơn sơ; phải làm **đúng công đoạn**: bài toán → ý tưởng → **present prototype** → system design → **viết code sau cùng**, không làm lắt nhắt mỗi thứ một ít rồi sửa. Và phải **track tiến độ hằng ngày**, có trang status công khai (kiểu status.claude.com) để show.
+
+Phần này **thay cho lịch từ Ngày 9 trở đi** ở các bảng tuần bên dưới. Các bảng cũ giữ lại để tham khảo nội dung từng chủ đề.
+
+### Nguyên tắc
+
+1. **Mỗi giai đoạn có cổng (gate)**: chưa qua gate thì không sang giai đoạn sau. Không quay lại sửa giai đoạn trước, trừ khi gate sau phát hiện lỗi (ghi lý do vào DEVLOG).
+2. **Mỗi giai đoạn trả lời một câu hỏi**: *có đáng làm không?* → *người dùng có muốn không?* → *xây thế nào?* → *xây cho chạy được*.
+3. **Track hằng ngày**: cuối mỗi buổi cập nhật `DEVLOG.md` (riêng tư) và trang **/status** (công khai, chỉ thông tin trình bày được).
+4. Vai trò giữ nguyên: frontend do AI dựng, mình review; chủ đề mới thì AI làm mẫu → làm cùng → mình tự làm.
+
+### Giai đoạn và lịch
+
+| Giai đoạn | Ngày | Mục tiêu chính | Output | Gate |
+| --- | --- | --- | --- | --- |
+| **1. Bài toán & ý tưởng** | T5 22/10 (2 h) | Vì sao TaskFlow đáng làm | Business brief 1 trang: vấn đề có bằng chứng, nhóm khách hàng, đối thủ, điểm khác biệt, mô hình kinh doanh giả định, chỉ số thành công, rủi ro. **Trang /status v1** | Nói được pitch 60 giây bằng tiếng Anh |
+| **2. Prototype "hoành tráng" + present** | T6 23/10 (2 h) | Nâng cấp hình ảnh | Visual v2 (shadcn/ui, minh hoạ, chuyển động nhẹ) + **landing page** (vấn đề → giải pháp → "Try the demo") | |
+| | T7 24/10 (4 h) | Tính năng "wow" chạy trên mock | **Board Kanban kéo thả** (có cách dùng bàn phím) · **realtime giả lập** (đồng đội ảo kéo task, avatar online, toast) · **AI soạn task từ đoạn văn** (mock) | |
+| | CN 25/10 (4 h) | Present | Dữ liệu demo đẹp, kịch bản demo, **pitch deck 6–8 slide**, video demo 2 phút; mình tập thuyết trình 5 phút bằng tiếng Anh | Mentor + 2–3 người xem, góp ý ≥ 2 người trùng nhau thì sửa |
+| **3. System design** | T2 26/10 (2 h) | Kiến trúc tổng thể | C4 mức 1–2 + ERD | |
+| | T3 27/10 (2 h) | Luồng khó | Sequence: kéo thả realtime nhiều instance, AI soạn task; AI phản biện thiết kế | |
+| | T4 28/10 (2 h) | Quyết định | ADR-001 (NestJS + Prisma), ADR-002 (hạ tầng); cập nhật contract cho tính năng mới (AI draft, sự kiện realtime) | Design review: tự trình bày 10 phút không cần đọc |
+| **4. Code** | T5 29/10 | Hàng rào chất lượng | Lint/hook/CI chặn agent "phá rào" | |
+| | T6 30/10 → T3 03/11 | Backend TDD lõi | Auth → workspace/RBAC + test cách ly tenant → task/409/move → realtime (Redis pub/sub) → nối FE, tắt MSW từng phần, deploy API | Màn chính chạy API thật trên production |
+| **5. Tuần 4** | 04/11 → 10/11 | Phỏng vấn | Nộp 1–2 đơn/ngày, mock interview, STAR; backend làm tiếp nhẹ (AI draft gọi LLM thật) | |
+
+### Cắt scope để đổi lấy giai đoạn 1–2 (backend bắt đầu 29/10 thay vì 24/10)
+
+- **P2 AI Dev Kit**: chỉ giữ hàng rào chất lượng + CLAUDE.md + 1–2 skill. Bỏ MCP tự viết, agent review trong CI, plugin, mini-agent.
+- **P3 Job Hunt kit**: bỏ (scan job tự động đã chạy hằng ngày).
+- **P1**: bỏ đính kèm file S3, full-text search, mutation test, Terraform đầy đủ, diễn tập sự cố. Deploy API bằng cách đơn giản nhất làm được (1 VM hoặc dịch vụ PaaS), ghi trade-off trong ADR-002.
+- Giữ nguyên các chủ đề đào sâu khi phỏng vấn: cách ly tenant, 409, fractional indexing, realtime nhiều instance, AI có kiểm duyệt.
+
+### Trang /status
+
+- Địa chỉ: `/status` trên prototype (https://taskflow-blond-gamma.vercel.app/status).
+- Hiển thị: % hoàn thành từng giai đoạn và tổng, giai đoạn hiện tại, việc hôm nay, nhật ký ngắn các ngày gần nhất, link repo / prototype / tài liệu.
+- Dữ liệu: file `progress.json` trong repo taskflow (công khai), cập nhật cuối mỗi buổi. Không đưa job tracker, tự chấm hay ghi chú cá nhân lên đó.
+
 ## Mục tiêu
 
 Trong 28 ngày (Thứ Tư 14/10 – Thứ Ba 10/11/2026), tự học cường độ cao để chuyển từ **Senior React Developer** thành **Senior Software Engineer** (JS/TS, ứng dụng AI).
