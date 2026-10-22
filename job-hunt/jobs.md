@@ -89,3 +89,11 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior Fullstack Developer (NestJS, VueJS, TypeScript) | Không rõ | Remote, nhận HN; frontend là Vue; tin "hot" | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
 | NodeJS Dev (+ ReactJS/NestJS/NextJS) | Offspring Digital | Hà Nội, tại văn phòng; không ghi senior | [itviec nestjs](https://itviec.com/it-jobs/nestjs) | saved |
 | Senior AI Native Engineer (React, Next.js, Flutter) | DatVietVAC | Chưa rõ địa điểm; AI-native, thiên frontend/mobile | [itviec](https://itviec.com/it-jobs/senior-ai-native-engineer-react-next-js-flutter-datvietvac-3240) | saved |
+
+## 2026-10-22
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Software Engineer (Javascript, NodeJS) | Không rõ | Hà Nội; tên công ty không hiện trong kết quả | [linkedin node jobs](https://vn.linkedin.com/jobs/node-js-developer-jobs) | saved |
+| Senior Fullstack Developer (Java / TypeScript) | LG CNS Việt Nam | Hà Nội; backend Java, có lead/coach team | [itviec senior fullstack](https://itviec.com/it-jobs/senior-full-stack-developer) | saved |
+| NodeJS Developer | Savvycom | Hà Nội; công ty product development; không ghi senior; đăng ~1 tuần | [linkedin node jobs](https://vn.linkedin.com/jobs/node-js-developer-jobs) | saved |
