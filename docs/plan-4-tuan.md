@@ -30,12 +30,22 @@ Phần này **thay cho lịch từ Ngày 9 trở đi** ở các bảng tuần b�
 | | T6 30/10 → T3 03/11 | Backend TDD lõi | Auth → workspace/RBAC + test cách ly tenant → task/409/move → realtime (Redis pub/sub) → nối FE, tắt MSW từng phần, deploy API | Màn chính chạy API thật trên production |
 | **5. Tuần 4** | 04/11 → 10/11 | Phỏng vấn | Nộp 1–2 đơn/ngày, mock interview, STAR; backend làm tiếp nhẹ (AI draft gọi LLM thật) | |
 
-### Cắt scope để đổi lấy giai đoạn 1–2 (backend bắt đầu 29/10 thay vì 24/10)
+### Phạm vi: xếp hàng ưu tiên, không cắt (chốt 22/10)
 
-- **P2 AI Dev Kit**: chỉ giữ hàng rào chất lượng + CLAUDE.md + 1–2 skill. Bỏ MCP tự viết, agent review trong CI, plugin, mini-agent.
-- **P3 Job Hunt kit**: bỏ (scan job tự động đã chạy hằng ngày).
-- **P1**: bỏ đính kèm file S3, full-text search, mutation test, Terraform đầy đủ, diễn tập sự cố. Deploy API bằng cách đơn giản nhất làm được (1 VM hoặc dịch vụ PaaS), ghi trade-off trong ADR-002.
-- Giữ nguyên các chủ đề đào sâu khi phỏng vấn: cách ly tenant, 409, fractional indexing, realtime nhiều instance, AI có kiểm duyệt.
+Backend bắt đầu 29/10. Không xoá phần nào của plan cũ; phần chưa kịp làm trước 04/11 được **xếp hàng ưu tiên**, làm tiếp song song với nộp đơn:
+
+1. Redis: cache, rate limit login, BullMQ gửi email mời, outbox (~3 buổi)
+2. AI soạn task gọi LLM thật + eval trong CI (~3 buổi)
+3. P2 rút gọn: MCP tự viết + 1 skill (~4 buổi)
+4. Deploy AWS đơn giản → Terraform (~4 buổi)
+5. Nếu còn thời gian: bảo mật + mutation test, P2 phần còn lại, P3
+
+**Hai điều kiện để không làm lắt nhắt:**
+
+1. **Chốt phạm vi và thiết kế trọn vẹn từ đầu.** Giai đoạn 1 chốt **phạm vi v1** và **roadmap v1.1**. Giai đoạn 3 thiết kế **toàn bộ v1**, kể cả phần code sau 03/11 (Redis/hàng đợi, AI thật, deploy). Sau đó chỉ code theo thiết kế, không quay lại thiết kế. Thứ ngoài v1 (đính kèm file, full-text search…) nằm trong roadmap, không làm.
+2. **Khóa UI sau giai đoạn 2.** Prototype có sẵn giao diện mọi tính năng v1; code backend chỉ thay mock bằng API thật. Ý tưởng mới giữa chừng ghi vào backlog v1.1.
+
+Mục tiêu thời gian của toàn bộ hàng đợi: ~31 buổi (~3,5 tuần ở nhịp hiện tại) nếu làm hết.
 
 ### Trang /status
 

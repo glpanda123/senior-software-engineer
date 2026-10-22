@@ -92,4 +92,5 @@ Frontend là thế mạnh (7 năm), tự viết thêm màn hình không giúp l�
 Mentor: prototype còn đơn sơ; làm theo hướng business: bài toán → ý tưởng → present prototype → system design → code sau cùng; track hằng ngày, có trang status để show. Lịch mới: mục "Cập nhật 22/10" trong `docs/plan-4-tuan.md`.
 
 Tóm tắt: GĐ1 bài toán + /status (22/10) → GĐ2 prototype "hoành tráng" + pitch (23–25/10) → GĐ3 system design (26–28/10) → GĐ4 code backend lõi (29/10–03/11) → tuần 4 phỏng vấn. Đổi lại: thu gọn P2, bỏ P3, bỏ S3/FTS/Terraform đầy đủ.
+- Chốt (22/10): không cắt mà **xếp hàng ưu tiên** phần còn lại sau 03/11; hai điều kiện: chốt phạm vi + thiết kế trọn v1 từ đầu, khóa UI sau giai đoạn 2. Soạn tin nhắn gửi mentor xác nhận hướng.
 
