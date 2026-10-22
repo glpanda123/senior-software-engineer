@@ -1,6 +1,6 @@
 # Business brief: hướng dẫn đọc (bản tiếng Việt)
 
-Bản chính (tiếng Anh): [`01-business-brief.md`](01-business-brief.md). Đây là bài mẫu ("I do"): mình viết trọn, bạn đọc rồi phản biện. Lần sau (brief cho P2) mình làm cùng nhau.
+Bản chính (tiếng Anh): [`01-business-brief.md`](01-business-brief.md). Bản dịch đầy đủ: [`01-business-brief.full.vi.md`](01-business-brief.full.vi.md). Đây là bài mẫu ("I do"): mình viết trọn, bạn đọc rồi phản biện. Lần sau (brief cho P2) mình làm cùng nhau.
 
 ## 1. Khái niệm mới, dịch từ thứ bạn đã biết
 
