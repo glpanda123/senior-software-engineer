@@ -52,6 +52,18 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Việc của mình: review PR #8 như senior FE.
 - Tự chấm:
 
+## Ngày 8 — T4 21/10/2026
+
+- Nghỉ (không có buổi học).
+
+## Ngày 9 — T5 22/10/2026 · Giai đoạn 1
+
+- Plan: xếp hàng ưu tiên sau 03/11 + 2 điều kiện (chốt & thiết kế trọn v1; khóa UI sau GĐ2).
+- Business brief bài mẫu: `docs/business/01-business-brief.md` (+ `.vi.md` hướng dẫn đọc, câu hỏi phản biện). Đề xuất v1: thêm activity log; comment/label/file/tìm kiếm sang v1.1 → chờ mình duyệt rồi nâng PRD v1.3.
+- Trang /status v1 (taskflow PR #9): dữ liệu `apps/web/src/content/progress.json`; chuyển các route dùng API vào route group `(prototype)` để /status render tĩnh từ server.
+- Còn lại cho gate: trả lời ≥ 2 câu phản biện, chốt phạm vi v1, nói pitch 60 giây tiếng Anh.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
@@ -91,6 +103,6 @@ Frontend là thế mạnh (7 năm), tự viết thêm màn hình không giúp l�
 
 Mentor: prototype còn đơn sơ; làm theo hướng business: bài toán → ý tưởng → present prototype → system design → code sau cùng; track hằng ngày, có trang status để show. Lịch mới: mục "Cập nhật 22/10" trong `docs/plan-4-tuan.md`.
 
-Tóm tắt: GĐ1 bài toán + /status (22/10) → GĐ2 prototype "hoành tráng" + pitch (23–25/10) → GĐ3 system design (26–28/10) → GĐ4 code backend lõi (29/10–03/11) → tuần 4 phỏng vấn. Đổi lại: thu gọn P2, bỏ P3, bỏ S3/FTS/Terraform đầy đủ.
+Tóm tắt: GĐ1 bài toán + /status (22/10) → GĐ2 prototype "hoành tráng" + pitch (23–25/10) → GĐ3 system design (26–28/10) → GĐ4 code backend lõi (29/10–03/11) → tuần 4 phỏng vấn. Phần chưa kịp làm trước 04/11 không cắt mà xếp hàng ưu tiên (xem dòng dưới).
 - Chốt (22/10): không cắt mà **xếp hàng ưu tiên** phần còn lại sau 03/11; hai điều kiện: chốt phạm vi + thiết kế trọn v1 từ đầu, khóa UI sau giai đoạn 2. Soạn tin nhắn gửi mentor xác nhận hướng.
 
