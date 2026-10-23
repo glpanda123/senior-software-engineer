@@ -89,3 +89,12 @@ https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-agile-c
 https://topdev.vn/detail-jobs/hcm-senior-fullstack-developer-nodejs-reactjs-vuejs-ts041602-srfullstackjs-talent-success-2034209
 https://topdev.vn/detail-jobs/hcm-senior-fullstack-developer-nodejs-reactjs-vuejs-ts041602-srfullstackjs-talent-success-2033809
 https://itviec.com/it-jobs/fullstack-developer-nodejs-nestjs-reactjs-nextjs-midu-menaq7-jsc-1452
+https://itviec.com/viec-lam-it/senior-front-end-engineer-react-micro-frontend-epam-vietnam-2641
+https://itviec.com/it-jobs/senior-front-end-engineer-react-micro-frontend-epam-vietnam-2641
+https://itviec.com/viec-lam-it/senior-remote-fullstack-developer-ai-project-llm-xenia-tech-2702
+https://itviec.com/it-jobs/senior-remote-fullstack-developer-ai-project-llm-xenia-tech-2702
+https://jobs.byfounders.vc/companies/creative-force/jobs/79184017-senior-frontend-developer-reactjs
+https://careers.epam.com/en/vacancy/senior-front-end-engineer-reactjs-react-native-blt8hc0k7yuqef5sb3n_en
+https://nodeflair.com/jobs/epam-systems-senior-front-end-engineer-reactjs-react-native-530190
+https://itviec.com/viec-lam-it/senior-fullstack-developer-nestjs-vuejs-typescript-tradeit-gg-4452
+https://itviec.com/it-jobs/senior-fullstack-developer-nestjs-vuejs-typescript-tradeit-gg-4452
