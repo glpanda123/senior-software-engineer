@@ -97,3 +97,17 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior Software Engineer (Javascript, NodeJS) | Không rõ | Hà Nội; tên công ty không hiện trong kết quả | [linkedin node jobs](https://vn.linkedin.com/jobs/node-js-developer-jobs) | saved |
 | Senior Fullstack Developer (Java / TypeScript) | LG CNS Việt Nam | Hà Nội; backend Java, có lead/coach team | [itviec senior fullstack](https://itviec.com/it-jobs/senior-full-stack-developer) | saved |
 | NodeJS Developer | Savvycom | Hà Nội; công ty product development; không ghi senior; đăng ~1 tuần | [linkedin node jobs](https://vn.linkedin.com/jobs/node-js-developer-jobs) | saved |
+
+## 2026-10-23
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Engineer (ReactJS, Node & AI) | Xenia Tech | Tin mới (~1 giờ trước lúc scan); tính năng ghi âm / gọi trực tiếp; yêu cầu dùng AI agent suốt vòng đời kỹ thuật; tin khác tin Remote 16/10, cần kiểm tra địa điểm | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-engineer-reactjs-node-ai-xenia-tech-2317) | saved |
+| Senior Fullstack Developer (ReactJS, NodeJS, English) | Restaff (khách hàng House of Norway) | 5+ năm; TypeScript, Kafka/RabbitMQ, Redis; chưa rõ địa điểm và ngày đăng | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-developer-reactjs-nodejs-english-restaff-house-of-norway-2349) | saved |
+| Senior Fullstack Software Engineer | Techvify | Hà Nội; tới 40 triệu; ReactJS + NodeJS/Python | [techvify careers](https://careers.techvify.com/tuyen-dung-it/senior-fullstack-software-engineer) | saved |
+| Sr Fullstack Dev (NodeJS, ReactJS), up to $3,000 | CodeHQ | Chưa rõ địa điểm và ngày đăng | [itviec](https://itviec.com/viec-lam-it/sr-fullstack-developer-nodejs-reactjs-up-to-3000-codehq-5343) | saved |
+| Fullstack Developer (NodeJS, ReactJS, AI) | HDS Services Vietnam | Chưa rõ level / địa điểm | [itviec](https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-ai-hds-services-vietnam-0555) | saved |
+| Senior Fullstack Developer (NodeJS, ReactJS, MySQL) | Car From Japan (Agile) | Nam Từ Liêm, HN; bản TopDev hết hạn từ 2024, bản ITviec chưa rõ ngày, có thể đã đóng | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-agile-car-from-japan-5215) | saved |
+| Full-stack Developer (JavaScript, TypeScript, NestJS) | iArt Holdings | Hà Nội; không ghi senior | [glassdoor HN list](https://www.glassdoor.com/Job/developer-jobs-SRCH_IC2757069_KO0,9.htm) | saved |
+| Remote Full-stack Developer (TypeScript, Node.js, NestJS) | OrgScale | Remote Việt Nam; 3+ năm; chưa rõ ngày đăng | [glassdoor VN remote](https://www.glassdoor.com/Job/vietnam-remote-software-developer-jobs-SRCH_IL.0,7_IN251_KO8,33.htm) | saved |
+| AI Engineer (LLM agents, workflow) | TheHegeo | Python hoặc TypeScript, LLM API, RAG, AI agent; chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/ai-engineer-llm-agents-workflow-thehegeo-4604) | saved |
