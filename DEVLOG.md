@@ -74,6 +74,10 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Gate giai đoạn 1 chưa xong: 2 câu phản biện + pitch 60 giây, mình sẽ luyện sau. Pitch phải xong trước buổi present của giai đoạn 2.
 - Giai đoạn 2, buổi 1 (taskflow PR #11): landing page ở `/` (vấn đề → 3 tính năng → cách hoạt động → giá dự kiến), `/demo` vào thẳng app bằng tài khoản demo, visual v2 (sidebar có icon + màu dự án, Today có câu tóm tắt + "Projects to watch", màn đăng nhập mới). Test: auth 6/6, app 13/13.
 - Việc của mình: review PR #11 như senior FE (gợi ý: landing có nói quá điều prototype chưa làm được không? màu dự án có đủ tương phản không?).
+- Giai đoạn 2, buổi 2:
+  - PR #12: board Kanban kéo thả (chuột, cảm ứng, bàn phím; trình đọc màn hình đọc vị trí), thả xong thấy ngay (optimistic). Realtime qua WebSocket thật, MSW chặn trong trình duyệt; "đồng đội ảo" kéo/thêm task, có avatar online + thông báo. Test bắt được lỗi a11y: thẻ của viewer bị đọc là "disabled".
+  - PR #13 (merge sau #12): AI soạn task từ brief (mock theo luật, ghi rõ trên UI) + activity log. Thêm 2 endpoint vào contract dạng nháp để giai đoạn 3 review. Test 44/44.
+- Còn lại của giai đoạn 2 (25/10): dữ liệu demo, kịch bản demo, pitch deck 6–8 slide, video 2 phút, tập thuyết trình 5 phút; mentor + 2–3 người xem.
 - Tự chấm:
 
 ## Điều chỉnh plan — 17/10
