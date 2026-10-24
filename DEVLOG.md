@@ -72,6 +72,8 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 
 - Chốt phạm vi v1 như đề xuất trong brief → PRD v1.3 (comment/label/file/tìm kiếm sang v1.1; activity log theo dự án ở v1). Thêm màn activity log vào giai đoạn 2.
 - Gate giai đoạn 1 chưa xong: 2 câu phản biện + pitch 60 giây, mình sẽ luyện sau. Pitch phải xong trước buổi present của giai đoạn 2.
+- Giai đoạn 2, buổi 1 (taskflow PR #11): landing page ở `/` (vấn đề → 3 tính năng → cách hoạt động → giá dự kiến), `/demo` vào thẳng app bằng tài khoản demo, visual v2 (sidebar có icon + màu dự án, Today có câu tóm tắt + "Projects to watch", màn đăng nhập mới). Test: auth 6/6, app 13/13.
+- Việc của mình: review PR #11 như senior FE (gợi ý: landing có nói quá điều prototype chưa làm được không? màu dự án có đủ tương phản không?).
 - Tự chấm:
 
 ## Điều chỉnh plan — 17/10
