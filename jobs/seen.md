@@ -98,3 +98,14 @@ https://careers.epam.com/en/vacancy/senior-front-end-engineer-reactjs-react-nati
 https://nodeflair.com/jobs/epam-systems-senior-front-end-engineer-reactjs-react-native-530190
 https://itviec.com/viec-lam-it/senior-fullstack-developer-nestjs-vuejs-typescript-tradeit-gg-4452
 https://itviec.com/it-jobs/senior-fullstack-developer-nestjs-vuejs-typescript-tradeit-gg-4452
+https://itviec.com/viec-lam-it/senior-fullstack-software-engineer-node-js-react-js-soxes-ag-3900
+https://itviec.com/it-jobs/senior-fullstack-software-engineer-node-js-react-js-soxes-ag-3900
+https://vn.joboko.com/viec-lam-senior-fullstack-engineer-xvi6623694
+https://itviec.com/viec-lam-it/senior-full-stack-developer-node-js-nestjs-next-js-fgs-software-ltd-co-5548
+https://itviec.com/it-jobs/senior-full-stack-developer-node-js-nestjs-next-js-fgs-software-ltd-co-5548
+https://topdev.vn/viec-lam/technical-leader-frontend-reactjs-cong-ty-co-phan-chung-khoan-vndirect-2033960
+https://itviec.com/it-jobs/mid-senior-front-end-web-developer-reactjs-typescript-space-t-4209
+https://itviec.com/viec-lam-it/senior-frontend-reactjs-typescript-hcl-vietnam-company-limited-3141
+https://jointaro.com/jobs/qode/frontend-developer-react-and-typescript
+https://itviec.com/viec-lam-it/senior-frontend-developer-typescript-reactjs-nodejs-ringkas-4850
+https://itviec.com/it-jobs/senior-frontend-developer-typescript-reactjs-nodejs-ringkas-4850
