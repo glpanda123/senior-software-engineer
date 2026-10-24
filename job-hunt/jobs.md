@@ -102,8 +102,8 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
-| Senior Fullstack Engineer (ReactJS, Node & AI) | Xenia Tech | Tin mới (~1 giờ trước lúc scan); tính năng ghi âm / gọi trực tiếp; yêu cầu dùng AI agent suốt vòng đời kỹ thuật; tin khác tin Remote 16/10, cần kiểm tra địa điểm | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-engineer-reactjs-node-ai-xenia-tech-2317) | saved |
-| Senior Fullstack Developer (ReactJS, NodeJS, English) | Restaff (khách hàng House of Norway) | 5+ năm; TypeScript, Kafka/RabbitMQ, Redis; chưa rõ địa điểm và ngày đăng | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-developer-reactjs-nodejs-english-restaff-house-of-norway-2349) | saved |
+| Senior Fullstack Engineer (ReactJS, Node & AI) | Xenia Tech | Tin mới (~1 giờ trước lúc scan); tính năng ghi âm / gọi trực tiếp; yêu cầu dùng AI agent suốt vòng đời kỹ thuật; tin khác tin Remote 16/10; (cập nhật 24/10) hybrid hoặc remote toàn Việt Nam, yêu cầu điều phối nhiều AI agent song song | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-engineer-reactjs-node-ai-xenia-tech-2317) | saved |
+| Senior Fullstack Developer (ReactJS, NodeJS, English) | Restaff (khách hàng House of Norway) | 5+ năm; TypeScript, Kafka/RabbitMQ, Redis; (cập nhật 24/10) tại văn phòng Hà Nội; chưa rõ ngày đăng | [itviec](https://itviec.com/viec-lam-it/senior-fullstack-developer-reactjs-nodejs-english-restaff-house-of-norway-2349) | saved |
 | Senior Fullstack Software Engineer | Techvify | Hà Nội; tới 40 triệu; ReactJS + NodeJS/Python | [techvify careers](https://careers.techvify.com/tuyen-dung-it/senior-fullstack-software-engineer) | saved |
 | Sr Fullstack Dev (NodeJS, ReactJS), up to $3,000 | CodeHQ | Chưa rõ địa điểm và ngày đăng | [itviec](https://itviec.com/viec-lam-it/sr-fullstack-developer-nodejs-reactjs-up-to-3000-codehq-5343) | saved |
 | Fullstack Developer (NodeJS, ReactJS, AI) | HDS Services Vietnam | Chưa rõ level / địa điểm | [itviec](https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-ai-hds-services-vietnam-0555) | saved |
@@ -111,3 +111,16 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Full-stack Developer (JavaScript, TypeScript, NestJS) | iArt Holdings | Hà Nội; không ghi senior | [glassdoor HN list](https://www.glassdoor.com/Job/developer-jobs-SRCH_IC2757069_KO0,9.htm) | saved |
 | Remote Full-stack Developer (TypeScript, Node.js, NestJS) | OrgScale | Remote Việt Nam; 3+ năm; chưa rõ ngày đăng | [glassdoor VN remote](https://www.glassdoor.com/Job/vietnam-remote-software-developer-jobs-SRCH_IL.0,7_IN251_KO8,33.htm) | saved |
 | AI Engineer (LLM agents, workflow) | TheHegeo | Python hoặc TypeScript, LLM API, RAG, AI agent; chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/ai-engineer-llm-agents-workflow-thehegeo-4604) | saved |
+
+## 2026-10-24
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Full-stack Software Engineer (TypeScript) | Không rõ | Yêu cầu dùng Claude Code trong công việc thật; 7+ năm; chưa rõ địa điểm | [joboko](https://vn.joboko.com/viec-lam-senior-full-stack-software-engineer-typescript-xvi6737584?apply=true) | saved |
+| Senior Full Stack Developer (Node JS / React JS) | ArctX | Văn phòng Hà Nội; backend endpoint, code review, mentor; chưa rõ ngày đăng | [vietnamworks](https://vietnamworks.com/senior-full-stack-developer-node-js-react-js-1868250-jv) | saved |
+| Senior Backend Developer (NodeJS) | Không rõ | Hà Nội, tại văn phòng; NestJS, NextJS, ReactJS, AWS | [itviec nodejs developer](https://itviec.com/it-jobs/nodejs-developer) | saved |
+| Remote Senior Fullstack Engineer | FMG Suite | Remote; chưa rõ stack chi tiết | [itviec](https://itviec.com/viec-lam-it/remote-senior-fullstack-engineer-fmg-suite-4839) | saved |
+| Remote Fullstack Engineer (Hardcore, Nodejs), English fluently | Không rõ | Remote; yêu cầu tiếng Anh lưu loát | [joboko](https://vn.joboko.com/viec-lam-remote-fullstack-engineer-hardcore-nodejs-english-fluently-xvi6710941?amp=1) | saved |
+| Fullstack Developer (JavaScript, NodeJS, TypeScript) | AthenaFS | Cầu Giấy, HN, tại văn phòng; không ghi senior | [itviec](https://itviec.com/viec-lam-it/fullstack-developer-javascript-nodejs-typescript-athenafs-5821) | saved |
+| Experienced Fullstack TypeScript/JavaScript Developer | Olli | Chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/experienced-fullstack-typescript-javascript-developer-olli-0026) | saved |
+| Lead/Principal Front-end Engineer (ReactJS/NextJS) | Money Forward Vietnam | Hà Nội, hybrid; tiếng Anh, leadership; thuần frontend (phương án dự phòng) | [itviec nextjs](https://itviec.com/it-jobs/nextjs) | saved |
