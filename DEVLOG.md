@@ -64,6 +64,16 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Còn lại cho gate: trả lời ≥ 2 câu phản biện, chốt phạm vi v1, nói pitch 60 giây tiếng Anh.
 - Tự chấm:
 
+## Ngày 10 — T6 23/10/2026
+
+- Không có buổi học (chỉ scan job tự động).
+
+## Ngày 11 — T7 24/10/2026
+
+- Chốt phạm vi v1 như đề xuất trong brief → PRD v1.3 (comment/label/file/tìm kiếm sang v1.1; activity log theo dự án ở v1). Thêm màn activity log vào giai đoạn 2.
+- Gate giai đoạn 1 chưa xong: 2 câu phản biện + pitch 60 giây, mình sẽ luyện sau. Pitch phải xong trước buổi present của giai đoạn 2.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.

@@ -1,6 +1,6 @@
 # TaskFlow — Product Requirements (v1)
 
-Status: Draft v1.2 · Owner: Ly · Last updated: 2026-10-19
+Status: v1.3 (scope locked) · Owner: Ly · Last updated: 2026-10-24
 
 ## 1. Problem
 
@@ -41,15 +41,25 @@ Small teams (3–15 people) coordinate work across chat (Zalo, Slack), spreadshe
 
 ## 6. Scope (v1)
 
+Locked on 2026-10-24 at the end of Stage 1 (see `docs/business/01-business-brief.md`). Stage 3 designs all of it; new ideas go to the v1.1 roadmap, not into v1.
+
 | Area | Included |
 | --- | --- |
 | Accounts | Register, log in, stay logged in (refresh token rotation), log out |
-| Workspaces | Create a workspace, invite members by email, 4 roles: owner, admin, member, viewer. Owner/admin/member see every project in the workspace; viewers are invited to specific projects |
-| Projects & board | Projects inside a workspace; a board per project with status columns |
-| Tasks | Title, description, status, assignee, priority, due date, labels; comments; file attachments |
-| Board interaction | Drag and drop to reorder / change status; live updates for everyone on the board |
-| History & search | Activity log per workspace; full-text search over tasks |
-| AI assist | Paste a free-text description ("we need to launch the landing page next week…") → a draft list of structured tasks the user reviews before saving |
+| Workspaces | Create a workspace, invite members by email (sent from a background queue), 4 roles: owner, admin, member, viewer. Owner/admin/member see every project in the workspace; viewers are invited to specific projects, read-only |
+| Projects & board | Projects inside a workspace; a board per project with 4 status columns |
+| Tasks | Title, description, status, assignee, priority, due date; edit conflicts rejected with 409 |
+| Board interaction | Drag and drop to reorder / change status; live updates for everyone on the board (< 1 s) |
+| Today | Late, due-this-week, in-progress, unassigned and done-this-week at a glance |
+| History | Activity log per project: who changed what, when |
+| AI assist | Paste a free-text description ("we need to launch the landing page next week…") → a draft list of structured tasks the user reviews before saving; real LLM, schema-validated output, evals in CI |
+| Non-functional | Tenant isolation (tests in CI), login rate limiting, caching for the board |
+
+### v1.1 roadmap (not in v1)
+
+Comments, labels, file attachments (S3), full-text search, *internal* tasks hidden from viewers, late-task email digest, Slack/Zalo notifications.
+
+> Changed from v1.2: comments, labels, file attachments and full-text search moved to v1.1; activity log narrowed to per project; Today and non-functional requirements listed explicitly.
 
 ## 7. Key user flow
 

@@ -21,7 +21,7 @@ Phần này **thay cho lịch từ Ngày 9 trở đi** ở các bảng tuần b�
 | --- | --- | --- | --- | --- |
 | **1. Bài toán & ý tưởng** | T5 22/10 (2 h) | Vì sao TaskFlow đáng làm | Business brief 1 trang: vấn đề có bằng chứng, nhóm khách hàng, đối thủ, điểm khác biệt, mô hình kinh doanh giả định, chỉ số thành công, rủi ro. **Trang /status v1** | Nói được pitch 60 giây bằng tiếng Anh |
 | **2. Prototype "hoành tráng" + present** | T6 23/10 (2 h) | Nâng cấp hình ảnh | Visual v2 (shadcn/ui, minh hoạ, chuyển động nhẹ) + **landing page** (vấn đề → giải pháp → "Try the demo") | |
-| | T7 24/10 (4 h) | Tính năng "wow" chạy trên mock | **Board Kanban kéo thả** (có cách dùng bàn phím) · **realtime giả lập** (đồng đội ảo kéo task, avatar online, toast) · **AI soạn task từ đoạn văn** (mock) | |
+| | T7 24/10 (4 h) | Tính năng "wow" chạy trên mock | **Board Kanban kéo thả** (có cách dùng bàn phím) · **realtime giả lập** (đồng đội ảo kéo task, avatar online, toast) · **AI soạn task từ đoạn văn** (mock) · **activity log** theo dự án (thêm 24/10 khi chốt phạm vi v1) | |
 | | CN 25/10 (4 h) | Present | Dữ liệu demo đẹp, kịch bản demo, **pitch deck 6–8 slide**, video demo 2 phút; mình tập thuyết trình 5 phút bằng tiếng Anh | Mentor + 2–3 người xem, góp ý ≥ 2 người trùng nhau thì sửa |
 | **3. System design** | T2 26/10 (2 h) | Kiến trúc tổng thể | C4 mức 1–2 + ERD | |
 | | T3 27/10 (2 h) | Luồng khó | Sequence: kéo thả realtime nhiều instance, AI soạn task; AI phản biện thiết kế | |

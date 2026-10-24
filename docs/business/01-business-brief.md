@@ -77,7 +77,7 @@ Small teams that deliver projects for clients (design, dev and marketing agencie
 
 ## 8. Scope
 
-**v1 (locked at the end of Stage 1; Stage 3 designs all of it):**
+**v1 (locked 2026-10-24; Stage 3 designs all of it; PRD v1.3):**
 
 - Accounts: register, log in, stay logged in (refresh rotation), log out
 - Workspaces, 4 roles, invitations by email (sent from a queue)

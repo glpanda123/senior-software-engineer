@@ -79,7 +79,7 @@ Các team nhỏ làm dự án cho khách hàng (agency thiết kế, lập trìn
 
 ## 8. Phạm vi
 
-**v1 (chốt vào cuối giai đoạn 1; giai đoạn 3 thiết kế toàn bộ):**
+**v1 (đã chốt 24/10; giai đoạn 3 thiết kế toàn bộ; PRD v1.3):**
 
 - Tài khoản: đăng ký, đăng nhập, duy trì đăng nhập (xoay vòng refresh token), đăng xuất
 - Workspace, 4 role, mời qua email (gửi từ hàng đợi)

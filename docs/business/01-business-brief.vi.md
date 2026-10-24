@@ -33,7 +33,7 @@ Bản chính (tiếng Anh): [`01-business-brief.md`](01-business-brief.md). Bả
 7. **Rủi ro lớn nhất:** team lead **không muốn** client thấy board thật (lộ việc nội bộ lộn xộn). Kiểm bằng phỏng vấn; giải pháp ở roadmap là đánh dấu task "internal".
 8. **Phạm vi v1 (đề xuất chốt):** auth, workspace + 4 role + mời qua email, viewer theo dự án, board kéo thả + realtime, task + 409, Today, **activity log**, AI soạn task thật. **v1.1:** comment, label, đính kèm file (S3), tìm kiếm, task internal, email nhắc task trễ, thông báo Slack/Zalo.
 
-> **Khác PRD v1.2:** comment, label, đính kèm file và tìm kiếm chuyển từ v1 sang v1.1; activity log giữ lại trong v1 vì nó giải quyết nỗi đau "không có lịch sử thay đổi". Khi bạn đồng ý, mình nâng PRD lên v1.3 cho khớp và thêm màn activity log vào giai đoạn 2.
+> **Khác PRD v1.2:** comment, label, đính kèm file và tìm kiếm chuyển từ v1 sang v1.1; activity log giữ lại trong v1 vì nó giải quyết nỗi đau "không có lịch sử thay đổi". **Đã chốt 24/10:** PRD nâng lên v1.3, màn activity log thêm vào giai đoạn 2.
 
 ## 3. Pitch 60 giây: nghĩa tiếng Việt
 
