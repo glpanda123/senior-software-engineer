@@ -109,3 +109,13 @@ https://itviec.com/viec-lam-it/senior-frontend-reactjs-typescript-hcl-vietnam-co
 https://jointaro.com/jobs/qode/frontend-developer-react-and-typescript
 https://itviec.com/viec-lam-it/senior-frontend-developer-typescript-reactjs-nodejs-ringkas-4850
 https://itviec.com/it-jobs/senior-frontend-developer-typescript-reactjs-nodejs-ringkas-4850
+https://itviec.com/viec-lam-it/us-market-sr-tech-lead-fullstack-dev-up-to-70m-vnd-rikkeisoft-2331
+https://itviec.com/it-jobs/us-market-sr-tech-lead-fullstack-dev-up-to-70m-vnd-rikkeisoft-2331
+https://itviec.com/viec-lam-it/sr-lead-fullstack-engineer-reactjs-nodejs-english-cyberlogitec-vietnam-co-ltd-2730
+https://itviec.com/it-jobs/sr-lead-fullstack-engineer-reactjs-nodejs-english-cyberlogitec-vietnam-co-ltd-2730
+https://itviec.com/viec-lam-it/remote-technical-lead-full-stack-svtek-technology-corporation-0123
+https://itviec.com/it-jobs/remote-technical-lead-full-stack-svtek-technology-corporation-0123
+https://builtin.com/job/senior-frontend-developer-reactjs/3379469
+https://www.cake.me/companies/hcltech-vietnam/jobs/lead-fullstack-engineer
+https://itviec.com/it-jobs/senior-full-stack-dev-nodejs-nestjs-reactjs-english-fantastic5-technology-2420
+https://123job.vn/viec-lam/fullstack-nodejs-react-29GgKjl49E
