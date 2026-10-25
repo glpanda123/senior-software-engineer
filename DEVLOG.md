@@ -80,6 +80,15 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Còn lại của giai đoạn 2 (25/10): dữ liệu demo, kịch bản demo, pitch deck 6–8 slide, video 2 phút, tập thuyết trình 5 phút; mentor + 2–3 người xem.
 - Tự chấm:
 
+## Ngày 12 — CN 25/10/2026 · Giai đoạn 2, buổi cuối
+
+- Dữ liệu demo: 3 dự án ở các giai đoạn khác nhau (Website redesign, Mobile app, Brand guidelines), mô tả cho task chính; viewer tên Hana Le.
+- Video demo 100 giây (Playwright quay tự động, có con trỏ + chú thích), nhúng vào landing page ("Watch the demo"); WebM + MP4.
+- Pitch deck 8 slide có speaker notes: https://claude.ai/artifact/AatZ6Tk9aQ8wCEM3Q6LcDC (cần Share trước khi gửi).
+- Kịch bản demo 5 phút + câu hỏi khó + tin nhắn xin góp ý: `docs/business/02-demo-script.md` (+ `.vi.md`); bảng ghi góp ý `03-feedback.md`.
+- Việc của mình: luyện pitch 60 s + demo 5 phút; gửi cho anh + 2–3 người; ghi góp ý. Gate giai đoạn 2 = góp ý xong, sửa điều ≥ 2 người nói, khóa UI.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
