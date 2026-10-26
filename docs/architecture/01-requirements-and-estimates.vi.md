@@ -4,6 +4,8 @@ Bản tiếng Việt của [`01-requirements-and-estimates.md`](01-requirements-
 
 Các thuật ngữ hay dùng khi phỏng vấn (QPS, p95, cache, WebSocket…) giữ nguyên tiếng Anh, có giải thích ở lần xuất hiện đầu.
 
+> **Cập nhật 26/10 (PRD v1.3, đã chốt phạm vi):** comment, label, đính kèm file và tìm kiếm chuyển sang v1.1. v1 có thêm activity log theo dự án và AI soạn task bằng LLM thật. Các con số ước lượng giữ nguyên. Kiến trúc: repo taskflow, thư mục `docs/architecture/`.
+
 ## Yêu cầu chức năng (functional)
 
 1. **Tài khoản:** người dùng đăng ký, đăng nhập, giữ đăng nhập an toàn (xoay vòng refresh token), đăng xuất.

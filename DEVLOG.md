@@ -89,6 +89,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Việc của mình: luyện pitch 60 s + demo 5 phút; gửi cho anh + 2–3 người; ghi góp ý. Gate giai đoạn 2 = góp ý xong, sửa điều ≥ 2 người nói, khóa UI.
 - Tự chấm:
 
+## Ngày 13 — T2 26/10/2026 · Giai đoạn 3, buổi 1
+
+- C4 mức 1–2 + ERD cho toàn bộ v1 (bài mẫu), công khai trong taskflow `docs/architecture/` (PR); giải thích tiếng Việt + 5 câu phản biện: `docs/architecture/02-c4-erd.vi.md`.
+- Quyết định chính: modular monolith (API + worker), WebSocket trong API + Redis pub/sub, transactional outbox, AI gọi đồng bộ có timeout + rate limit, Postgres là nguồn sự thật duy nhất.
+- Tài liệu yêu cầu cập nhật theo PRD v1.3.
+- Việc của mình: đọc, trả lời 2–3 câu phản biện; vẫn gom góp ý prototype.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.

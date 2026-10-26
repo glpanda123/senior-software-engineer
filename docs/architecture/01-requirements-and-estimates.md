@@ -2,6 +2,8 @@
 
 Step 1–2 of the system design. Source of product scope: [`docs/PRD.md`](../PRD.md). Vietnamese version: [`01-requirements-and-estimates.vi.md`](01-requirements-and-estimates.vi.md).
 
+> **Updated 2026-10-26 (PRD v1.3, scope locked):** comments, labels, file attachments and full-text search moved to v1.1. v1 adds an activity log per project and AI drafting on a real LLM. Capacity numbers below are unchanged (comments/attachments were a small share). Architecture: taskflow repo `docs/architecture/`.
+
 ## Functional requirements
 
 1. **Accounts:** users sign up, log in and stay logged in securely (refresh-token rotation), log out.
