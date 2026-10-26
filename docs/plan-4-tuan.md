@@ -55,7 +55,7 @@ Mục tiêu thời gian của toàn bộ hàng đợi: ~31 buổi (~3,5 tuần �
 
 ## Cập nhật 26/10: chứng chỉ Claude (công ty tài trợ, hạn 31/12)
 
-Công ty cho thi miễn phí các chứng chỉ Claude, phải thi xong trước **31/12/2026**. Chốt (26/10): **chỉ thi Architect – Foundations (CCA-F)**. Đã đăng ký, tài khoản Pearson VUE đã kích hoạt.
+Công ty cho thi miễn phí các chứng chỉ Claude, phải thi xong trước **31/12/2026**. Chốt (26/10): **chỉ thi Architect – Foundations (CCA-F)**. Đã đăng ký và **đặt lịch thi T7 12/12/2026** qua Pearson VUE.
 
 | Chứng chỉ | Quyết định | Lý do |
 | --- | --- | --- |
@@ -68,11 +68,12 @@ Công ty cho thi miễn phí các chứng chỉ Claude, phải thi xong trước
 
 | Thời gian | Việc |
 | --- | --- |
-| Tuần này | Đặt lịch thi (xem điều khoản đổi lịch trước, chọn đúng múi giờ GMT+7). Hỏi công ty có cho thi lại miễn phí không. Mở exam guide chính thức để đối chiếu domain. |
+| Tuần này | ~~Đặt lịch thi~~ (xong: 12/12). Hỏi công ty có cho thi lại miễn phí không. Mở exam guide chính thức để đối chiếu domain. |
 | Đến 10/11 | **Không ôn thi.** Giữ nguyên giai đoạn 3 → 4 → tuần 4 phỏng vấn. |
-| Từ 11/11 | Ôn Architect, mỗi buổi khoảng 30–45 phút, xen với phỏng vấn. Buổi đầu: AI làm mẫu một agent nhỏ bằng TypeScript (gọi API, tool use, vòng lặp `stop_reason`) vì đây là chủ đề mới. |
-| Ngày thi | Chờ đặt lịch: T7–CN 28–29/11, hoặc T7–CN 12–13/12 nếu cần thêm thời gian ôn. Không đặt sát 31/12. |
-| Sau ngày thi → 31/12 | Dự phòng: thi lại hoặc lịch phỏng vấn dày |
+| 11/11 – 11/12 | Ôn Architect (~4 tuần), mỗi buổi khoảng 30–45 phút, xen với phỏng vấn. Buổi đầu: AI làm mẫu một agent nhỏ bằng TypeScript (gọi API, tool use, vòng lặp `stop_reason`) vì đây là chủ đề mới. |
+| Tuần trước 12/12 | Thi online: chạy kiểm tra hệ thống của Pearson VUE trên đúng máy sẽ thi; kiểm tra lại giờ thi theo GMT+7. |
+| **T7 12/12** | **Thi Architect – Foundations** |
+| 13/12 → 31/12 | Dự phòng: thi lại hoặc lịch phỏng vấn dày |
 
 ### Nguyên tắc
 

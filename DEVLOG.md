@@ -125,3 +125,4 @@ Công ty cho thi miễn phí chứng chỉ Claude, hạn 31/12. Chốt: **Archit
 - Ban đầu AI gợi ý Developer trước (khớp CV "SE + AI"). Mình chọn Architect vì thích phần dựng agent. Sau khi xem nội dung, Architect có dạy vòng lặp agent nên không hổng nền; phần Developer bù thêm là vận hành (caching, batch, chi phí, retry).
 - Việc ngay: đăng ký giữ suất, hỏi công ty có cho thi lại không, đối chiếu exam guide chính thức.
 - Cập nhật cùng ngày: đã đăng ký CCA-F, kích hoạt tài khoản Pearson VUE. **Bỏ Developer, chỉ thi Architect.** Ngày thi chưa đặt: 28–29/11 hoặc 12–13/12; không để sát 31/12 (không còn dự phòng nếu trượt hoặc máy lỗi).
+- Đã đặt lịch thi CCA-F: **T7 12/12/2026**. Ôn 11/11 – 11/12; 13/12 – 31/12 để dự phòng.
