@@ -134,3 +134,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Full Stack Web Developer (NestJS, NextJS) | Zizi Project | Chưa rõ địa điểm, level | [itviec](https://itviec.com/viec-lam-it/full-stack-web-developer-nestjs-nextjs-zizi-project-0957) | saved |
 | Senior NestJS Developer | Không rõ | Chưa rõ địa điểm | [joboko](https://vn.joboko.com/viec-lam-senior-nestjs-developer-xvi6582605?amp=1) | saved |
 | Fullstack Developer (Next.js, NestJS) | Arobid | Chưa rõ địa điểm, level | [topdev](https://topdev.vn/viec-lam/fullstack-developer-next-js-nestjs-cong-ty-co-phan-cong-nghe-arobid-2085671) | saved |
+
+## 2026-10-26
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Fullstack Developer (NodeJS, ReactJS, AI Native) | Restaff (khách hàng House of Norway) | Tin khác với tin Senior đã lưu 23/10; nhấn mạnh làm việc kiểu AI-native; chưa rõ level, địa điểm | [itviec](https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-ai-native-restaff-house-of-norway-3009) | saved |
+| Full-Stack ReactJS / NodeJS Developer | FPT Software | Cầu Giấy, HN; 3+ năm fullstack, REST, microservices; không ghi tiếng Anh; khác tin AWS đã lưu 13/10 | [itviec](https://itviec.com/viec-lam-it/full-stack-reactjs-nodejs-developer-fpt-software-0018) | saved |
