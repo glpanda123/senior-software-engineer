@@ -119,3 +119,12 @@ https://builtin.com/job/senior-frontend-developer-reactjs/3379469
 https://www.cake.me/companies/hcltech-vietnam/jobs/lead-fullstack-engineer
 https://itviec.com/it-jobs/senior-full-stack-dev-nodejs-nestjs-reactjs-english-fantastic5-technology-2420
 https://123job.vn/viec-lam/fullstack-nodejs-react-29GgKjl49E
+https://career.luxoft.com/jobs/senior-frontend-engineer-react-graphql-26144
+https://ITviec.com/it-jobs/senior-fullstack-engineer-typescript-reactjs-nodejs-cong-ty-tnhh-vani-heroes-3719
+https://itviec.com/it-jobs/nodejs-dev-reactjs-nestjs-nextjs-offspring-digital-viet-nam-0145
+https://itviec.com/it-jobs/nodejs-dev-reactjs-nestjs-nextjs-offspring-digital-viet-nam-4435
+https://itviec.com/it-jobs/nodejs-dev-reactjs-nestjs-nextjs-offspring-digital-viet-nam-2556
+https://itviec.com/it-jobs/fullstack-engineer-typescript-javascript-smg-swiss-marketplace-group-4236
+https://itviec.com/viec-lam-it/mid-senior-fullstack-engineer-typescript-javascript-smg-swiss-marketplace-group-5909
+https://itviec.com/viec-lam-it/frontend-react-next-react-native-6-month-contract-softflex-llc-co-ltd-2103
+https://itviec.com/it-jobs/frontend-react-next-react-native-6-month-contract-softflex-llc-co-ltd-2103
