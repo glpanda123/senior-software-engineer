@@ -53,6 +53,37 @@ Mục tiêu thời gian của toàn bộ hàng đợi: ~31 buổi (~3,5 tuần �
 - Hiển thị: % hoàn thành từng giai đoạn và tổng, giai đoạn hiện tại, việc hôm nay, nhật ký ngắn các ngày gần nhất, link repo / prototype / tài liệu.
 - Dữ liệu: file `progress.json` trong repo taskflow (công khai), cập nhật cuối mỗi buổi. Không đưa job tracker, tự chấm hay ghi chú cá nhân lên đó.
 
+## Cập nhật 26/10: chứng chỉ Claude (công ty tài trợ, hạn 31/12)
+
+Công ty cho thi miễn phí các chứng chỉ Claude, phải thi xong trước **31/12/2026**. Chốt (26/10): **Architect – Foundations trước, Developer – Foundations sau.**
+
+| Chứng chỉ | Quyết định | Lý do |
+| --- | --- | --- |
+| Architect – Foundations (CCA-F) | **Thi trước** | Dạy dựng hệ thống agent: vòng lặp agent, điều phối subagent, thiết kế tool/MCP, context, structured output; 20% về Claude Code (dùng hằng ngày). Khớp với system design trong phỏng vấn. |
+| Developer – Foundations (CCDV-F) | Thi sau | Dạy vận hành Claude API trên production: Messages API, streaming, prompt caching, Batches, chọn model và chi phí, retry, security. Bù phần Architect không dạy. |
+| Associate – Foundations | Bỏ | Mức người dùng cơ bản, không giúp CV kỹ sư. |
+| Architect – Professional | Bỏ | Khuyến nghị 3+ năm kiến trúc và 6+ tháng Claude trên production; thêm governance, stakeholder. |
+
+Hai bài trùng nhau khoảng 40–50% (prompt, tool/MCP, agent), nên ôn bài thứ hai sẽ nhẹ hơn.
+
+### Lịch
+
+| Thời gian | Việc |
+| --- | --- |
+| Tuần này | Đăng ký giữ suất (10 phút). Hỏi công ty có cho thi lại miễn phí không. Mở "Exam guide" chính thức của 2 bài để đối chiếu domain. |
+| Đến 10/11 | **Không ôn thi.** Giữ nguyên giai đoạn 3 → 4 → tuần 4 phỏng vấn. |
+| 11/11 – 29/11 | Ôn Architect, mỗi buổi khoảng 30–45 phút, xen với phỏng vấn. Buổi đầu: AI làm mẫu một agent nhỏ bằng TypeScript (gọi API, tool use, vòng lặp `stop_reason`) vì đây là chủ đề mới. |
+| ~30/11 | **Thi Architect – Foundations** |
+| 01/12 – 14/12 | Ôn Developer: caching, batch, streaming, chọn model, chi phí, retry, security |
+| ~15/12 | **Thi Developer – Foundations** |
+| 16/12 – 31/12 | Dự phòng: thi lại hoặc lịch phỏng vấn dày |
+
+### Nguyên tắc
+
+- Phỏng vấn ưu tiên hơn chứng chỉ. Nếu lịch phỏng vấn dày: giữ Architect, Developer có thể bỏ.
+- Học gắn với việc thật: trong lúc ôn, ưu tiên các mục hàng đợi trùng domain thi là **AI soạn task gọi LLM thật** (mục 2) và **MCP tự viết + 1 skill** (mục 3).
+- Thông tin về đề (số câu, tỷ trọng domain) lấy từ tài liệu bên thứ ba; tin theo exam guide chính thức nếu khác.
+
 ## Mục tiêu
 
 Trong 28 ngày (Thứ Tư 14/10 – Thứ Ba 10/11/2026), tự học cường độ cao để chuyển từ **Senior React Developer** thành **Senior Software Engineer** (JS/TS, ứng dụng AI).

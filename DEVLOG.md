@@ -118,3 +118,9 @@ Mentor: prototype còn đơn sơ; làm theo hướng business: bài toán → ý
 Tóm tắt: GĐ1 bài toán + /status (22/10) → GĐ2 prototype "hoành tráng" + pitch (23–25/10) → GĐ3 system design (26–28/10) → GĐ4 code backend lõi (29/10–03/11) → tuần 4 phỏng vấn. Phần chưa kịp làm trước 04/11 không cắt mà xếp hàng ưu tiên (xem dòng dưới).
 - Chốt (22/10): không cắt mà **xếp hàng ưu tiên** phần còn lại sau 03/11; hai điều kiện: chốt phạm vi + thiết kế trọn v1 từ đầu, khóa UI sau giai đoạn 2. Soạn tin nhắn gửi mentor xác nhận hướng.
 
+
+## Điều chỉnh plan — 26/10 (chứng chỉ Claude, hạn 31/12)
+
+Công ty cho thi miễn phí chứng chỉ Claude, hạn 31/12. Chốt: **Architect – Foundations trước (~30/11), Developer – Foundations sau (~15/12)**; bỏ Associate (quá cơ bản) và Architect – Professional (chưa đủ kinh nghiệm). Không ôn trước 11/11; phỏng vấn ưu tiên hơn. Chi tiết: mục "Cập nhật 26/10" trong `docs/plan-4-tuan.md`.
+- Ban đầu AI gợi ý Developer trước (khớp CV "SE + AI"). Mình chọn Architect vì thích phần dựng agent. Sau khi xem nội dung, Architect có dạy vòng lặp agent nên không hổng nền; phần Developer bù thêm là vận hành (caching, batch, chi phí, retry).
+- Việc ngay: đăng ký giữ suất, hỏi công ty có cho thi lại không, đối chiếu exam guide chính thức.
