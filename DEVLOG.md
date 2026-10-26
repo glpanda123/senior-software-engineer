@@ -124,3 +124,4 @@ Tóm tắt: GĐ1 bài toán + /status (22/10) → GĐ2 prototype "hoành tráng"
 Công ty cho thi miễn phí chứng chỉ Claude, hạn 31/12. Chốt: **Architect – Foundations trước (~30/11), Developer – Foundations sau (~15/12)**; bỏ Associate (quá cơ bản) và Architect – Professional (chưa đủ kinh nghiệm). Không ôn trước 11/11; phỏng vấn ưu tiên hơn. Chi tiết: mục "Cập nhật 26/10" trong `docs/plan-4-tuan.md`.
 - Ban đầu AI gợi ý Developer trước (khớp CV "SE + AI"). Mình chọn Architect vì thích phần dựng agent. Sau khi xem nội dung, Architect có dạy vòng lặp agent nên không hổng nền; phần Developer bù thêm là vận hành (caching, batch, chi phí, retry).
 - Việc ngay: đăng ký giữ suất, hỏi công ty có cho thi lại không, đối chiếu exam guide chính thức.
+- Cập nhật cùng ngày: đã đăng ký CCA-F, kích hoạt tài khoản Pearson VUE. **Bỏ Developer, chỉ thi Architect.** Ngày thi chưa đặt: 28–29/11 hoặc 12–13/12; không để sát 31/12 (không còn dự phòng nếu trượt hoặc máy lỗi).
