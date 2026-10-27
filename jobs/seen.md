@@ -128,3 +128,16 @@ https://itviec.com/it-jobs/fullstack-engineer-typescript-javascript-smg-swiss-ma
 https://itviec.com/viec-lam-it/mid-senior-fullstack-engineer-typescript-javascript-smg-swiss-marketplace-group-5909
 https://itviec.com/viec-lam-it/frontend-react-next-react-native-6-month-contract-softflex-llc-co-ltd-2103
 https://itviec.com/it-jobs/frontend-react-next-react-native-6-month-contract-softflex-llc-co-ltd-2103
+https://itviec.com/viec-lam-it/sign-on-bonus-senior-frontend-engineer-55k-year-crossian-5659
+https://itviec.com/it-jobs/sign-on-bonus-senior-frontend-engineer-55k-year-crossian-4835
+https://talent.cake.hr/jobs/7699358d-613c-48c4-b447-d2db75d250bc
+https://vietnamworks.com/senior-frontend-engineer-react-nextjs-storefront-ecommerce-platform-total-annual-net-income-55-000-1863350-jv
+https://itviec.com/viec-lam-it/senior-lead-fullstack-engineer-crossian-5412
+https://itviec.com/it-jobs/senior-lead-fullstack-engineer-crossian-5412
+https://nodeflair.com/jobs/crossian-senior-lead-fullstack-engineer-546166
+https://nodeflair.com/jobs/crossian-senior-fullstack-engineer-ai-556794
+https://itviec.com/viec-lam-it/frontend-engineer-reactjs-piscada-2624
+https://itviec.com/it-jobs/frontend-engineer-reactjs-piscada-2624
+https://itviec.com/viec-lam-it/senior-frontend-developer-typescript-nextjs-english-youthdev-0613
+https://itviec.com/it-jobs/senior-frontend-developer-typescript-nextjs-english-youthdev-0613
+https://itviec.com/it-jobs/remote-fullstack-developer-typescript-reactjs-nodejs-solventus-llc-1610
