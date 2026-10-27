@@ -118,7 +118,7 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Full-stack Software Engineer (TypeScript) | Không rõ | Yêu cầu dùng Claude Code trong công việc thật; 7+ năm; chưa rõ địa điểm | [joboko](https://vn.joboko.com/viec-lam-senior-full-stack-software-engineer-typescript-xvi6737584?apply=true) | saved |
 | Senior Full Stack Developer (Node JS / React JS) | ArctX | Văn phòng Hà Nội; backend endpoint, code review, mentor; chưa rõ ngày đăng | [vietnamworks](https://vietnamworks.com/senior-full-stack-developer-node-js-react-js-1868250-jv) | saved |
-| Senior Backend Developer (NodeJS) | Không rõ | Hà Nội, tại văn phòng; NestJS, NextJS, ReactJS, AWS | [itviec nodejs developer](https://itviec.com/it-jobs/nodejs-developer) | saved |
+| Senior Backend Developer (NodeJS) | Offspring Digital (xác định 27/10) | Hà Nội, tại văn phòng; NestJS, NextJS, ReactJS, AWS | [itviec nodejs developer](https://itviec.com/it-jobs/nodejs-developer) | saved |
 | Remote Senior Fullstack Engineer | FMG Suite | Remote; chưa rõ stack chi tiết | [itviec](https://itviec.com/viec-lam-it/remote-senior-fullstack-engineer-fmg-suite-4839) | saved |
 | Remote Fullstack Engineer (Hardcore, Nodejs), English fluently | Không rõ | Remote; yêu cầu tiếng Anh lưu loát | [joboko](https://vn.joboko.com/viec-lam-remote-fullstack-engineer-hardcore-nodejs-english-fluently-xvi6710941?amp=1) | saved |
 | Fullstack Developer (JavaScript, NodeJS, TypeScript) | AthenaFS | Cầu Giấy, HN, tại văn phòng; không ghi senior | [itviec](https://itviec.com/viec-lam-it/fullstack-developer-javascript-nodejs-typescript-athenafs-5821) | saved |
@@ -141,3 +141,11 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Fullstack Developer (NodeJS, ReactJS, AI Native) | Restaff (khách hàng House of Norway) | Tin khác với tin Senior đã lưu 23/10; nhấn mạnh làm việc kiểu AI-native; chưa rõ level, địa điểm | [itviec](https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-ai-native-restaff-house-of-norway-3009) | saved |
 | Full-Stack ReactJS / NodeJS Developer | FPT Software | Cầu Giấy, HN; 3+ năm fullstack, REST, microservices; không ghi tiếng Anh; khác tin AWS đã lưu 13/10 | [itviec](https://itviec.com/viec-lam-it/full-stack-reactjs-nodejs-developer-fpt-software-0018) | saved |
+
+## 2026-10-27
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Developer | Fetch Technology | Hà Nội, full-time; tới 2.500 USD/tháng; Node.js, React, Kafka, gRPC; trang không ghi ngày đăng | [fetch careers](https://career.fetch.tech/) | saved |
+| Senior Full Stack Engineer (remote) | Fetch Technology | Remote; 3.500 USD/tháng gross; cùng trang tuyển dụng; chưa rõ stack chi tiết | [fetch careers](https://career.fetch.tech/) | saved |
+| Senior Full-stack AI Engineer | Không rõ (team phân tán ở Úc) | Remote từ Việt Nam; tin mở ~82 ngày, có thể sắp đóng | [freehire VN fullstack](https://freehire.me/roles/fullstack/vietnam) | saved |
