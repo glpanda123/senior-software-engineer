@@ -1,53 +1,113 @@
-# C4 + ERD: hướng dẫn đọc (bài mẫu giai đoạn 3)
+# C4 + ERD giải thích dễ hiểu
 
-Bản chính (tiếng Anh, công khai trong repo taskflow):
-- [`docs/architecture/01-context-and-containers.md`](https://github.com/glpanda123/taskflow/blob/master/docs/architecture/01-context-and-containers.md): C4 mức 1–2
-- [`docs/architecture/02-data-model.md`](https://github.com/glpanda123/taskflow/blob/master/docs/architecture/02-data-model.md): ERD
+Bản tiếng Anh (công khai, đầy đủ hơn): repo taskflow, thư mục [`docs/architecture/`](https://github.com/glpanda123/taskflow/tree/master/docs/architecture). File này chỉ cần đọc **phần 1 và 2**. Phần 3 là thuật ngữ nâng cao, để dành đến giai đoạn 4 khi có code minh hoạ.
 
-Đây là bài **mình làm mẫu** ("I do"). Lần sau (sequence diagram, 27/10) làm cùng nhau; ADR (28/10) bạn viết nháp trước vì đã thấy mẫu.
+---
 
-## 1. Dịch từ thứ bạn đã biết
+## Phần 1. C4 = bản đồ hệ thống
 
-| Backend / system design | Giống cái gì bên frontend |
+### Bắt đầu từ thứ bạn đã có
+
+Prototype hiện tại đã có đủ 3 mảnh, chỉ là **cả 3 nằm trong trình duyệt**:
+
+```
+Trình duyệt
+ ├─ Giao diện       → apps/web (React, Next.js)
+ ├─ API giả         → mocks/handlers/*.ts   (kiểm tra quyền, trả lỗi 409…)
+ └─ Database giả    → mocks/db.ts           (mảng users, tasks… trong bộ nhớ)
+```
+
+Bản thật chỉ là **tách 3 mảnh đó ra 3 nơi**:
+
+```
+[Trình duyệt: giao diện]  ──gọi API──▶  [API server]  ──đọc/ghi──▶  [Database]
+```
+
+Vẽ ra "có những phần nào chạy riêng, phần nào gọi phần nào" chính là **C4 mức 2**. (C4 mức 1 còn đơn giản hơn: cả TaskFlow là 1 hộp, xung quanh là người dùng và các dịch vụ bên ngoài như gửi email, AI.)
+
+### Thêm hộp, mỗi hộp giải quyết một vấn đề
+
+**Vấn đề 1: API server sập thì cả app chết.**
+→ Chạy **2 bản API giống hệt nhau**, phía trước đặt một "người chia việc" (load balancer). Bản này chết, bản kia vẫn chạy.
+
+```
+                         ┌─▶ [API bản A]
+[Trình duyệt] ─▶ [chia việc]
+                         └─▶ [API bản B]
+```
+
+**Vấn đề 2: có 2 bản API thì realtime bị hỏng.**
+- Ly mở board, kết nối vào **bản A**. Minh kết nối vào **bản B**.
+- Minh kéo một task: bản B biết, còn bản A **không biết**, nên màn hình của Ly không đổi.
+
+→ Thêm **Redis**, hãy hình dung như **nhóm chat giữa các bản API**. Bản B nhắn vào nhóm: "task X vừa chuyển sang In progress". Bản A đọc được và báo cho Ly.
+
+**Vấn đề 3: có việc chậm, không nên bắt người dùng chờ** (ví dụ gửi email mời).
+→ Thêm **Worker**: một "trợ lý" chạy riêng. API chỉ ghi "cần gửi email cho an@…" vào danh sách việc, rồi trả lời người dùng ngay. Worker lấy việc ra làm sau; email lỗi thì thử lại.
+
+### Bản đồ hoàn chỉnh
+
+```
+[Trình duyệt] ─▶ [chia việc] ─▶ [API A] [API B] ─▶ [Postgres: dữ liệu thật]
+                                    │      │
+                                    └─▶ [Redis: nhóm chat + danh sách việc] ◀─ [Worker] ─▶ gửi email
+                                    └─▶ dịch vụ AI (soạn task)
+```
+
+5 hộp: **Giao diện, API (2 bản), Worker, Postgres, Redis**. Không hộp nào thêm cho "pro"; mỗi hộp có một lý do.
+
+**Một điều quan trọng:** Postgres là nơi duy nhất giữ dữ liệu thật. Redis mất thì chỉ chậm thông báo, không mất task nào.
+
+---
+
+## Phần 2. ERD = kiểu dữ liệu, vẽ thành hình
+
+Mở `mocks/db.ts`, bạn đã có sẵn:
+
+```ts
+type Db = {
+  users: ...;        // → bảng users        (ai dùng app)
+  workspaces: ...;   // → bảng workspaces   (công ty / agency)
+  memberships: ...;  // → bảng memberships  (ai thuộc workspace nào, role gì)
+  projects: ...;     // → bảng projects
+  tasks: ...;        // → bảng tasks
+  activity: ...;     // → bảng activity_events (ai đổi gì, lúc nào)
+};
+```
+
+ERD chỉ là vẽ các kiểu này thành **hộp**, rồi nối **mũi tên** cho quan hệ:
+
+```
+workspaces ──có nhiều──▶ projects ──có nhiều──▶ tasks
+     │                                            │
+     └──có nhiều──▶ memberships ◀──── users ──────┘ (được giao task)
+```
+
+Khác TypeScript ở 2 điểm, cả hai bạn đã gặp rồi:
+
+| Database | Bạn đã dùng ở frontend |
 | --- | --- |
-| **C4 mức 1 (context)**: hệ thống là một hộp, xung quanh là người dùng và hệ thống ngoài | Sơ đồ "app của mình gọi những API bên thứ ba nào" |
-| **C4 mức 2 (container)**: các phần **deploy riêng** bên trong | Monorepo có `apps/web`, `apps/api`, `apps/worker`: mỗi app một lần deploy |
-| **Container ≠ Docker container** | Chỉ là "thứ chạy riêng": web app, API, database, Redis |
-| **ERD**: các bảng, khoá, quan hệ | Kiểu TypeScript của dữ liệu (`Task`, `User`), nhưng thêm khoá ngoại và index |
-| **Index** | `Map` tra cứu theo khoá thay vì `array.find()` duyệt hết |
-| **Transaction** | Một lần `setState` gộp nhiều thay đổi: hoặc tất cả, hoặc không gì cả |
-| **Redis pub/sub** | `EventEmitter` nhưng giữa nhiều server |
-| **Worker + queue** | `setTimeout` / web worker cho việc chậm, nhưng không mất khi tab tắt (server crash) |
+| **Khoá ngoại**: `tasks.project_id` trỏ về project | `task.projectId` |
+| **Index**: tra nhanh theo một cột | Dùng `Map` thay vì `array.find()` duyệt từ đầu đến cuối |
 
-**Điều sẽ làm bạn bất ngờ:**
-- **Ít container là tốt.** Ở 35 request/giây, một API + một worker là đủ. "Microservices" ở quy mô này là sai, không phải "pro".
-- **Database là nguồn sự thật duy nhất.** Redis mất cũng không sao (chỉ chậm sự kiện); Postgres mất là mất dữ liệu.
-- **Phần khó là đúng, không phải nhanh**: cách ly tenant, sửa đồng thời, thứ tự, realtime nhiều server.
+Bản thật có thêm vài bảng mà prototype không cần, ví dụ:
+- `refresh_tokens`: để "giữ đăng nhập". Prototype giả lập việc này rất đơn giản.
+- `project_viewers`: client được xem project nào. Prototype gộp nó vào `memberships`.
 
-## 2. Năm quyết định chính (và lý do)
+---
 
-1. **Modular monolith**: một codebase NestJS, build ra 2 image: `api` và `worker`. Một người làm, tải nhỏ → không cần microservices.
-2. **WebSocket chạy chung process với API**. Muốn realtime chạy được khi có 2 instance → **Redis pub/sub**: instance nào xử lý write cũng phát lên kênh `project:{id}`, mọi instance nghe và đẩy cho browser của mình.
-3. **Transactional outbox**: ghi task + activity + 1 dòng `outbox` **trong cùng transaction**; worker đọc outbox rồi mới phát lên Redis. Lý do: nếu phát lên Redis ngay trong request mà sau đó transaction rollback → browser thấy thay đổi không có thật; nếu crash giữa commit và phát → mất sự kiện.
-4. **AI gọi đồng bộ** (không qua queue): người dùng đằng nào cũng chờ 2–8 giây; có timeout 20 giây + giới hạn tần suất theo workspace. **Không lưu brief của khách** (riêng tư), chỉ lưu số liệu sử dụng.
-5. **JWT access 15 phút + refresh token xoay vòng trong cookie httpOnly**: API không cần chia sẻ session giữa các instance.
+## Phần 3. Để dành cho giai đoạn 4 (không cần hiểu bây giờ)
 
-## 3. ERD: những chi tiết đáng nhớ để phỏng vấn
+Những từ này có trong bản tiếng Anh. Khi viết code ở giai đoạn 4, mỗi từ sẽ có ví dụ thật:
 
-- **`workspace_id` có mặt ở mọi bảng của tenant** (kể cả `tasks`, dù đã có `project_id`): để mọi câu query lọc theo workspace dễ và nhanh → cách ly tenant.
-- **`version` + `UPDATE … WHERE version = $2`**: optimistic locking trong **một câu SQL**, không có khe hở giữa kiểm tra và ghi.
-- **`position` dùng `COLLATE "C"`**: fractional index so sánh theo byte; collation ngôn ngữ (vd. tiếng Việt) sẽ sắp khác client → thứ tự board sai. Chi tiết nhỏ nhưng interviewer thích.
-- **Chỉ lưu hash của refresh token** (như mật khẩu): lộ database cũng không dùng được token.
-- **Index một phần (partial index)** cho Today: `WHERE status <> 'done'` → task đã xong (đa số, theo thời gian) không bị quét.
-- **Unique index cho lời mời đang chờ**: "đã mời rồi" (409) do database đảm bảo, không phải kiểm-tra-rồi-ghi (dễ race).
-- **`activity_events.task_id` không có khoá ngoại**: lịch sử phải còn dù task bị xoá sau này.
+- **Optimistic locking / `version`**: cách phát hiện 2 người sửa cùng lúc. Bạn đã thấy nó chạy trong prototype (lỗi 409).
+- **Outbox**: cách đảm bảo "thông báo realtime chỉ gửi khi dữ liệu đã lưu thật".
+- **`COLLATE "C"`**: để database sắp xếp thứ tự task giống hệt trình duyệt.
+- **Partial index**: index chỉ cho task chưa xong, để màn Today nhanh.
 
-## 4. Việc của bạn: đọc rồi phản biện (chọn 2–3 câu, trả lời ngắn)
+---
 
-1. Vì sao `tasks` vẫn cần `workspace_id` khi đã có `project_id` (project đã thuộc workspace)?
-2. Nếu bỏ outbox và cho API phát lên Redis ngay sau khi commit, chuyện gì có thể sai? Có chấp nhận được ở v1 không?
-3. Một viewer được mời vào 1 project: theo ERD, những bảng nào phải có dòng cho người đó?
-4. Contract hiện vẫn trả `labels: []` dù labels là v1.1. Bạn chọn giữ field hay bỏ? Vì sao?
-5. (Khó) Access token hết hạn sau 15 phút, nhưng WebSocket mở cả ngày. Server nên làm gì?
+## Kiểm tra (chỉ 2 câu, trả lời ngắn)
 
-Câu trả lời của bạn sẽ vào `docs/interview/qa-review.md` như mọi câu kiểu phỏng vấn.
+1. Trong prototype, API giả và database giả nằm ở đâu? Sang bản thật, chúng thành hộp nào?
+2. Vì sao có 2 bản API thì phải thêm Redis? (Gợi ý: Ly và Minh.)
