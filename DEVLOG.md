@@ -97,6 +97,19 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Việc của mình: đọc, trả lời 2–3 câu phản biện; vẫn gom góp ý prototype.
 - Tự chấm:
 
+## Ngày 14 — T3 27/10/2026
+
+- Không có buổi học (bận).
+
+## Ngày 15 — T4 28/10/2026 · Giai đoạn 3, buổi 2–3
+
+- Viết lại `02-c4-erd.vi.md` theo kiểu dễ hiểu (đi từ prototype, mỗi hộp = một vấn đề) sau khi bản đầu quá nhiều thuật ngữ.
+- Trả lời 2 câu kiểm tra (Q12): câu 1 đúng phần bản thật; câu 2 nhầm Redis = session, thực ra là realtime giữa các instance.
+- Sequence diagram 3 luồng khó + bảng tin nhắn realtime + ADR-001 (NestJS + Prisma) + ADR-002 (AWS, cấu hình demo/production) — taskflow PR; giải thích tiếng Việt `docs/architecture/03-sequences-adr.vi.md`.
+- Giữ plan: backend bắt đầu 29/10.
+- Việc của mình: đồng ý/phản đối 4 quyết định + 1 câu kiểm tra; tạo AWS budget alert.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
