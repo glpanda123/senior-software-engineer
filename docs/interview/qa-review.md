@@ -225,8 +225,28 @@ Spoken version (~60 s):
 
 ---
 
+## Q12. System design: containers in TaskFlow
+
+**Questions:** (a) "In the prototype, where do the fake API and the fake database live? In the real system, which boxes do they become?" (b) "Once we run two API instances, why do we need Redis?"
+
+**My answer (28/10):**
+> 1. prototype, API giả và db giả đang nằm hết trên DB. sang bản thật thì thành app server riêng và db riêng
+> 2. cần thêm redis vì khi có từ 2 instance trở lên, t cần keep data của user trên cùng 1 session để tránh gây ra lỗi
+
+**What was off:** (a) ✅ the real-system part. One word: in the prototype both live **in the browser** (MSW runs inside the tab), not "in the DB". (b) A real use of Redis (a shared session store when sessions live in server memory), but not TaskFlow's reason: TaskFlow uses JWTs, which any instance can verify on its own. The reason here is **realtime fan-out**: a change handled by instance B must reach sockets connected to instance A.
+
+<details><summary>Model answer</summary>
+
+> (a) "In the prototype everything runs in the browser tab: MSW intercepts the requests, the handlers play the API and an in-memory object plays the database. In production those become separate containers: a NestJS API server, at least two instances behind a load balancer, and a Postgres database that is the only source of truth."
+> (b) "Because of realtime. Each browser keeps a WebSocket open to one instance. If Ly is connected to instance A and Minh moves a task through instance B, only B knows about it. So every instance publishes changes to a Redis pub/sub channel per project and subscribes to it; A hears B's event and pushes it to Ly. Sessions don't need Redis here, because access tokens are JWTs that any instance can verify on its own. If sessions lived in server memory, a shared session store would be another reason."
+
+**Takeaway:** for every box in the diagram, name the problem it solves. Redis in TaskFlow = messages between instances (pub/sub), not sessions.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | |

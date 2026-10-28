@@ -282,3 +282,29 @@ Vậy quy mô không phải vấn đề: một Postgres primary là quá đủ. 
 
 **Bài học:** với mỗi yêu cầu mới, hỏi "nó thay đổi gì trên **đường xử lý chính (hot path)**?". Giữ hot path (redirect) nhanh, đẩy phần còn lại sang bất đồng bộ.
 </details>
+
+---
+
+## Q12. System design: các container trong TaskFlow
+
+*"(a) In the prototype, where do the fake API and the fake database live? In the real system, which boxes do they become? (b) Once we run two API instances, why do we need Redis?"*
+
+**Câu hỏi:** (a) Trong prototype, API giả và database giả nằm ở đâu? Sang bản thật chúng thành hộp nào? (b) Khi chạy 2 bản API, vì sao cần Redis?
+
+**Câu trả lời của mình (28/10):**
+> 1. prototype, API giả và db giả đang nằm hết trên DB. sang bản thật thì thành app server riêng và db riêng
+> 2. cần thêm redis vì khi có từ 2 instance trở lên, t cần keep data của user trên cùng 1 session để tránh gây ra lỗi
+
+**Chỗ chưa ổn:** (a) ✅ phần bản thật. Sửa một chữ: trong prototype cả hai nằm **trong trình duyệt** (MSW chạy ngay trong tab), không phải "trên DB". (b) Đây là một cách dùng Redis có thật (lưu session chung khi session nằm trong bộ nhớ server), nhưng không phải lý do của TaskFlow: TaskFlow dùng JWT, instance nào cũng tự kiểm tra được. Lý do ở đây là **realtime**: thay đổi do bản B xử lý phải đến được các socket đang nối với bản A.
+
+<details><summary>Đáp án mẫu</summary>
+
+> (a) "In the prototype everything runs in the browser tab: MSW intercepts the requests, the handlers play the API and an in-memory object plays the database. In production those become separate containers: a NestJS API server, at least two instances behind a load balancer, and a Postgres database that is the only source of truth."
+> (b) "Because of realtime. Each browser keeps a WebSocket open to one instance. If Ly is connected to instance A and Minh moves a task through instance B, only B knows about it. So every instance publishes changes to a Redis pub/sub channel per project and subscribes to it; A hears B's event and pushes it to Ly. Sessions don't need Redis here, because access tokens are JWTs that any instance can verify on its own. If sessions lived in server memory, a shared session store would be another reason."
+
+**Nghĩa:**
+(a) Trong prototype mọi thứ chạy trong tab trình duyệt: MSW chặn request, các handler đóng vai API, một object trong bộ nhớ đóng vai database. Bản thật tách thành các container riêng: API server NestJS (ít nhất 2 bản sau load balancer) và Postgres là nguồn dữ liệu duy nhất.
+(b) Vì realtime. Mỗi trình duyệt mở WebSocket tới một bản API. Ly nối vào A, Minh kéo task qua B thì chỉ B biết. Nên mọi bản API phát thay đổi lên kênh Redis pub/sub của từng project và cùng nghe kênh đó; A nghe được sự kiện của B và đẩy xuống cho Ly. Session không cần Redis ở đây vì access token là JWT, bản nào cũng tự kiểm tra được. Nếu session nằm trong bộ nhớ server thì lưu session chung cũng là một lý do khác.
+
+**Bài học:** mỗi hộp trên sơ đồ phải gọi tên được vấn đề nó giải quyết. Redis trong TaskFlow = tin nhắn giữa các instance (pub/sub), không phải session.
+</details>
