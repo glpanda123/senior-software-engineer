@@ -141,3 +141,9 @@ https://itviec.com/it-jobs/frontend-engineer-reactjs-piscada-2624
 https://itviec.com/viec-lam-it/senior-frontend-developer-typescript-nextjs-english-youthdev-0613
 https://itviec.com/it-jobs/senior-frontend-developer-typescript-nextjs-english-youthdev-0613
 https://itviec.com/it-jobs/remote-fullstack-developer-typescript-reactjs-nodejs-solventus-llc-1610
+https://itviec.com/viec-lam-it/frontend-developer-nextjs-reactjs-javascript-bluebottle-digital-viet-nam-3250
+https://itviec.com/it-jobs/frontend-developer-nextjs-reactjs-javascript-bluebottle-digital-viet-nam-3250
+https://itviec.com/viec-lam-it/senior-front-end-developer-1000-3000-blue-belt-technology-3429
+https://itviec.com/it-jobs/senior-front-end-developer-1000-3000-blue-belt-technology-3429
+https://itviec.com/viec-lam-it/senior-fullstack-developer-cj-olivenetworks-vina-co-ltd-3506
+https://careers.techvify.com/tuyen-dung-it/senior-nodejs-developer-ha-noi
