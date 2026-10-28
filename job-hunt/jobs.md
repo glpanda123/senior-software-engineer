@@ -149,3 +149,16 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior Fullstack Developer | Fetch Technology | Hà Nội, full-time; tới 2.500 USD/tháng; Node.js, React, Kafka, gRPC; trang không ghi ngày đăng | [fetch careers](https://career.fetch.tech/) | saved |
 | Senior Full Stack Engineer (remote) | Fetch Technology | Remote; 3.500 USD/tháng gross; cùng trang tuyển dụng; chưa rõ stack chi tiết | [fetch careers](https://career.fetch.tech/) | saved |
 | Senior Full-stack AI Engineer | Không rõ (team phân tán ở Úc) | Remote từ Việt Nam; tin mở ~82 ngày, có thể sắp đóng | [freehire VN fullstack](https://freehire.me/roles/fullstack/vietnam) | saved |
+
+## 2026-10-28
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Engineer (NestJS, React, Claude, Codex) | Digital Unicorn | Tiêu đề nêu rõ dùng coding agent (Claude, Codex); chưa rõ địa điểm | [itviec](https://itviec.com/it-jobs/senior-fullstack-engineer-nestjs-react-claude-codex-digital-unicorn-0141) | saved |
+| Middle/Senior Software Engineer — AI-Augmented | FLINTERS VIETNAM | Hà Nội; Java, Golang, NodeJS, Python, Cloud; văn hoá AI-first, công ty trả Claude cho mọi người | [itviec nodejs HN](https://itviec.com/it-jobs/nodejs/ha-noi) | saved |
+| [MARTECH] Senior Software Engineer (NestJS / ReactJS) | SotaTek | Cầu Giấy, HN; làm từ xa; 5–10 năm | [glints](https://glints.com/vn/find-jobs/tim-viec-lam-reactjs) | saved |
+| Senior Full Stack Dev (NodeJS/NestJS, ReactJS, English) | Fantastic5 Technology | Yêu cầu tiếng Anh; chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/senior-full-stack-dev-nodejs-nestjs-reactjs-english-fantastic5-technology-4708) | saved |
+| Senior Full Stack Developer (Node JS, NestJS, Next JS) | FGS Software | Chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/senior-full-stack-developer-node-js-nestjs-next-js-fgs-software-ltd-co-5548) | saved |
+| Tech Lead (Fullstack Python / Node.js & React.js) | Không rõ | Hà Nội; 80–90 triệu; hạn nộp 31/10/2026 | [itworks](https://itworks.asia/job-category/react-js/) | saved |
+| Fullstack Developer (Nodejs & Reactjs) | Unitrust Việt Nam | Hoàn Kiếm, HN; 22–35 triệu; 3–5 năm | [glints](https://glints.com/vn/find-jobs/tim-viec-lam-reactjs) | saved |
+| Full Stack (NextJS, ReactJS) | Friendify AI | Công ty AI; chưa rõ địa điểm, level | [topdev](https://topdev.vn/viec-lam/full-stack-nextjs-reactjs-cong-ty-tnhh-friendify-ai-2072939) | saved |
