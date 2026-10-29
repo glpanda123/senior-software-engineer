@@ -162,3 +162,12 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Tech Lead (Fullstack Python / Node.js & React.js) | Không rõ | Hà Nội; 80–90 triệu; hạn nộp 31/10/2026 | [itworks](https://itworks.asia/job-category/react-js/) | saved |
 | Fullstack Developer (Nodejs & Reactjs) | Unitrust Việt Nam | Hoàn Kiếm, HN; 22–35 triệu; 3–5 năm | [glints](https://glints.com/vn/find-jobs/tim-viec-lam-reactjs) | saved |
 | Full Stack (NextJS, ReactJS) | Friendify AI | Công ty AI; chưa rõ địa điểm, level | [topdev](https://topdev.vn/viec-lam/full-stack-nextjs-reactjs-cong-ty-tnhh-friendify-ai-2072939) | saved |
+
+## 2026-10-29
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| [TeenCare] AI Fullstack Engineer for EdTech Project | TeenUp | Hà Nội, tại văn phòng; AI, Python, NodeJS, NextJS, ReactJS; chưa rõ level, ngày đăng | [itviec senior fullstack HN](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
+| Full-Stack Engineer (Product Builder) | TeenUp | Hà Nội, tại văn phòng; AI, NodeJS, ReactJS, CI/CD | [itviec senior fullstack HN](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
+| Fullstack Web Developer (ReactJS, NodeJS) | Ewoosoft | Hà Nội, tại văn phòng; tới 2.000 USD; không ghi senior | [itviec senior fullstack HN](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
+| Senior Backend Software Engineer (Node.js / TypeScript) | Makai Labs | Remote, startup AI; thiên backend; cần kiểm tra có nhận ứng viên Việt Nam không | [ashby](https://jobs.ashbyhq.com/makai-labs/badf8c3f-3118-438b-8fec-f595f3f5f552) | saved |
