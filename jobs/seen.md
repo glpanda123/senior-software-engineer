@@ -147,3 +147,8 @@ https://itviec.com/viec-lam-it/senior-front-end-developer-1000-3000-blue-belt-te
 https://itviec.com/it-jobs/senior-front-end-developer-1000-3000-blue-belt-technology-3429
 https://itviec.com/viec-lam-it/senior-fullstack-developer-cj-olivenetworks-vina-co-ltd-3506
 https://careers.techvify.com/tuyen-dung-it/senior-nodejs-developer-ha-noi
+https://itviec.com/viec-lam-it/frontend-developer-reactjs-javascript-typescript-smaregi-vietnam-co-ltd-2159
+https://itviec.com/viec-lam-it/senior-backend-developer-nodejs-typescript-legatcy-singapore-1249
+https://itviec.com/it-jobs/senior-backend-developer-nodejs-typescript-legatcy-singapore-1249
+https://itviec.com/viec-lam-it/senior-nodejs-developer-open-web-technology-1403
+https://itviec.com/it-jobs/senior-nodejs-developer-open-web-technology-1403
