@@ -152,3 +152,8 @@ https://itviec.com/viec-lam-it/senior-backend-developer-nodejs-typescript-legatc
 https://itviec.com/it-jobs/senior-backend-developer-nodejs-typescript-legatcy-singapore-1249
 https://itviec.com/viec-lam-it/senior-nodejs-developer-open-web-technology-1403
 https://itviec.com/it-jobs/senior-nodejs-developer-open-web-technology-1403
+https://fptjobs.com/full-stack-developer-seniornodejsreact-jsjavascriptproducthn-9987
+https://itviec.com/viec-lam-it/senior-fullstack-engineer-nodejs-java-react-python-fpt-digital-1336
+https://itviec.com/it-jobs/senior-fullstack-engineer-nodejs-java-react-python-fpt-digital-1336
+https://topdev.vn/viec-lam/nodejs-developer-senior-cyberlogitec-vietnam-co-ltd-2096129
+https://itviec.com/viec-lam-it/full-stack-reactjs-nodejs-developer-fpt-software-0018
