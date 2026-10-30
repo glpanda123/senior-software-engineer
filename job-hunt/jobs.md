@@ -171,3 +171,11 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Full-Stack Engineer (Product Builder) | TeenUp | Hà Nội, tại văn phòng; AI, NodeJS, ReactJS, CI/CD | [itviec senior fullstack HN](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
 | Fullstack Web Developer (ReactJS, NodeJS) | Ewoosoft | Hà Nội, tại văn phòng; tới 2.000 USD; không ghi senior | [itviec senior fullstack HN](https://itviec.com/it-jobs/senior-full-stack-developer/ha-noi) | saved |
 | Senior Backend Software Engineer (Node.js / TypeScript) | Makai Labs | Remote, startup AI; thiên backend; cần kiểm tra có nhận ứng viên Việt Nam không | [ashby](https://jobs.ashbyhq.com/makai-labs/badf8c3f-3118-438b-8fec-f595f3f5f552) | saved |
+
+## 2026-10-30
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior AI-Native Full-Stack Engineer (Node.js / React / AI Orchestration) | Không rõ (qua headhunter, khách hàng UK) | Remote từ Việt Nam; tới 4.500 USD; làm 13h–22h giờ VN; 8+ năm TS/React/Node/NestJS; cần kinh nghiệm realtime (WebSocket) | [aniday](https://aniday.com/en/headhunter/lam-quang-duy-8363/copy-of-onsite-dnhcm-senior-full-stack-developer-ai-projects-16154) | saved |
+| Remote Senior Fullstack Engineer (NodeJS / ReactJS) | SourceCode (sản phẩm bảo hiểm) | Làm từ xa ở Việt Nam; lương USD net | [itviec](https://itviec.com/it-jobs/remote-senior-fullstack-engineer-nodejs-reactjs-sourcecode-1445) | saved |
+| Senior Backend Engineer (NestJS, NodeJS, AI) | Không rõ (mã tin "DI") | Thiên backend NestJS + AI; chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/senior-backend-engineer-nestjs-nodejs-ai-di-1143) | saved |
