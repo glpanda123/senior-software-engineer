@@ -110,6 +110,18 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Việc của mình: đồng ý/phản đối 4 quyết định + 1 câu kiểm tra; tạo AWS budget alert.
 - Tự chấm:
 
+## Ngày 16–17 — T5–T6 29–30/10/2026
+
+- Không có buổi học (bận).
+
+## Ngày 18 — T7 31/10/2026 · Giai đoạn 4, buổi 1
+
+- Đọc `03-sequences-adr.vi.md` vẫn không hiểu → đổi cách dạy: **code chạy trước, giải thích sau, mỗi buổi 1 khái niệm**. Chấp nhận các lựa chọn mặc định (NestJS, Prisma, AWS); merge PR #16.
+- Backend thật đầu tiên (taskflow PR #17): NestJS + Prisma + Postgres; auth đủ (register, login, refresh xoay vòng + phát hiện dùng lại, logout, /me); 15 test e2e với Postgres thật; CI chạy test backend; lint chặn quên `await`.
+- Bài học thật: cố tình làm hỏng code mà 1 test vẫn xanh (test race dựa vào may rủi thời gian) → viết lại test ép đúng tình huống xấu nhất.
+- Lịch còn lại trước 04/11: CN phân quyền (làm cùng), T2–T3 task + 409 (mình tự viết lõi); realtime + deploy sau 04/11.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.

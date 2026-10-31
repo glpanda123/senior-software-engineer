@@ -1,6 +1,6 @@
 # Bắt đầu từ đây: thứ tự đọc toàn bộ tài liệu
 
-**Đang chờ bạn ngay bây giờ:** `docs/architecture/03-sequences-adr.vi.md` (trả lời 4 ✅/❌ + 1 câu ở cuối).
+**Đang chờ bạn ngay bây giờ:** review taskflow PR #17 (backend auth). Đọc đúng 1 file: `apps/api/src/auth/auth.service.ts`, rồi trả lời câu hỏi mình gửi trong chat.
 
 Quy tắc chung: file nào có bản `.vi.md` thì **chỉ đọc bản `.vi.md`**; bản `.md` tiếng Anh cùng tên là bản sao để công khai. Thứ tự dưới đây đi theo đúng câu chuyện của dự án: kế hoạch → sản phẩm → prototype → kiến thức backend → thiết kế → phỏng vấn.
 
@@ -44,7 +44,7 @@ Ký hiệu: **Đọc** = đọc kỹ · **Lướt** = xem tiêu đề và ý ch�
 | # | File | Cách đọc | Để làm gì |
 | --- | --- | --- | --- |
 | 14 | `docs/architecture/02-c4-erd.vi.md` (phần 1–2) | ✅ | Các hộp trong hệ thống + các bảng dữ liệu |
-| 15 | `docs/architecture/03-sequences-adr.vi.md` | **Đọc ngay** | Từng bước của 3 luồng khó + 2 quyết định stack và hạ tầng |
+| 15 | `docs/architecture/03-sequences-adr.vi.md` | Để sau (hiểu dần khi code) | Từng bước của 3 luồng khó + 2 quyết định stack và hạ tầng |
 | 16 | Repo taskflow: `docs/architecture/` theo thứ tự README → 01 → 02 → 03 → `adr/ADR-001` → `adr/ADR-002` | Đọc trước phỏng vấn system design | Bản đầy đủ tiếng Anh, chính là thứ bạn sẽ trình bày |
 
 ## F. Phỏng vấn (ôn nhiều lần)
