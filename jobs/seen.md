@@ -157,3 +157,14 @@ https://itviec.com/viec-lam-it/senior-fullstack-engineer-nodejs-java-react-pytho
 https://itviec.com/it-jobs/senior-fullstack-engineer-nodejs-java-react-python-fpt-digital-1336
 https://topdev.vn/viec-lam/nodejs-developer-senior-cyberlogitec-vietnam-co-ltd-2096129
 https://itviec.com/viec-lam-it/full-stack-reactjs-nodejs-developer-fpt-software-0018
+https://123job.vn/viec-lam/senior-front-end-engineer-reactjs-english-yDNQZ8GPqz
+https://itviec.com/viec-lam-it/senior-backend-engineer-nodejs-upto-4000-blue-belt-technology-2143
+https://itviec.com/it-jobs/senior-backend-engineer-nodejs-upto-4000-blue-belt-technology-2143
+https://123job.vn/viec-lam/senior-full-stack-engineer-react-nodejs-python-4q3LN7xYD2
+https://itviec.com/viec-lam-it/medior-fullstack-dev-react-reactjs-typescript-roshi-0842
+https://vietnamworks.com/senior-frontend-developer-react-1848221-jv
+https://job-boards.greenhouse.io/persefoniaiinc/jobs/4380758006
+https://itviec.com/viec-lam-it/frontend-engineer-vuejs-reactjs-line-vietnam-5052
+https://itviec.com/it-jobs/frontend-engineer-vuejs-reactjs-line-vietnam-5052
+https://itviec.com/viec-lam-it/senior-back-end-developer-nodejs-javascript-space-t-4639
+https://vn.joboko.com/viec-lam-senior-full-stack-software-engineer-typescript-xvi6737584
