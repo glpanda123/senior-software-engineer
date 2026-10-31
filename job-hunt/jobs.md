@@ -179,3 +179,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior AI-Native Full-Stack Engineer (Node.js / React / AI Orchestration) | Không rõ (qua headhunter, khách hàng UK) | Remote từ Việt Nam; tới 4.500 USD; làm 13h–22h giờ VN; 8+ năm TS/React/Node/NestJS; cần kinh nghiệm realtime (WebSocket) | [aniday](https://aniday.com/en/headhunter/lam-quang-duy-8363/copy-of-onsite-dnhcm-senior-full-stack-developer-ai-projects-16154) | saved |
 | Remote Senior Fullstack Engineer (NodeJS / ReactJS) | SourceCode (sản phẩm bảo hiểm) | Làm từ xa ở Việt Nam; lương USD net | [itviec](https://itviec.com/it-jobs/remote-senior-fullstack-engineer-nodejs-reactjs-sourcecode-1445) | saved |
 | Senior Backend Engineer (NestJS, NodeJS, AI) | Không rõ (mã tin "DI") | Thiên backend NestJS + AI; chưa rõ địa điểm | [itviec](https://itviec.com/viec-lam-it/senior-backend-engineer-nestjs-nodejs-ai-di-1143) | saved |
+
+## 2026-10-31
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Remote Fullstack Developer (TypeScript, ReactJS, NodeJS) | Solventus, LLC | Remote, có địa điểm Ba Đình, HN; công ty thuộc mảng AI Software & Services; chưa rõ level | [itviec](https://itviec.com/it-jobs/remote-fullstack-developer-typescript-reactjs-nodejs-solventus-llc-1610) | saved |
+| Senior Full Stack Engineer (startup AI marketing cho e-commerce) | Không rõ (qua NodeFlair) | Team Việt Nam, chủ yếu remote, gặp trực tiếp tối đa 2 ngày/tuần (cần hỏi thành phố); TypeScript, Node.js, React | [jobgether](https://dynamic.jobgether.com/offer/6734ce704a6b7352f3c845a7-senior-full-stack-engineer) | saved |
