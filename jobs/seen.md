@@ -168,3 +168,9 @@ https://itviec.com/viec-lam-it/frontend-engineer-vuejs-reactjs-line-vietnam-5052
 https://itviec.com/it-jobs/frontend-engineer-vuejs-reactjs-line-vietnam-5052
 https://itviec.com/viec-lam-it/senior-back-end-developer-nodejs-javascript-space-t-4639
 https://vn.joboko.com/viec-lam-senior-full-stack-software-engineer-typescript-xvi6737584
+https://itviec.com/it-jobs/senior-fullstack-engineer-nestjs-reactjs-typescript-ryte-technology-services-vietnam-1456
+https://123job.vn/viec-lam/frontend-team-lead-reactjs-nextjs-react-native-39JmNlQBDm
+https://startup.jobs/senior-software-engineer-javascript-typescript-remote-bjak-my-8092786
+https://himalayas.app/companies/people-profilers-vietnam/jobs/senior-full-stack-engineer-next-js-node-js-fully-remote
+https://topdev.vn/viec-lam/senior-react-developer-freelancer-dirox-2078785
+https://topdev.vn/detail-jobs/it-front-end-developer-leader-cong-ty-tnhh-chung-khoan-nh-viet-nam-nhsv-2065017
