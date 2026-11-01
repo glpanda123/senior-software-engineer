@@ -186,3 +186,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Remote Fullstack Developer (TypeScript, ReactJS, NodeJS) | Solventus, LLC | Remote, có địa điểm Ba Đình, HN; công ty thuộc mảng AI Software & Services; chưa rõ level | [itviec](https://itviec.com/it-jobs/remote-fullstack-developer-typescript-reactjs-nodejs-solventus-llc-1610) | saved |
 | Senior Full Stack Engineer (startup AI marketing cho e-commerce) | Không rõ (qua NodeFlair) | Team Việt Nam, chủ yếu remote, gặp trực tiếp tối đa 2 ngày/tuần (cần hỏi thành phố); TypeScript, Node.js, React | [jobgether](https://dynamic.jobgether.com/offer/6734ce704a6b7352f3c845a7-senior-full-stack-engineer) | saved |
+
+## 2026-11-01
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Full-stack AI Engineer (Vietnam-based only) | Sunbytes (tuyển cho khách hàng, chưa rõ tên) | Remote, chỉ nhận ứng viên ở Việt Nam; Node.js + TypeScript 5+ năm, LLM tool calling, multi-step orchestration, Vercel AI SDK; đăng ~5 ngày trước | [arc.dev](https://arc.dev/remote-jobs/j/sunbytes-senior-full-stack-ai-engineer-vietnam-based-only-prza7ymbsh) | saved |
+| Senior Full Stack Developer (JavaScript) | CodeLink | HCMC / Hà Nội / Đà Nẵng, hybrid; NodeJS hoặc Python + ReactJS; công ty làm phần mềm và triển khai AI; vài trang ITviec báo tin không còn, cần kiểm tra lại | [itviec 0719](https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-0719), [itviec 2048](https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-2048) | saved |
