@@ -193,3 +193,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Full-stack AI Engineer (Vietnam-based only) | Sunbytes (tuyển cho khách hàng, chưa rõ tên) | Remote, chỉ nhận ứng viên ở Việt Nam; Node.js + TypeScript 5+ năm, LLM tool calling, multi-step orchestration, Vercel AI SDK; đăng ~5 ngày trước | [arc.dev](https://arc.dev/remote-jobs/j/sunbytes-senior-full-stack-ai-engineer-vietnam-based-only-prza7ymbsh) | saved |
 | Senior Full Stack Developer (JavaScript) | CodeLink | HCMC / Hà Nội / Đà Nẵng, hybrid; NodeJS hoặc Python + ReactJS; công ty làm phần mềm và triển khai AI; vài trang ITviec báo tin không còn, cần kiểm tra lại | [itviec 0719](https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-0719), [itviec 2048](https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-2048) | saved |
+
+## 2026-11-02
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Fullstack Developer (NodeJS, NestJS, ReactJS, NextJS) | Midu MenaQ7 JSC | Hà Đông, HN, onsite; công ty product 51–150 người; level chưa ghi rõ; đăng ~9 ngày trước | [itviec](https://itviec.com/it-jobs/fullstack-developer-nodejs-nestjs-reactjs-nextjs-midu-menaq7-jsc-1452) | saved |
+| Senior Fullstack Developer (Japan Market) | Techvify | Hà Nội; tới 50 triệu; khách hàng Nhật (có thể cần tiếng Nhật, không phải môi trường tiếng Anh) | [techvify careers](https://careers.techvify.com/tuyen-dung-it/senior-fullstack-developer-japan-market) | saved |
