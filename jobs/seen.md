@@ -174,3 +174,9 @@ https://startup.jobs/senior-software-engineer-javascript-typescript-remote-bjak-
 https://himalayas.app/companies/people-profilers-vietnam/jobs/senior-full-stack-engineer-next-js-node-js-fully-remote
 https://topdev.vn/viec-lam/senior-react-developer-freelancer-dirox-2078785
 https://topdev.vn/detail-jobs/it-front-end-developer-leader-cong-ty-tnhh-chung-khoan-nh-viet-nam-nhsv-2065017
+https://itviec.com/it-jobs/remote-frontend-web-developer-typescript-reactjs-moksha-ai-llc-1658
+https://itviec.com/viec-lam-it/remote-frontend-web-developer-typescript-reactjs-moksha-ai-llc-1658
+https://aniday.com/de/headhunter/thao-tran-45580/senior-frontend-developer-reactjs-16029
+https://kyanon.digital/?p=78299
+https://itviec.com/it-jobs/remote-frontend-dev-react-router-v7-typescript-tekve-0137
+https://itviec.com/viec-lam-it/remote-frontend-dev-react-router-v7-typescript-tekve-0137
