@@ -122,6 +122,19 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Lịch còn lại trước 04/11: CN phân quyền (làm cùng), T2–T3 task + 409 (mình tự viết lõi); realtime + deploy sau 04/11.
 - Tự chấm:
 
+## Ngày 19–20 — CN–T2 01–02/11/2026
+
+- Không có buổi học. PR #17 xanh CI (sửa: lint cần `prisma generate` trước), chờ merge.
+
+## Ngày 21 — T3 03/11/2026 · Giai đoạn 4, buổi 2
+
+- Merge PR #17. Trả lời Q13 (bỏ `usedAt: null` thì sao): đúng kết quả (kẻ trộm giữ được phiên), sai cơ chế (cả hai request cùng thắng → family tách 2 nhánh, không ai phát hiện).
+- Phân quyền + cách ly tenant (taskflow PR #18): bảng projects/project_viewers, API tạo workspace + list/tạo project. **Mình tự viết `decide()`** (bảng quyền 4 vai trò, 403 vs 404) → 18/18 test unit xanh lần đầu; tổng 42 test.
+- Khái niệm của buổi: 403 = ở trong nhưng vai trò không đủ; 404 = không được biết nó tồn tại (người ngoài, viewer chưa được mời).
+- Lưu ý: commit đầu tiên của mình dùng email công ty → đổi `git config user.email` sang email cá nhân trong repo taskflow.
+- Tiếp theo: tasks + 409 + kéo-thả (mình tự viết lõi), rồi realtime + deploy, song song nộp CV từ 04/11.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
