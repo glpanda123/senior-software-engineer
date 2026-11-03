@@ -245,8 +245,26 @@ Spoken version (~60 s):
 
 ---
 
+## Q13. Backend: race condition in refresh-token rotation
+
+**Question:** "In `AuthService.claim()`, what happens if we drop `usedAt: null` from the `where`, and a thief and the real user refresh with the same token at the same moment?"
+
+**My answer (03/11):**
+> nếu bỏ usedAt: null, thì có khả năng hacker sẽ ghi đè khoảng thời gian refreshtoken được làm mới, dẫn đến việc hacker luôn lấy được access token mới mà không có cách nào revoke
+
+**What was off:** ✅ the outcome: the thief keeps getting new access tokens. Two fixes. (1) The mechanism isn't "overwriting the refresh time": without the condition the `UPDATE` matches the row by `id` alone, so **both** requests change 1 row, both get `true`, and both get a new token in the same family. The family splits into two valid chains, and reuse detection never fires, because each side only ever presents its own fresh token. (2) "No way to revoke" is too strong: logout revokes the whole family, the thief's chain included. The danger is that **nobody notices**, so nobody revokes.
+
+<details><summary>Model answer</summary>
+
+> "Both requests would win. Without `usedAt: null`, the update matches the row by id alone, so it always changes one row and both callers think they claimed the token. Each gets a new refresh token in the same family, so the family splits into two valid chains: one for the user, one for the thief. Reuse detection never fires, because from then on each side presents only its own fresh token, once. The thief keeps a silent, parallel session, and since every rotation issues a fresh 30-day token, it can last until the user logs out, which revokes the whole family. With `usedAt: null`, the check and the write are one atomic statement: exactly one request updates the row, the other sees a count of 0, and we treat that as reuse: we revoke the family and both have to log in again. The theft is detected instead of hidden."
+
+**Takeaway:** check-then-write in two steps is a race. Put the condition in the `WHERE` of one `UPDATE` and read the affected-row count: the same pattern as the 409 version check.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | |

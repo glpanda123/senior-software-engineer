@@ -308,3 +308,25 @@ Vậy quy mô không phải vấn đề: một Postgres primary là quá đủ. 
 
 **Bài học:** mỗi hộp trên sơ đồ phải gọi tên được vấn đề nó giải quyết. Redis trong TaskFlow = tin nhắn giữa các instance (pub/sub), không phải session.
 </details>
+
+---
+
+## Q13. Backend: race condition khi xoay vòng refresh token
+
+*"In `AuthService.claim()`, what happens if we drop `usedAt: null` from the `where`, and a thief and the real user refresh with the same token at the same moment?"*
+
+**Câu hỏi:** Trong `AuthService.claim()`, nếu bỏ `usedAt: null` khỏi điều kiện `where`, và kẻ trộm cùng người dùng thật bấm refresh bằng cùng một token cùng lúc, thì chuyện gì xảy ra?
+
+**Câu trả lời của mình (03/11):**
+> nếu bỏ usedAt: null, thì có khả năng hacker sẽ ghi đè khoảng thời gian refreshtoken được làm mới, dẫn đến việc hacker luôn lấy được access token mới mà không có cách nào revoke
+
+**Chỗ chưa ổn:** ✅ đúng kết quả: kẻ trộm cứ lấy được access token mới. Sửa 2 chỗ. (1) Cơ chế không phải "ghi đè thời gian refresh": khi bỏ điều kiện, câu `UPDATE` chỉ tìm dòng theo `id`, nên **cả hai** request đều sửa được 1 dòng, cả hai nhận `true`, cả hai được cấp token mới trong cùng family. Family tách thành 2 chuỗi token đều hợp lệ, và cơ chế phát hiện dùng lại không bao giờ kích hoạt, vì từ đó mỗi bên chỉ dùng token mới của riêng mình, mỗi token một lần. (2) "Không có cách nào revoke" là quá: logout vẫn thu hồi cả family, gồm cả chuỗi của kẻ trộm. Nguy hiểm thật là **không ai phát hiện**, nên không ai thu hồi.
+
+<details><summary>Đáp án mẫu</summary>
+
+> "Both requests would win. Without `usedAt: null`, the update matches the row by id alone, so it always changes one row and both callers think they claimed the token. Each gets a new refresh token in the same family, so the family splits into two valid chains: one for the user, one for the thief. Reuse detection never fires, because from then on each side presents only its own fresh token, once. The thief keeps a silent, parallel session, and since every rotation issues a fresh 30-day token, it can last until the user logs out, which revokes the whole family. With `usedAt: null`, the check and the write are one atomic statement: exactly one request updates the row, the other sees a count of 0, and we treat that as reuse: we revoke the family and both have to log in again. The theft is detected instead of hidden."
+
+**Nghĩa:** Cả hai request đều thắng. Không có `usedAt: null`, câu update tìm dòng chỉ theo id nên lúc nào cũng sửa được 1 dòng, và cả hai đều tưởng mình đã "nhận" token. Mỗi bên được một refresh token mới trong cùng family, nên family tách làm hai chuỗi hợp lệ: một của người dùng, một của kẻ trộm. Cơ chế phát hiện dùng lại không bao giờ chạy, vì từ đó mỗi bên chỉ đưa token mới của riêng mình, mỗi token một lần. Kẻ trộm có một phiên song song âm thầm, và vì mỗi lần xoay vòng lại được token mới hạn 30 ngày, phiên đó kéo dài tới khi người dùng logout (thu hồi cả family). Có `usedAt: null` thì bước kiểm tra và bước ghi là một câu lệnh nguyên khối: đúng một request sửa được dòng, request kia thấy số dòng = 0, và ta coi đó là dùng lại: thu hồi family, cả hai phải đăng nhập lại. Vụ trộm bị phát hiện thay vì bị giấu.
+
+**Bài học:** kiểm tra rồi mới ghi trong 2 bước là race condition. Đặt điều kiện vào `WHERE` của một câu `UPDATE` duy nhất rồi đọc số dòng bị sửa: giống hệt cách kiểm tra version của luật 409.
+</details>
