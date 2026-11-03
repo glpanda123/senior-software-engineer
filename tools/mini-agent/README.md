@@ -11,9 +11,9 @@ cd /path/to/repo-you-want-to-work-on
 npx --prefix /path/to/tools/mini-agent tsx /path/to/tools/mini-agent/agent.ts
 ```
 
-Commands: `/model haiku|sonnet|opus`, `/mode acceptEdits|auto|default|plan`, `/new` (fresh conversation), `/exit`.
+Commands: `/model haiku|sonnet|opus`, `/effort low|medium|high|xhigh|max`, `/mode acceptEdits|auto|default|plan`, `/new` (fresh conversation), `/exit`.
 
-Env: `AGENT_MODEL` (default `sonnet`), `AGENT_MODE` (default `acceptEdits`), `AGENT_BUDGET_USD` (max spend per prompt, default `2`).
+Env: `AGENT_MODEL` (default `opus`), `AGENT_EFFORT` (default `high`), `AGENT_MODE` (default `acceptEdits`), `AGENT_BUDGET_USD` (max spend per prompt, default `2`).
 
 ## Permissions
 

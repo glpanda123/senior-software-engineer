@@ -1,6 +1,6 @@
 // Mini coding agent on the Claude Agent SDK, billed to Console API credits.
 // Run from the repo you want to work on:  npx tsx /path/to/agent.ts
-import { query, type CanUseTool, type PermissionMode } from "@anthropic-ai/claude-agent-sdk";
+import { query, type CanUseTool, type EffortLevel, type PermissionMode } from "@anthropic-ai/claude-agent-sdk";
 import { createInterface } from "node:readline/promises";
 import { stdin, stdout } from "node:process";
 
@@ -12,7 +12,10 @@ if (!process.env.ANTHROPIC_API_KEY) {
 const rl = createInterface({ input: stdin, output: stdout });
 rl.on("close", () => process.exit(0)); // Ctrl+D or /exit
 
-let model = process.env.AGENT_MODEL ?? "sonnet"; // "haiku" | "sonnet" | "opus"
+let model = process.env.AGENT_MODEL ?? "opus"; // "haiku" | "sonnet" | "opus"
+// How hard the model thinks: higher = better on hard problems, but more tokens (more $).
+const EFFORTS: EffortLevel[] = ["low", "medium", "high", "xhigh", "max"];
+let effort = (process.env.AGENT_EFFORT ?? "high") as EffortLevel;
 const budgetPerPrompt = Number(process.env.AGENT_BUDGET_USD ?? "2");
 // "acceptEdits": edits auto-approved, other tools ask you.
 // "auto": a classifier model approves/denies each tool call, asks you only when unsure.
@@ -38,6 +41,7 @@ async function runPrompt(prompt: string) {
     prompt,
     options: {
       model,
+      effort,
       resume: sessionId,
       cwd: process.cwd(),
       systemPrompt: { type: "preset", preset: "claude_code" }, // same system prompt as Claude Code
@@ -64,13 +68,15 @@ async function runPrompt(prompt: string) {
       totalCost += message.total_cost_usd;
       const status = message.subtype === "success" ? "" : ` [stopped: ${message.subtype}]`;
       console.log(
-        `\n  $${message.total_cost_usd.toFixed(4)} this prompt · $${totalCost.toFixed(4)} total · ${model}${status}`,
+        `\n  $${message.total_cost_usd.toFixed(4)} this prompt · $${totalCost.toFixed(4)} total · ${model} (${effort})${status}`,
       );
     }
   }
 }
 
-console.log(`mini-agent · model: ${model} · mode: ${mode} · /model <name>, /mode <name>, /new, /exit`);
+console.log(
+  `mini-agent · model: ${model} · effort: ${effort} · mode: ${mode} · /model, /effort, /mode, /new, /exit`,
+);
 while (true) {
   const line = (await rl.question("\n> ")).trim();
   if (!line) continue;
@@ -78,6 +84,16 @@ while (true) {
   if (line === "/new") {
     sessionId = undefined;
     console.log("  new conversation");
+    continue;
+  }
+  if (line.startsWith("/effort ")) {
+    const next = line.slice(8).trim() as EffortLevel;
+    if (EFFORTS.includes(next)) {
+      effort = next;
+      console.log(`  effort: ${effort}`);
+    } else {
+      console.log(`  efforts: ${EFFORTS.join(", ")}`);
+    }
     continue;
   }
   if (line.startsWith("/mode ")) {
