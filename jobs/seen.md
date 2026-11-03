@@ -180,3 +180,10 @@ https://aniday.com/de/headhunter/thao-tran-45580/senior-frontend-developer-react
 https://kyanon.digital/?p=78299
 https://itviec.com/it-jobs/remote-frontend-dev-react-router-v7-typescript-tekve-0137
 https://itviec.com/viec-lam-it/remote-frontend-dev-react-router-v7-typescript-tekve-0137
+https://itviec.com/viec-lam-it/remote-hybrid-senior-frontend-reactjs-english-rikkeisoft-4342
+https://itviec.com/viec-lam-it/senior-frontend-engineer-reactjs-nextjs-simple-tech-investment-0941
+https://itviec.com/it-jobs/senior-fullstack-developer-next-js-nestjs-arobid-com-4838
+https://itviec.com/viec-lam-it/middle-senior-frontend-engineer-vulcan-labs-4639
+https://itviec.com/it-jobs/frontend-tech-lead-react-javascript-niteco-vietnam-co-ltd-4051
+https://itviec.com/viec-lam-it/lead-frontend-dev-reactjs-typecsript-persol-career-tech-studio-vietnam-2556
+https://itviec.com/viec-lam-it/tech-lead-javascript-reactjs-nodejs-english-onsite-water-environment-solutions-singapore-3250
