@@ -11,11 +11,13 @@ cd /path/to/repo-you-want-to-work-on
 npx --prefix /path/to/tools/mini-agent tsx /path/to/tools/mini-agent/agent.ts
 ```
 
-Commands: `/model haiku|sonnet|opus`, `/effort low|medium|high|xhigh|max`, `/mode auto|acceptEdits|default|plan`, `/cost`, `/new` (fresh conversation), `/exit`.
+Commands: `/model haiku|sonnet|opus`, `/effort low|medium|high|xhigh|max`, `/mode auto|acceptEdits|default|plan`, `/balance <amount>`, `/cost`, `/new` (fresh conversation), `/exit`.
 
-Env: `AGENT_MODEL` (default `opus`), `AGENT_EFFORT` (default `high`), `AGENT_MODE` (default `auto`), `AGENT_LIMIT_USD` (optional cap on total spend across all runs; no cap if unset).
+Env: `AGENT_MODEL` (default `opus`), `AGENT_EFFORT` (default `high`), `AGENT_MODE` (default `auto`).
 
-Total spend is saved in `.spend.json` (gitignored). Delete it to reset. The numbers are the SDK's estimate; Console Billing is the source of truth. For a hard cap, also set a spend limit in Console → Settings → Limits.
+## Balance
+
+There is no API for the Console's "Remaining balance", so copy it in: `/balance 87.40`. The agent subtracts what it spends (saved in `.wallet.json`, gitignored) and stops at $0. Spend numbers are the SDK's estimate and leave out the auto-mode classifier calls, so re-sync from Console Billing now and then.
 
 ## Permissions
 

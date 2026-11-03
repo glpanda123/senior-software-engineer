@@ -25,13 +25,20 @@ let mode = (process.env.AGENT_MODE ?? "auto") as PermissionMode;
 let sessionId: string | undefined; // lets the next prompt continue the same conversation
 let sessionCost = 0; // running total the SDK reports for the current conversation
 
-// Total spend across all runs, saved next to this file. Delete .spend.json to reset.
-// Optional cap: AGENT_LIMIT_USD=20 stops the agent once the total reaches $20.
-const SPEND_FILE = new URL(".spend.json", import.meta.url);
-const limit = process.env.AGENT_LIMIT_USD ? Number(process.env.AGENT_LIMIT_USD) : undefined;
-let spent: number = existsSync(SPEND_FILE) ? JSON.parse(readFileSync(SPEND_FILE, "utf8")).spent : 0;
-const saveSpent = () => writeFileSync(SPEND_FILE, JSON.stringify({ spent }));
-const spendLine = () => `$${spent.toFixed(2)} spent` + (limit === undefined ? "" : ` of $${limit} limit`);
+// There is no API for the Console's "Remaining balance", so you copy it in with
+// `/balance 87.40`. From then on the agent subtracts what it spends and stops at $0.
+// Saved next to this file, so it carries over between runs.
+type Wallet = { balance: number | null; spentSinceSync: number };
+const WALLET_FILE = new URL(".wallet.json", import.meta.url);
+const wallet: Wallet = existsSync(WALLET_FILE)
+  ? JSON.parse(readFileSync(WALLET_FILE, "utf8"))
+  : { balance: null, spentSinceSync: 0 };
+const saveWallet = () => writeFileSync(WALLET_FILE, JSON.stringify(wallet));
+const remaining = () => (wallet.balance === null ? undefined : wallet.balance - wallet.spentSinceSync);
+const walletLine = () =>
+  wallet.balance === null
+    ? `$${wallet.spentSinceSync.toFixed(2)} spent · no balance set (/balance <amount>)`
+    : `≈ $${remaining()!.toFixed(2)} left (Console said $${wallet.balance.toFixed(2)}, spent $${wallet.spentSinceSync.toFixed(2)} since)`;
 
 // Reading and searching always run without asking.
 // Any other tool call the permission mode doesn't settle lands here and asks you first
@@ -45,9 +52,9 @@ const askBeforeRunning: CanUseTool = async (toolName, input) => {
 };
 
 async function runPrompt(prompt: string) {
-  const remaining = limit === undefined ? undefined : limit - spent;
-  if (remaining !== undefined && remaining <= 0) {
-    console.log(`  limit reached (${spendLine()}). Raise AGENT_LIMIT_USD or delete .spend.json.`);
+  const left = remaining();
+  if (left !== undefined && left <= 0) {
+    console.log(`  balance used up (${walletLine()}). Check Console, then /balance <amount>.`);
     return;
   }
   const conversation = query({
@@ -62,7 +69,7 @@ async function runPrompt(prompt: string) {
       permissionMode: mode,
       allowedTools: ["Read", "Glob", "Grep"],
       canUseTool: askBeforeRunning,
-      maxBudgetUsd: remaining, // stops mid-task if this prompt would go past the limit
+      maxBudgetUsd: left, // stops mid-task if this prompt would use up the balance
     },
   });
 
@@ -83,16 +90,16 @@ async function runPrompt(prompt: string) {
       const total = message.total_cost_usd;
       const promptCost = total >= sessionCost ? total - sessionCost : total;
       sessionCost = total;
-      spent += promptCost;
-      saveSpent();
+      wallet.spentSinceSync += promptCost;
+      saveWallet();
       const status = message.subtype === "success" ? "" : ` [stopped: ${message.subtype}]`;
-      console.log(`\n  $${promptCost.toFixed(4)} this prompt · ${spendLine()} · ${model} (${effort})${status}`);
+      console.log(`\n  $${promptCost.toFixed(4)} this prompt · ${walletLine()} · ${model} (${effort})${status}`);
     }
   }
 }
 
-console.log(`mini-agent · ${model} (${effort}) · mode: ${mode} · ${spendLine()}`);
-console.log("commands: /model, /effort, /mode, /cost, /new, /exit");
+console.log(`mini-agent · ${model} (${effort}) · mode: ${mode} · ${walletLine()}`);
+console.log("commands: /balance <amount>, /cost, /model, /effort, /mode, /new, /exit");
 while (true) {
   const line = (await rl.question("\n> ")).trim();
   if (!line) continue;
@@ -104,7 +111,19 @@ while (true) {
     continue;
   }
   if (line === "/cost") {
-    console.log(`  ${spendLine()} (estimate; Console Billing is the real number)`);
+    console.log(`  ${walletLine()} (estimate; Console Billing is the real number)`);
+    continue;
+  }
+  if (line.startsWith("/balance")) {
+    const amount = Number(line.slice(8).trim().replace("$", ""));
+    if (line.slice(8).trim() && Number.isFinite(amount) && amount >= 0) {
+      wallet.balance = amount;
+      wallet.spentSinceSync = 0;
+      saveWallet();
+      console.log(`  ${walletLine()}`);
+    } else {
+      console.log("  usage: /balance 87.40  (copy Remaining balance from Console → Billing)");
+    }
     continue;
   }
   if (line.startsWith("/effort ")) {
