@@ -187,3 +187,9 @@ https://itviec.com/viec-lam-it/middle-senior-frontend-engineer-vulcan-labs-4639
 https://itviec.com/it-jobs/frontend-tech-lead-react-javascript-niteco-vietnam-co-ltd-4051
 https://itviec.com/viec-lam-it/lead-frontend-dev-reactjs-typecsript-persol-career-tech-studio-vietnam-2556
 https://itviec.com/viec-lam-it/tech-lead-javascript-reactjs-nodejs-english-onsite-water-environment-solutions-singapore-3250
+https://itviec.com/viec-lam-it/senior-full-stack-developer-javascript-codelink-2048
+https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-2048
+https://itviec.com/viec-lam-it/senior-full-stack-developer-javascript-codelink-0719
+https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-0719
+https://careers-page.com/dikshatek-3/job/QVRYW4V8
+https://careers-page.com/dikshatek-3/job/QXW3Y9RY
