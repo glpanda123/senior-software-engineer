@@ -200,3 +200,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Fullstack Developer (NodeJS, NestJS, ReactJS, NextJS) | Midu MenaQ7 JSC | Hà Đông, HN, onsite; công ty product 51–150 người; level chưa ghi rõ; đăng ~9 ngày trước | [itviec](https://itviec.com/it-jobs/fullstack-developer-nodejs-nestjs-reactjs-nextjs-midu-menaq7-jsc-1452) | saved |
 | Senior Fullstack Developer (Japan Market) | Techvify | Hà Nội; tới 50 triệu; khách hàng Nhật (có thể cần tiếng Nhật, không phải môi trường tiếng Anh) | [techvify careers](https://careers.techvify.com/tuyen-dung-it/senior-fullstack-developer-japan-market) | saved |
+
+## 2026-11-04
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Sr FullStack Dev (NodeJS, ReactJS, AWS) - Remote | Automation Consulting (Úc), làm cho khách hàng fintech Úc | Remote từ Việt Nam, hợp đồng (contractor), làm theo giờ Úc; mảng thanh toán, không có phần GenAI | [itviec 5545](https://itviec.com/it-jobs/senior-fullstack-dev-nodejs-reactjs-aws-remote-automation-consulting-pty-ltd-5545), [itviec 2534](https://itviec.com/it-jobs/sr-fullstack-dev-nodejs-reactjs-aws-remote-automation-consulting-pty-ltd-2534) | saved |
