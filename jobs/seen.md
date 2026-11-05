@@ -193,3 +193,5 @@ https://itviec.com/viec-lam-it/senior-full-stack-developer-javascript-codelink-0
 https://itviec.com/it-jobs/senior-full-stack-developer-javascript-codelink-0719
 https://careers-page.com/dikshatek-3/job/QVRYW4V8
 https://careers-page.com/dikshatek-3/job/QXW3Y9RY
+https://www.hirebase.org/company/dikshatek/jobs/senior-fullstack-nodejs-reactjs-fully-remote-f36a579a
+https://www.careerjet.vn/jobad/vn25535905df371661828c980d2b3f935e
