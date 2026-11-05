@@ -206,3 +206,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Sr FullStack Dev (NodeJS, ReactJS, AWS) - Remote | Automation Consulting (Úc), làm cho khách hàng fintech Úc | Remote từ Việt Nam, hợp đồng (contractor), làm theo giờ Úc; mảng thanh toán, không có phần GenAI | [itviec 5545](https://itviec.com/it-jobs/senior-fullstack-dev-nodejs-reactjs-aws-remote-automation-consulting-pty-ltd-5545), [itviec 2534](https://itviec.com/it-jobs/sr-fullstack-dev-nodejs-reactjs-aws-remote-automation-consulting-pty-ltd-2534) | saved |
+
+## 2026-11-05
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Engineer (TypeScript, ReactJS, NodeJS) | Công ty TNHH Vani Heroes | Senior + tech lead, dựng service mới từ đầu, TypeScript cả FE và BE; thành phố chưa rõ (tin ghi "Centre Location"), cần mở link kiểm tra | [itviec](https://ITviec.com/it-jobs/senior-fullstack-engineer-typescript-reactjs-nodejs-cong-ty-tnhh-vani-heroes-3719) | saved |
