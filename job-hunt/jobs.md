@@ -212,3 +212,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Fullstack Engineer (TypeScript, ReactJS, NodeJS) | Công ty TNHH Vani Heroes | Senior + tech lead, dựng service mới từ đầu, TypeScript cả FE và BE; thành phố chưa rõ (tin ghi "Centre Location"), cần mở link kiểm tra | [itviec](https://ITviec.com/it-jobs/senior-fullstack-engineer-typescript-reactjs-nodejs-cong-ty-tnhh-vani-heroes-3719) | saved |
+
+## 2026-11-06
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Software Engineer (Communications & AI Platform) | Dwarves Foundation | Remote 100%, chỉ nhận ứng viên ở Việt Nam; tag TypeScript + AI; giờ làm 9h–18h; cộng điểm nếu từng làm fintech; lương thoả thuận | [arc.dev](https://arc.dev/remote-jobs/j/dwarves-foundation-only-hiring-in-vietnam-senior-software-engineer-communications-ai-platform-okawhuy8y9) | saved |
+| Senior Applied AI Engineer (LLM, AI agent) | HD Global Career | Remote, làm từ bất kỳ đâu ở Việt Nam; agentic systems; skill gồm TypeScript, Python, React, FastAPI, AWS; tới 4.000 USD/tháng gross (senior) | [arc.dev](https://arc.dev/remote-jobs/j/hd-global-career-senior-applied-ai-engineer-ncitgi8lcf), [monster](https://www.monster.com.vn/job/senior-applied-ai-engineer-llm-ai-agent-hd-global-career-ho-chi-minh-52666170) | saved |
