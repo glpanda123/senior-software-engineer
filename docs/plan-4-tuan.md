@@ -2,6 +2,65 @@
 
 Oct 13, 2026 · @Hoang Nguyen Duong · bản rút gọn từ plan 60 ngày
 
+## Cập nhật 03/11: làm xong project → CCAF (thi 12/12) → rồi mới nộp CV
+
+Quyết định của mình (03/11): tập trung làm xong mock project, rồi ôn và thi **CCAF (Claude Certified Architect – Foundations) ngày 12/12**, **nộp CV và luyện phỏng vấn để sau 12/12**. Phần này **thay cho lịch từ 04/11** ở mục "Cập nhật 22/10" (Giai đoạn 4 phần còn lại và Giai đoạn 5). Mục tiêu offer trước 12/12 không còn là mốc của plan này.
+
+Vì sao phần AI nằm trước phần ôn lý thuyết: AI của TaskFlow (gọi Claude, tool use, structured output, eval, MCP, skill/hook) chính là nội dung đề CCAF. Làm trước thì lúc ôn đã từng tự tay làm, đúng kiểu "code chạy trước, hiểu sau".
+
+Nhịp giữ nguyên: ngày thường ~2 h, cuối tuần ~4 h, mỗi ngày 1 mục tiêu chính. Chủ đề mới: AI làm mẫu → làm cùng → mình tự làm. Cuối mỗi buổi cập nhật `DEVLOG.md` + `/status`. Lỡ 1 buổi thì lùi 1 ngày, dùng ngày dự phòng.
+
+### Giai đoạn A: project, mọi phần trừ AI (04/11 → 15/11)
+
+| Ngày | Buổi | Ai viết lõi |
+| --- | --- | --- |
+| T4 04/11 | Tasks 1: tạo + xem task của project, thêm quyền task vào `decide()` | Mình thêm dòng vào bảng quyền |
+| T5 05/11 | Tasks 2: sửa task với luật 409 (`version`) | **Mình tự viết** |
+| T6 06/11 | Tasks 3: kéo-thả `move` (đổi cột, `position`) | Làm cùng |
+| T7 07/11 (4 h) | Nối giao diện vào API thật: đăng nhập, workspace, project (tắt MSW phần đó) | AI dựng, mình review |
+| CN 08/11 (4 h) | Nối giao diện: board + task + màn hình 409; tạo **AWS budget alert** | AI dựng, mình review |
+| T2 09/11 | Deploy theo cấu hình demo của ADR-002 (ECS Fargate, RDS) | AI làm mẫu |
+| T3 10/11 | Deploy (tiếp) + mốc chốt: **màn chính chạy API thật trên production** | Làm cùng |
+| T4 11/11 | Realtime 1: WebSocket gateway, 1 instance | AI làm mẫu |
+| T5 12/11 | Realtime 2: Redis pub/sub nhiều instance + outbox | Làm cùng |
+| T6 13/11 | Thành viên + lời mời (BullMQ gửi email) | Làm cùng |
+| T7 14/11 (4 h) | Today + activity log; Redis: giới hạn đăng nhập + cache board | Làm cùng |
+| CN 15/11 (4 h) | **Dự phòng**; gửi link bản thật cho mentor + 2–3 người xem, ghi `03-feedback.md` | — |
+
+**Gate A:** mọi màn hình v1 (trừ AI) chạy API thật trên production, CI xanh.
+
+### Giai đoạn B: AI trong project = ôn CCAF bằng thực hành (16/11 → 22/11)
+
+| Ngày | Buổi | Mảng CCAF |
+| --- | --- | --- |
+| T2 16/11 | AI soạn task gọi Claude thật (tool use, structured output) | Ứng dụng Claude, tool use |
+| T3 17/11 | Kiểm output theo schema, retry, timeout, 429 | Độ tin cậy, xử lý lỗi |
+| T4 18/11 | Eval trong CI | Đánh giá output |
+| T5 19/11 | Tự viết MCP server cho TaskFlow | MCP |
+| T6 20/11 | MCP (tiếp): mình tự thêm 1 tool | MCP |
+| T7 21/11 (4 h) | Skill + hook + subagent trong repo; đối chiếu với 5 mảng đề thi | Cấu hình Claude Code, agent |
+| CN 22/11 (4 h) | **Dự phòng**; README, video demo mới, `/status` | — |
+
+**Gate B:** project xong v1 (kể cả AI); kể được 5 mảng CCAF bằng ví dụ từ chính project.
+
+### Giai đoạn C: ôn và thi CCAF (23/11 → 12/12)
+
+| Tuần | Ngày thường (~1,5–2 h) | Cuối tuần |
+| --- | --- | --- |
+| 23–29/11 | Tài liệu chính thức, mỗi ngày 1 mảng đề | T7 28/11: **đề thử 1** (120 phút); CN: chữa đề |
+| 30/11–06/12 | Ôn mảng yếu theo kết quả đề thử | T7 05/12: **đề thử 2**; CN: chữa đề |
+| 07–11/12 | Ôn nhẹ; T4 09/12: **đề thử 3**; T6 11/12: nghỉ | **T7 12/12: thi CCAF** |
+
+Ước lượng: cần ~30 h ôn cho người đã dùng Claude Code nhưng chưa làm MCP/agent; giai đoạn B gánh ~10–14 h, giai đoạn C có ~40 h nên còn dư.
+
+### Giai đoạn D: sau khi thi (từ 14/12)
+
+CV/LinkedIn, nộp 1–2 đơn/ngày (ưu tiên job saved còn mở), mock interview, STAR, ôn `qa-review`. Job scan hằng ngày vẫn chạy để gom job, không nhắc nộp đơn trước 12/12.
+
+### Không nằm trong lịch (làm sau nếu còn thời gian)
+
+Terraform, bảo mật + mutation test, phần còn lại của P2, P3.
+
 ## Cập nhật 22/10: làm theo công đoạn, hướng business
 
 Góp ý của mentor (22/10): prototype còn đơn sơ; phải làm **đúng công đoạn**: bài toán → ý tưởng → **present prototype** → system design → **viết code sau cùng**, không làm lắt nhắt mỗi thứ một ít rồi sửa. Và phải **track tiến độ hằng ngày**, có trang status công khai (kiểu status.claude.com) để show.

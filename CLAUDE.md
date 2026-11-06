@@ -19,8 +19,9 @@ Every interview-style question I answer gets added to `docs/interview/qa-review.
 ## Plan adjustments (decided by me)
 
 - 17/10: DSA paused until further notice. Don't schedule or remind DSA.
-- 17/10: Applications (and CV/LinkedIn polish) move to week 4, from Day 22 (04/11). Keep scanning jobs daily; don't remind me to apply before 04/11.
+- 17/10: Applications (and CV/LinkedIn polish) move to week 4, from Day 22 (04/11). Superseded on 03/11 (see below).
 - 22/10 (mentor feedback): work in stages with gates — problem → prototype + present → system design → code last; no back-and-forth between stages. Schedule: section "Cập nhật 22/10" in `docs/plan-4-tuan.md`. End every session by updating `DEVLOG.md` and the public `/status` page data (`progress.json` in the taskflow repo).
+- 03/11: Finish the mock project first (everything except AI, then AI as hands-on CCAF prep), then study for CCAF (Claude Certified Architect – Foundations), exam on 12/12. Applications, CV/LinkedIn and interview practice start after 12/12: keep scanning jobs daily, but don't remind me to apply before then. Schedule: section "Cập nhật 03/11" in `docs/plan-4-tuan.md`.
 
 ## Conventions
 

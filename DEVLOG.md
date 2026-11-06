@@ -122,6 +122,32 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Lịch còn lại trước 04/11: CN phân quyền (làm cùng), T2–T3 task + 409 (mình tự viết lõi); realtime + deploy sau 04/11.
 - Tự chấm:
 
+## Ngày 19–20 — CN–T2 01–02/11/2026
+
+- Không có buổi học. PR #17 xanh CI (sửa: lint cần `prisma generate` trước), chờ merge.
+
+## Ngày 21 — T3 03/11/2026 · Giai đoạn 4, buổi 2
+
+- Merge PR #17. Trả lời Q13 (bỏ `usedAt: null` thì sao): đúng kết quả (kẻ trộm giữ được phiên), sai cơ chế (cả hai request cùng thắng → family tách 2 nhánh, không ai phát hiện).
+- Phân quyền + cách ly tenant (taskflow PR #18): bảng projects/project_viewers, API tạo workspace + list/tạo project. **Mình tự viết `decide()`** (bảng quyền 4 vai trò, 403 vs 404) → 18/18 test unit xanh lần đầu; tổng 42 test.
+- Khái niệm của buổi: 403 = ở trong nhưng vai trò không đủ; 404 = không được biết nó tồn tại (người ngoài, viewer chưa được mời).
+- Lưu ý: commit đầu tiên của mình dùng email công ty → đổi `git config user.email` sang email cá nhân trong repo taskflow.
+- Tiếp theo: tasks + 409 + kéo-thả (mình tự viết lõi), rồi realtime + deploy, song song nộp CV từ 04/11.
+- Tự chấm:
+
+## Plan mới — 03/11
+
+- Chốt thứ tự: làm xong project (trừ AI) → phần AI = ôn CCAF bằng thực hành → ôn CCAF, **thi 12/12** → nộp CV + luyện phỏng vấn từ 14/12. Lịch: mục "Cập nhật 03/11" trong `docs/plan-4-tuan.md`.
+
+## Ngày 22–24 — T4–T6 04–06/11/2026 · Giai đoạn A, Tasks 1
+
+- AI dựng bảng `tasks`, API tạo + xem task (cuối cột, phân trang cursor, `COLLATE "C"`), 19 test mới. **Mình tự thêm `task:create` vào `decide()`** → 24/24 unit, 61/61 tổng xanh (taskflow PR #19).
+- Khái niệm: viewer được mời → 403 (xem được, không sửa được); viewer chưa mời → 404. TypeScript bắt lỗi khi thêm action mới mà chưa viết luật.
+- 05/11 không có buổi → lùi lịch 1 ngày, dùng ngày dự phòng 15/11.
+- Chia sẻ prototype + tài liệu thiết kế cho anh Hải để xin góp ý.
+- ⚠️ Commit vẫn dùng email công ty → đổi `git config user.email` trong repo taskflow.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
