@@ -135,6 +135,19 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Tiếp theo: tasks + 409 + kéo-thả (mình tự viết lõi), rồi realtime + deploy, song song nộp CV từ 04/11.
 - Tự chấm:
 
+## Plan mới — 03/11
+
+- Chốt thứ tự: làm xong project (trừ AI) → phần AI = ôn CCAF bằng thực hành → ôn CCAF, **thi 12/12** → nộp CV + luyện phỏng vấn từ 14/12. Lịch: mục "Cập nhật 03/11" trong `docs/plan-4-tuan.md`.
+
+## Ngày 22–24 — T4–T6 04–06/11/2026 · Giai đoạn A, Tasks 1
+
+- AI dựng bảng `tasks`, API tạo + xem task (cuối cột, phân trang cursor, `COLLATE "C"`), 19 test mới. **Mình tự thêm `task:create` vào `decide()`** → 24/24 unit, 61/61 tổng xanh (taskflow PR #19).
+- Khái niệm: viewer được mời → 403 (xem được, không sửa được); viewer chưa mời → 404. TypeScript bắt lỗi khi thêm action mới mà chưa viết luật.
+- 05/11 không có buổi → lùi lịch 1 ngày, dùng ngày dự phòng 15/11.
+- Chia sẻ prototype + tài liệu thiết kế cho anh Hải để xin góp ý.
+- ⚠️ Commit vẫn dùng email công ty → đổi `git config user.email` trong repo taskflow.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
