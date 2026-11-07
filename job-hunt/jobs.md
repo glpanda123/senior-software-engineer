@@ -219,3 +219,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Software Engineer (Communications & AI Platform) | Dwarves Foundation | Remote 100%, chỉ nhận ứng viên ở Việt Nam; tag TypeScript + AI; giờ làm 9h–18h; cộng điểm nếu từng làm fintech; lương thoả thuận | [arc.dev](https://arc.dev/remote-jobs/j/dwarves-foundation-only-hiring-in-vietnam-senior-software-engineer-communications-ai-platform-okawhuy8y9) | saved |
 | Senior Applied AI Engineer (LLM, AI agent) | HD Global Career | Remote, làm từ bất kỳ đâu ở Việt Nam; agentic systems; skill gồm TypeScript, Python, React, FastAPI, AWS; tới 4.000 USD/tháng gross (senior) | [arc.dev](https://arc.dev/remote-jobs/j/hd-global-career-senior-applied-ai-engineer-ncitgi8lcf), [monster](https://www.monster.com.vn/job/senior-applied-ai-engineer-llm-ai-agent-hd-global-career-ho-chi-minh-52666170) | saved |
+
+## 2026-11-07
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Mid/Sr Fullstack Developer (TypeScript, NodeJS, ReactJS) | FasTrak AI | Công ty AI; level mid–senior; địa điểm chưa rõ (cần mở tin kiểm tra) | [itviec](https://itviec.com/viec-lam-it/mid-sr-fullstack-developer-typescript-nodejs-reactjs-fastrak-ai-5131) | saved |
