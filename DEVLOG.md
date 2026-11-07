@@ -148,6 +148,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - ⚠️ Commit vẫn dùng email công ty → đổi `git config user.email` trong repo taskflow.
 - Tự chấm:
 
+## Ngày 25–26 — T6–T7 06–07/11/2026 · Giai đoạn A, Tasks 2 (409)
+
+- AI dựng API xem/sửa task, phản hồi 409 kèm bản mới nhất, 17 test mới. **Mình tự viết `updateIfVersion()` + `task:update`** (taskflow PR #20); 80/80 test.
+- 3 lần sửa: (1) còn `throw` và chưa tăng version; (2) `catch` bắt mọi lỗi → giấu lỗi thật thành 409; (3) chỉ bắt P2025, ném tiếp lỗi khác. Bài học: chỉ bắt đúng lỗi mình hiểu.
+- Thêm `TEST_DATABASE_URL` để test không bao giờ xoá nhầm DB dev. Đã đổi sang email cá nhân khi commit ✅.
+- PR #19 có 2 lỗi do bot Codex tìm ra (tên toàn dấu cách, cursor giả) → đã sửa ở cả 4 chỗ cùng kiểu lỗi.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.

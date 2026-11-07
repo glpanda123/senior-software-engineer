@@ -1,6 +1,6 @@
 # Bắt đầu từ đây: thứ tự đọc toàn bộ tài liệu
 
-**Đang chờ bạn ngay bây giờ:** merge taskflow PR #19 (tasks: tạo + xem) khi CI xanh, rồi buổi Tasks 2 (luật 409, bạn tự viết).
+**Đang chờ bạn ngay bây giờ:** merge taskflow PR #20 (sửa task + 409) khi CI xanh, rồi buổi Tasks 3 (kéo-thả `move`).
 
 Quy tắc chung: file nào có bản `.vi.md` thì **chỉ đọc bản `.vi.md`**; bản `.md` tiếng Anh cùng tên là bản sao để công khai. Thứ tự dưới đây đi theo đúng câu chuyện của dự án: kế hoạch → sản phẩm → prototype → kiến thức backend → thiết kế → phỏng vấn.
 
