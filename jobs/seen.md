@@ -195,3 +195,11 @@ https://careers-page.com/dikshatek-3/job/QVRYW4V8
 https://careers-page.com/dikshatek-3/job/QXW3Y9RY
 https://www.hirebase.org/company/dikshatek/jobs/senior-fullstack-nodejs-reactjs-fully-remote-f36a579a
 https://www.careerjet.vn/jobad/vn25535905df371661828c980d2b3f935e
+https://devarch.pages.dev/jobs/midsenior-frontend-engineer-reactjs-nextjs-itviec-4050
+https://crawlbot.pages.dev/jobs/midsenior-frontend-engineer-reactjs-nextjs-itviec-4050
+https://itviec.com/viec-lam-it/remote-frontend-web-developer-reactjs-nodejs-nextjs-arch-partnership-limited-5948
+https://itviec.com/it-jobs/remote-frontend-web-developer-reactjs-nodejs-nextjs-arch-partnership-limited-5948
+https://itviec.com/viec-lam-it/senior-fullstack-python-reactjs-nextjs-4500-cong-ty-tnhh-nanyang-biologics-viet-nam-2912
+https://itviec.com/it-jobs/senior-fullstack-python-reactjs-nextjs-4500-cong-ty-tnhh-nanyang-biologics-viet-nam-2912
+https://viecoi.vn/viec-lam/senior-full-stack-engineer-up-to-4500-133492.html
+https://www.monster.com.vn/job/senior-frontend-engineer-toptal-vietnam-52521834
