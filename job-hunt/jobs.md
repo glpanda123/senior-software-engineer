@@ -225,3 +225,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Mid/Sr Fullstack Developer (TypeScript, NodeJS, ReactJS) | FasTrak AI | Công ty AI; level mid–senior; địa điểm chưa rõ (cần mở tin kiểm tra) | [itviec](https://itviec.com/viec-lam-it/mid-sr-fullstack-developer-typescript-nodejs-reactjs-fastrak-ai-5131) | saved |
+
+## 2026-11-08
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| [HCM/Remote] Senior Full-stack JavaScript Developer – AI Native | Không rõ (qua Talent Search Advisors) | HCM hoặc remote; JS fullstack + AI-native; chi tiết và ngày đăng chưa xác minh | [careers-page](https://careers-page.com/talent-search-adviors/job/L679W49R) | saved |
