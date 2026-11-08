@@ -203,3 +203,11 @@ https://itviec.com/viec-lam-it/senior-fullstack-python-reactjs-nextjs-4500-cong-
 https://itviec.com/it-jobs/senior-fullstack-python-reactjs-nextjs-4500-cong-ty-tnhh-nanyang-biologics-viet-nam-2912
 https://viecoi.vn/viec-lam/senior-full-stack-engineer-up-to-4500-133492.html
 https://www.monster.com.vn/job/senior-frontend-engineer-toptal-vietnam-52521834
+https://arc.dev/remote-jobs/j/sunbytes-senior-full-stack-ai-engineer-vietnam-based-only-prza7ymbsh
+https://www.remoterocketship.com/company/sunbytes-io/jobs/senior-full-stack-ai-engineer-vietnam-remote/
+https://dailyremote.com/remote-job/senior-full-stack-ai-engineer-5177045
+https://www.remoterocketship.com/company/sleek/jobs/senior-full-stack-engineer-vietnam-remote
+https://hw.glich.co/jobboard/jobs/senior-full-stack-engineer-remote-at-sleek-p7ghcp
+https://crawlbot.pages.dev/jobs/fullstack-engineer-claude-work-remotely-itviec-0552
+https://topdev.vn/detail-jobs/sr-ai-engineer-remote-hanoi-saigon-pageai-2034657
+https://topdev.vn/viec-lam/sr-ai-engineer-remote-hanoi-saigon-pageai-2034657
