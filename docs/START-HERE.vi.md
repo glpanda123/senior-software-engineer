@@ -36,6 +36,7 @@ Ký hiệu: **Đọc** = đọc kỹ · **Lướt** = xem tiêu đề và ý ch�
 | # | File | Cách đọc | Để làm gì |
 | --- | --- | --- | --- |
 | 11 | `docs/learning/backend-so-far.vi.md` | **Đọc kỹ** | Nền tảng backend: API, vòng đời request, đăng nhập, phân quyền, 409, thứ tự task |
+| 11b | `docs/learning/backend-code.vi.md` | Đọc song song với code | Bản dịch tiếng Việt toàn bộ comment và tên test trong `apps/api` (repo taskflow), theo từng file |
 | 12 | `docs/architecture/01-requirements-and-estimates.vi.md` | Đọc | Yêu cầu và ước lượng quy mô của TaskFlow |
 | 13 | `docs/system-design/01-url-shortener.vi.md` | Đọc | Bài mẫu khung system design 7 bước |
 
