@@ -231,3 +231,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | [HCM/Remote] Senior Full-stack JavaScript Developer – AI Native | Không rõ (qua Talent Search Advisors) | HCM hoặc remote; JS fullstack + AI-native; chi tiết và ngày đăng chưa xác minh | [careers-page](https://careers-page.com/talent-search-adviors/job/L679W49R) | saved |
+
+## 2026-11-09
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Full Stack Engineer (Node.js, Vue/React & AI Solutions) | CoverGo | Công ty sản phẩm SaaS bảo hiểm; có tin ghi fully remote cho ứng viên Việt Nam, có tin ghi onsite HCM; Node.js + TypeScript, 5–6+ năm; có phụ cấp remote, lương tháng 13; cần hỏi rõ remote | [workable](https://apply.workable.com/covergo/jobs/view/003269AA13.md), [jobicy](https://jobicy.com/jobs/122066-senior-full-stack-engineer-node-js-vue-react-product-demos) | saved |
+| Senior Software Engineer (Node.js, TypeScript) | Sunbytes (tuyển cho khách hàng) | Onsite Nam Từ Liêm, Hà Nội; thiên backend, 5+ năm; MySQL/PostgreSQL | [monster](https://www.monster.com.vn/job/senior-software-engineer-node-js-typescript-sunbytes-hanoi-50054832) | saved |
