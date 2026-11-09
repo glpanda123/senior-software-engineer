@@ -156,6 +156,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - PR #19 có 2 lỗi do bot Codex tìm ra (tên toàn dấu cách, cursor giả) → đã sửa ở cả 4 chỗ cùng kiểu lỗi.
 - Tự chấm:
 
+## Ngày 27–28 — CN–T2 08–09/11/2026 · Giai đoạn A, Tasks 3 (kéo-thả)
+
+- AI dựng API `move` + hàm `positionBetween()` (fractional indexing: chèn khoá mới giữa 2 hàng xóm, chỉ ghi 1 dòng), 19 test mới. Mình viết nhánh `beforeId` nhưng đổi chỗ 2 nhánh (afterId ↔ beforeId) → AI sửa và giải thích (chủ đề mới, theo "I do → we do") (taskflow PR #21); 99/99 test.
+- Mẹo nhớ: `afterId` = thẻ nằm TRÊN → biên dưới là nó, biên trên là thẻ ngay dưới nó; `beforeId` thì ngược lại.
+- ⚠️ Commit trên máy khác vẫn dùng email công ty → set `git config user.email` trên MỌI máy.
+- Lịch chậm ~2 ngày (buffer đã dùng): còn nối giao diện vào API thật → deploy → realtime.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
