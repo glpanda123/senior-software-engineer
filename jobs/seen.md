@@ -211,3 +211,14 @@ https://hw.glich.co/jobboard/jobs/senior-full-stack-engineer-remote-at-sleek-p7g
 https://crawlbot.pages.dev/jobs/fullstack-engineer-claude-work-remotely-itviec-0552
 https://topdev.vn/detail-jobs/sr-ai-engineer-remote-hanoi-saigon-pageai-2034657
 https://topdev.vn/viec-lam/sr-ai-engineer-remote-hanoi-saigon-pageai-2034657
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1848/hipages-%7c-senior-reactjs-engineer/job
+https://app.semesteria.com/jobs/senior-nodejs-engineer-remote-cbtw-apac-da66a2c3-570c-40c7-95e6-0e4c65efccb1
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1539/ps-%7c-senior-fullstack-engineer---javascript-typescript-%28nodejs%2c-react%29/job
+https://itviec.com/viec-lam-it/senior-frontend-developer-reactjs-one-mount-group-2010
+https://itviec.com/it-jobs/senior-frontend-developer-reactjs-one-mount-group-2010
+https://itviec.com/it-jobs/senior-software-engineer-php-typescript-nodejs-global-fashion-group-0850
+https://itviec.com/it-jobs/senior-software-engineer-php-typescript-nodejs-global-fashion-group-4713
+https://itviec.com/viec-lam-it/senior-software-engineer-php-typescript-nodejs-global-fashion-group-4713
+https://itviec.com/it-jobs/lead-senior-fullstack-engineer-nodejs-reactjs-collaboration-betters-the-world-cbtw-3920
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1469/senior-fullstack-engineer-%28nodejs-%26-reactjs%29/job
+https://www.careerjet.vn/jobad/vnefed97a11a43dc2fda2f988059bb37c3
