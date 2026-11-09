@@ -164,6 +164,16 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Lịch chậm ~2 ngày (buffer đã dùng): còn nối giao diện vào API thật → deploy → realtime.
 - Tự chấm:
 
+## Ngày 28 (tối) — T2 09/11/2026 · Giai đoạn A, giao diện chạy trên API thật
+
+- Bản dịch tiếng Việt toàn bộ comment + tên test backend: `docs/learning/backend-code.vi.md`.
+- PR #21 (kéo-thả) merge; bot Codex tìm ra lỗi 2 hàng xóm không sát nhau → đã sửa.
+- Giao diện chạy với API thật (taskflow PR #22): Next chuyển `/api/v1` sang API (cùng origin → cookie SameSite=Strict chạy, không cần CORS); 401 → refresh 1 lần → gửi lại request; refresh "mỗi lúc một lần".
+- Bài học thật: tải lại trang bị đá ra login vì React (dev) chạy effect 2 lần → 2 lần refresh cùng cookie → server coi là trộm và thu hồi cả family. Chính cơ chế Q13 bắt được lỗi của client.
+- Màn chưa có API (Today, Members, Activity, AI, realtime) hiện "Coming soon". Prototype trên Vercel vẫn dùng mock.
+- Tiếp theo: deploy (AWS, cấu hình demo).
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
