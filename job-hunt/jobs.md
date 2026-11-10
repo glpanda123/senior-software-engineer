@@ -238,3 +238,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Full Stack Engineer (Node.js, Vue/React & AI Solutions) | CoverGo | Công ty sản phẩm SaaS bảo hiểm; có tin ghi fully remote cho ứng viên Việt Nam, có tin ghi onsite HCM; Node.js + TypeScript, 5–6+ năm; có phụ cấp remote, lương tháng 13; cần hỏi rõ remote | [workable](https://apply.workable.com/covergo/jobs/view/003269AA13.md), [jobicy](https://jobicy.com/jobs/122066-senior-full-stack-engineer-node-js-vue-react-product-demos) | saved |
 | Senior Software Engineer (Node.js, TypeScript) | Sunbytes (tuyển cho khách hàng) | Onsite Nam Từ Liêm, Hà Nội; thiên backend, 5+ năm; MySQL/PostgreSQL | [monster](https://www.monster.com.vn/job/senior-software-engineer-node-js-typescript-sunbytes-hanoi-50054832) | saved |
+
+## 2026-11-10
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Developer | Hegka Vietnam | Fully remote, ưu tiên ứng viên ở Việt Nam / HCM; làm giao diện cho AI agent; ngày đăng chưa xác minh | [careers-page](https://careers-page.com/hegka-vietnam/job/L8W4Y463) | saved |
+| Senior Full-stack Developer (Next.js & NestJS) | SmartDev | Cầu Giấy, HN (Zodiac, 19 Duy Tân); Next.js + NestJS, mentor, CI/CD, có Azure; yêu cầu 5–10 hoặc 7+ năm tuỳ tin; tin từ đầu 2026, có thể đã hết hạn | [builtin](https://builtin.com/job/senior-full-stack-developer-next-js-nestjs/8299389), [smartdev careers](https://careers.smartdev.com/?p=9360) | saved |
