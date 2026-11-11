@@ -240,3 +240,17 @@ https://itviec.com/it-jobs/senior-full-stack-developer-nodejs-angular-reactjs-al
 https://builtin.com/job/senior-fullstack-developer-nodejs-typescript/7997981
 https://vietdevhire.vercel.app/jobs/senior-react-developer-remote-vietnam
 https://vietdevhire.vercel.app/jobs/fullstack-typescript-engineer-remote-vietnam
+https://itviec.com/viec-lam-it/senior-fullstack-developer-reactjs-nodejs-english-ntq-solution-0421
+https://itviec.com/it-jobs/senior-fullstack-developer-reactjs-nodejs-english-ntq-solution-0421
+https://itviec.com/viec-lam-it/middle-senior-front-end-reactjs-developer-esoft-vietnam-ltd-3519
+https://itviec.com/viec-lam-it/middle-senior-front-end-reactjs-developer-esoft-vietnam-ltd-1549
+https://itviec.com/it-jobs/middle-senior-front-end-reactjs-developer-esoft-vietnam-ltd-1549
+https://itviec.com/viec-lam-it/senior-reactjs-developer-javascript-typescript-paracel-technology-solutions-2556
+https://itviec.com/it-jobs/senior-reactjs-developer-javascript-typescript-paracel-technology-solutions-2556
+https://itviec.com/viec-lam-it/senior-front-end-developer-react-arctx-solution-llc-4953
+https://itviec.com/it-jobs/senior-front-end-developer-react-arctx-solution-llc-4953
+https://builtin.com/job/senior-fullstack-developer/9469001
+https://startup.jobs/senior-fullstack-developer-nextjs-nodejs-aws-gradion-8046256
+https://www.monster.com.vn/job/senior-software-developer-nodejs-typescript-gradion-hanoi-52054979
+https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-gigarion-technology-3447
+https://itviec.com/it-jobs/senior-fullstack-developer-nodejs-reactjs-gigarion-technology-3447
