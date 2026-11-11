@@ -1,6 +1,6 @@
 # Bắt đầu từ đây: thứ tự đọc toàn bộ tài liệu
 
-**Đang chờ bạn ngay bây giờ:** review + merge taskflow PR #22 (giao diện chạy trên API thật) khi CI xanh; thử chạy trên máy theo `apps/api/README.md`. Tiếp theo: deploy.
+**Đang chờ bạn ngay bây giờ:** merge taskflow PR #25 (cập nhật trang `/status`). API đã chạy trên AWS: https://3.1.242.249.sslip.io/api/v1/me trả 401. Tiếp theo: trỏ web trên Vercel vào API thật, rồi realtime.
 
 Quy tắc chung: file nào có bản `.vi.md` thì **chỉ đọc bản `.vi.md`**; bản `.md` tiếng Anh cùng tên là bản sao để công khai. Thứ tự dưới đây đi theo đúng câu chuyện của dự án: kế hoạch → sản phẩm → prototype → kiến thức backend → thiết kế → phỏng vấn.
 
@@ -37,6 +37,7 @@ Ký hiệu: **Đọc** = đọc kỹ · **Lướt** = xem tiêu đề và ý ch�
 | --- | --- | --- | --- |
 | 11 | `docs/learning/backend-so-far.vi.md` | **Đọc kỹ** | Nền tảng backend: API, vòng đời request, đăng nhập, phân quyền, 409, thứ tự task |
 | 11b | `docs/learning/backend-code.vi.md` | Đọc song song với code | Bản dịch tiếng Việt toàn bộ comment và tên test trong `apps/api` (repo taskflow), theo từng file |
+| 11c | Repo taskflow: `infra/aws/README.md` + trang minh hoạ [luồng deploy](https://claude.ai/artifact/EWVjYXphY7gq7q456Kkgdr) và [OIDC](https://claude.ai/artifact/MP2LjgmbX5KECR1mN1pC3M) | Đọc | Deploy API lên AWS: bước nào, ai chạy, dùng file nào; vì sao không cần SSH hay AWS key |
 | 12 | `docs/architecture/01-requirements-and-estimates.vi.md` | Đọc | Yêu cầu và ước lượng quy mô của TaskFlow |
 | 13 | `docs/system-design/01-url-shortener.vi.md` | Đọc | Bài mẫu khung system design 7 bước |
 

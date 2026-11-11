@@ -174,6 +174,18 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Tiếp theo: deploy (AWS, cấu hình demo).
 - Tự chấm:
 
+## Ngày 29–30 — T3–T4 10–11/11/2026 · Giai đoạn A, deploy API lên AWS
+
+- Tính giá trước: cấu hình demo của ADR-002 (ECS + ALB + RDS) ~65–70 đô/tháng → chọn phương án dự phòng 1 máy EC2 + Docker Compose (~13 đô/tháng).
+- taskflow PR #23: Dockerfile, CloudFormation (`taskflow-demo.yaml`), `compose.yaml`, Caddyfile, `deploy.sh`, workflow "Deploy API". Codex tìm 3 lỗi (log boot lộ mật khẩu, `API_IMAGE` không được lưu, Caddy không nạp lại cấu hình) → đã sửa.
+- Mình tự làm trên AWS: tạo stack, đặt 3 biến GitHub, chạy workflow, cập nhật stack bằng change set.
+- Bài học thật: lần deploy đầu lỗi `Not authorized to perform sts:AssumeRoleWithWebIdentity`. Repo tạo sau 7/2026 gửi `sub` có kèm ID (`repo:OWNER@ID/NAME@ID:ref:...`), luật trong role chỉ so tên. Tìm giá trị thật bằng CloudTrail (`userIdentity.userName`) → PR #24 → deploy xanh.
+- Kết quả: API chạy production qua HTTPS, `GET /me` trả 401.
+- Trang minh hoạ: luồng deploy 10 bước (https://claude.ai/artifact/EWVjYXphY7gq7q456Kkgdr), OIDC (https://claude.ai/artifact/MP2LjgmbX5KECR1mN1pC3M).
+- Mình tự tóm tắt lại được luồng deploy; 2 chỗ cần nhớ: quyền của DeployRole chỉ gồm đẩy image + gửi lệnh tới 1 máy (không phải cả stack); `deploy.sh` do máy EC2 chạy, GitHub chỉ gửi lệnh qua SSM.
+- Tiếp theo: trỏ web trên Vercel vào API thật (mốc "màn chính chạy API thật trên production"), rồi realtime.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
