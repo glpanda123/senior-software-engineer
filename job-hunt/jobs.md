@@ -245,3 +245,11 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Fullstack Developer | Hegka Vietnam | Fully remote, ưu tiên ứng viên ở Việt Nam / HCM; làm giao diện cho AI agent; ngày đăng chưa xác minh | [careers-page](https://careers-page.com/hegka-vietnam/job/L8W4Y463) | saved |
 | Senior Full-stack Developer (Next.js & NestJS) | SmartDev | Cầu Giấy, HN (Zodiac, 19 Duy Tân); Next.js + NestJS, mentor, CI/CD, có Azure; yêu cầu 5–10 hoặc 7+ năm tuỳ tin; tin từ đầu 2026, có thể đã hết hạn | [builtin](https://builtin.com/job/senior-full-stack-developer-next-js-nestjs/8299389), [smartdev careers](https://careers.smartdev.com/?p=9360) | saved |
+
+## 2026-11-11
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Engineer (Node.js, TypeScript, English) | NFQ | Hybrid; công ty có văn phòng HCM, Đà Nẵng, Cần Thơ và Hà Nội (cần hỏi vị trí này có nhận ở Hà Nội không); ngày đăng chưa xác minh | [lever](https://jobs.lever.co/nfq/d639688e-aeaa-4081-b77e-e246291b274e) | saved |
+| Senior Fullstack Developer (ReactJS, NodeJS, English) | NTQ Solution | Hà Nội (theo trang tổng hợp, ITviec chưa xác minh); thiên serverless trên AWS (Serverless Framework / AWS SAM); ngày đăng chưa xác minh | [itviec](https://itviec.com/it-jobs/senior-fullstack-developer-reactjs-nodejs-english-ntq-solution-0421) | saved |
+| Senior Fullstack Developer (NodeJS - ReactJS) | Gigarion Technology | Văn phòng Tân Bình, HCM, làm việc linh hoạt; có tin mid–senior ghi nhận cả Hà Nội, Đà Nẵng; NodeJS/NestJS, ReactJS, PostgreSQL, Redis; 4–5 năm | [itviec](https://itviec.com/it-jobs/senior-fullstack-developer-nodejs-reactjs-gigarion-technology-3447) | saved |
