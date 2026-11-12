@@ -1,6 +1,6 @@
 # Bắt đầu từ đây: thứ tự đọc toàn bộ tài liệu
 
-**Đang chờ bạn ngay bây giờ:** merge taskflow PR #25 (cập nhật trang `/status`). API đã chạy trên AWS: https://3.1.242.249.sslip.io/api/v1/me trả 401. Tiếp theo: trỏ web trên Vercel vào API thật, rồi realtime.
+**Đang chờ bạn ngay bây giờ:** merge taskflow PR #27 (thêm link bản chạy thật vào `/status` và README). Bản chạy API thật: https://taskflow-u8sb.vercel.app. Tiếp theo: Realtime 1 (WebSocket).
 
 Quy tắc chung: file nào có bản `.vi.md` thì **chỉ đọc bản `.vi.md`**; bản `.md` tiếng Anh cùng tên là bản sao để công khai. Thứ tự dưới đây đi theo đúng câu chuyện của dự án: kế hoạch → sản phẩm → prototype → kiến thức backend → thiết kế → phỏng vấn.
 

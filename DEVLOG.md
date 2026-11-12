@@ -186,6 +186,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Tiếp theo: trỏ web trên Vercel vào API thật (mốc "màn chính chạy API thật trên production"), rồi realtime.
 - Tự chấm:
 
+## Ngày 31 — T5 12/11/2026 · Giai đoạn A, web chạy trên API production
+
+- Tạo project Vercel thứ hai (`taskflow-u8sb`) với `API_URL` + `NEXT_PUBLIC_API_MOCKING=disabled`; prototype dữ liệu mẫu giữ nguyên ở địa chỉ cũ để demo.
+- Bài học thật: `/api/v1/me` trả 404 dù biến đặt đúng. Turborepo chạy build ở chế độ strict, chỉ truyền biến đã khai báo; `NEXT_PUBLIC_*` được tự nhận, `API_URL` thì không → Next không tạo rewrite. Sửa: khai báo `API_URL` trong `turbo.json` (taskflow PR #26).
+- Kết quả: https://taskflow-u8sb.vercel.app đăng ký, tạo project, tạo task, kéo thả, tải lại vẫn còn dữ liệu → **đạt mốc "màn chính chạy API thật trên production"**.
+- Tiếp theo: Realtime 1 (WebSocket gateway, 1 instance).
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
