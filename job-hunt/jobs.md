@@ -253,3 +253,11 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior Fullstack Engineer (Node.js, TypeScript, English) | NFQ | Hybrid; công ty có văn phòng HCM, Đà Nẵng, Cần Thơ và Hà Nội (cần hỏi vị trí này có nhận ở Hà Nội không); ngày đăng chưa xác minh | [lever](https://jobs.lever.co/nfq/d639688e-aeaa-4081-b77e-e246291b274e) | saved |
 | Senior Fullstack Developer (ReactJS, NodeJS, English) | NTQ Solution | Hà Nội (theo trang tổng hợp, ITviec chưa xác minh); thiên serverless trên AWS (Serverless Framework / AWS SAM); ngày đăng chưa xác minh | [itviec](https://itviec.com/it-jobs/senior-fullstack-developer-reactjs-nodejs-english-ntq-solution-0421) | saved |
 | Senior Fullstack Developer (NodeJS - ReactJS) | Gigarion Technology | Văn phòng Tân Bình, HCM, làm việc linh hoạt; có tin mid–senior ghi nhận cả Hà Nội, Đà Nẵng; NodeJS/NestJS, ReactJS, PostgreSQL, Redis; 4–5 năm | [itviec](https://itviec.com/it-jobs/senior-fullstack-developer-nodejs-reactjs-gigarion-technology-3447) | saved |
+
+## 2026-11-12
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Full-Stack JS Engineer (Node.js, React.js) | EPAM Systems | Hà Nội; Node.js (Express) + React (Next.js); 5+ năm JavaScript, 3+ năm fullstack; công ty toàn cầu, môi trường tiếng Anh; ngày đăng chưa xác minh | [themuse](https://themuse.com/jobs/epamsystems/senior-fullstack-js-engineer-nodejs-reactjs-29ab80), [epam](https://epam.com/careers/job-listings/job.epamgdo_bltb542adaa3f0a9082_en-us_Hanoi_VietNam) | saved |
+| Senior/Principal JavaScript Engineer | Qode (CoderPush) | Remote tại Việt Nam, full-time; hướng AI-first; tin ghi ngày 28/08/2026 nên cần kiểm tra còn mở không | [workable](https://apply.workable.com/qodeworld/jobs/view/7EA9FCDEB9.md) | saved |
+| Senior Fullstack (Node JS + React JS) | Syncsoft | Hà Nội; 28–33 triệu; 4 vị trí; ngày đăng chưa xác minh, có thể là tin cũ | [123job](https://www.123job.vn/viec-lam/senior-fullstack-node-js-react-js-G9xYnaKmrN) | saved |
