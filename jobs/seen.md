@@ -254,3 +254,11 @@ https://startup.jobs/senior-fullstack-developer-nextjs-nodejs-aws-gradion-804625
 https://www.monster.com.vn/job/senior-software-developer-nodejs-typescript-gradion-hanoi-52054979
 https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-gigarion-technology-3447
 https://itviec.com/it-jobs/senior-fullstack-developer-nodejs-reactjs-gigarion-technology-3447
+https://javascript.jobs/job/senior-fullstack-developer-nodejs-reactjs-1
+https://vn.joboko.com/viec-lam-fullstack-developer-nodejs-reactjs-xvi6732865
+https://vn.joboko.com/viec-lam-fullstack-developer-nodejs-reactjs-xvi6732190
+https://itviec.com/viec-lam-it/fullstack-engineer-nodejs-vuejs-reactjs-silverai-jsc-4846
+https://itviec.com/it-jobs/fullstack-engineer-nodejs-vuejs-reactjs-silverai-jsc-4846
+https://itviec.com/viec-lam-it/senior-fullstack-engineer-javascript-typescript-nodejs-cong-ty-tnhh-bonbon-mobility-viet-nam-5233
+https://itviec.com/it-jobs/senior-fullstack-engineer-javascript-typescript-nodejs-cong-ty-tnhh-bonbon-mobility-viet-nam-5233
+https://itviec.com/it-jobs/sr-full-stack-developer-nodejs-javascript-english-aletech-technology-solutions-company-3133
