@@ -262,3 +262,16 @@ https://itviec.com/it-jobs/fullstack-engineer-nodejs-vuejs-reactjs-silverai-jsc-
 https://itviec.com/viec-lam-it/senior-fullstack-engineer-javascript-typescript-nodejs-cong-ty-tnhh-bonbon-mobility-viet-nam-5233
 https://itviec.com/it-jobs/senior-fullstack-engineer-javascript-typescript-nodejs-cong-ty-tnhh-bonbon-mobility-viet-nam-5233
 https://itviec.com/it-jobs/sr-full-stack-developer-nodejs-javascript-english-aletech-technology-solutions-company-3133
+https://itviec.com/it-jobs/fulltime-remote-fullstack-javascript-typescript-reactjs-coderpush-5321
+https://itviec.com/viec-lam-it/fulltime-remote-fullstack-javascript-typescript-reactjs-coderpush-5321
+https://www.monster.com.vn/job/senior-frontend-developer-reactjs-vuejs-eastgate-software-hanoi-55344682
+https://nodeflair.com/jobs/eastgate-software-senior-frontend-developer-reactjs-vuejs-511893
+https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-eastgate-software-4005
+https://itviec.com/it-jobs/fullstack-developer-nodejs-reactjs-eastgate-software-4005
+https://jobs.lever.co/nfq/d639688e-aeaa-4081-b77e-e246291b274e
+https://javascript.jobs/job/senior-fullstack-engineer-nodejs-typescript-english
+https://builtin.com/job/senior-full-stack-developer-nodejs-reactjs-30mils-sign-bonus/6823110
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1991/senior-fullstack-engineer-%28nodejs%2c-ai-experienced%29/job
+https://itviec.com/viec-lam-it/senior-fullstack-engineer-nodejs-younet-media-0841
+https://javascript.jobs/job/fullstack-typescript-nodejs-reactjs
+https://javascript.jobs/job/senior-fullstack-developer-nodejsreactjs
