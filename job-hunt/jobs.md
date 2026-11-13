@@ -261,3 +261,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Senior Full-Stack JS Engineer (Node.js, React.js) | EPAM Systems | Hà Nội; Node.js (Express) + React (Next.js); 5+ năm JavaScript, 3+ năm fullstack; công ty toàn cầu, môi trường tiếng Anh; ngày đăng chưa xác minh | [themuse](https://themuse.com/jobs/epamsystems/senior-fullstack-js-engineer-nodejs-reactjs-29ab80), [epam](https://epam.com/careers/job-listings/job.epamgdo_bltb542adaa3f0a9082_en-us_Hanoi_VietNam) | saved |
 | Senior/Principal JavaScript Engineer | Qode (CoderPush) | Remote tại Việt Nam, full-time; hướng AI-first; tin ghi ngày 28/08/2026 nên cần kiểm tra còn mở không | [workable](https://apply.workable.com/qodeworld/jobs/view/7EA9FCDEB9.md) | saved |
 | Senior Fullstack (Node JS + React JS) | Syncsoft | Hà Nội; 28–33 triệu; 4 vị trí; ngày đăng chưa xác minh, có thể là tin cũ | [123job](https://www.123job.vn/viec-lam/senior-fullstack-node-js-react-js-G9xYnaKmrN) | saved |
+
+## 2026-11-13
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Node/Fullstack JS Engineer | Techvify | Hà Nội, senior, full-time; tới 50 triệu; Node.js (Express/NestJS/Fastify) + React, làm dashboard và báo cáo cho khách hàng; 3–5+ năm; ngày đăng chưa xác minh | [techvify careers](https://careers.techvify.com/tuyen-dung-it/node-fullstack-js-engineer/) | saved |
