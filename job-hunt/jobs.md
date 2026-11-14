@@ -267,3 +267,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Node/Fullstack JS Engineer | Techvify | Hà Nội, senior, full-time; tới 50 triệu; Node.js (Express/NestJS/Fastify) + React, làm dashboard và báo cáo cho khách hàng; 3–5+ năm; ngày đăng chưa xác minh | [techvify careers](https://careers.techvify.com/tuyen-dung-it/node-fullstack-js-engineer/) | saved |
+
+## 2026-11-14
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack Engineer (NodeJS, AWS, English) | VMO Systems | Hà Nội; Node.js + AWS, yêu cầu tiếng Anh; ngày đăng chưa xác minh | [monster](https://www.monster.com.vn/job/senior-fullstack-engineer-nodejs-aws-english-vmo-systems-hanoi-52087818) | saved |
+| Fullstack Developer (NodeJS/ReactJS), level senior | VMO Holdings | Cầu Giấy, Hà Nội; 5+ năm fullstack, đội production DU35.2; lương thoả thuận; trang ghi ngày 26/11/2026 (chưa rõ là hạn nộp hay ngày đăng) | [joboko](https://vn.joboko.com/viec-lam-fullstack-developer-nodejs-reactjs-xvi6732865?amp=1) | saved |
