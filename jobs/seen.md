@@ -275,3 +275,13 @@ https://careers-collaborationbetterstheworldvi.icims.com/jobs/1991/senior-fullst
 https://itviec.com/viec-lam-it/senior-fullstack-engineer-nodejs-younet-media-0841
 https://javascript.jobs/job/fullstack-typescript-nodejs-reactjs
 https://javascript.jobs/job/senior-fullstack-developer-nodejsreactjs
+https://apply.workable.com/sapigroup/jobs/view/AA2CEA5AEA.md
+https://jobs.workable.com/jobs/7956a2a3-46b0-4e67-8af7-962ab59229d9.md
+https://careers.garena.com/global/careers/J00385394
+https://outscal.com/us/job/hn-senior-software-engineer-front-end-at-garena-in-hanoi-hanoi-vietnam-1
+https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-english-remote-lumberworks-limited-0829
+https://itviec.com/it-jobs/fullstack-developer-nodejs-reactjs-english-remote-lumberworks-limited-0829
+https://jobs.lever.co/keyloop/f82f3143-bfa2-4fb0-a0e2-8e0e72edfb23
+https://jobs.lever.co/gradion/f46692e1-e8bf-493e-ae46-39b10dfa85be
+https://itviec.com/viec-lam-it/remote-fullstack-software-engineer-nextjs-revve-ai-2021
+https://itviec.com/it-jobs/remote-fullstack-software-engineer-nextjs-revve-ai-2021
