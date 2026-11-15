@@ -279,4 +279,4 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
-| Senior Full-stack Developer | Easia Travel | Hà Nội; 5–7 năm, TypeScript + Node.js chạy production; công ty du lịch làm sản phẩm nội bộ; hạn nộp 19/11/2026 | [careerviet](https://careerviet.vn/en/search-job/senior-full-stack-developer.35C8B3BB.html) | saved |
+| Senior Full-stack Developer | Easia Travel | Hà Nội; 5–7 năm, TypeScript + Node.js chạy production; công ty du lịch; hạn nộp 19/11/2026 | [careerviet](https://careerviet.vn/en/search-job/senior-full-stack-developer.35C8B3BB.html) | saved |
