@@ -274,3 +274,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Senior Fullstack Engineer (NodeJS, AWS, English) | VMO Systems | Hà Nội; Node.js + AWS, yêu cầu tiếng Anh; ngày đăng chưa xác minh | [monster](https://www.monster.com.vn/job/senior-fullstack-engineer-nodejs-aws-english-vmo-systems-hanoi-52087818) | saved |
 | Fullstack Developer (NodeJS/ReactJS), level senior | VMO Holdings | Cầu Giấy, Hà Nội; 5+ năm fullstack, đội production DU35.2; lương thoả thuận; trang ghi ngày 26/11/2026 (chưa rõ là hạn nộp hay ngày đăng) | [joboko](https://vn.joboko.com/viec-lam-fullstack-developer-nodejs-reactjs-xvi6732865?amp=1) | saved |
+
+## 2026-11-15
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Full-stack Developer | Easia Travel | Hà Nội; 5–7 năm, TypeScript + Node.js chạy production; công ty du lịch làm sản phẩm nội bộ; hạn nộp 19/11/2026 | [careerviet](https://careerviet.vn/en/search-job/senior-full-stack-developer.35C8B3BB.html) | saved |
