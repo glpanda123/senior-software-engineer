@@ -285,3 +285,6 @@ https://jobs.lever.co/keyloop/f82f3143-bfa2-4fb0-a0e2-8e0e72edfb23
 https://jobs.lever.co/gradion/f46692e1-e8bf-493e-ae46-39b10dfa85be
 https://itviec.com/viec-lam-it/remote-fullstack-software-engineer-nextjs-revve-ai-2021
 https://itviec.com/it-jobs/remote-fullstack-software-engineer-nextjs-revve-ai-2021
+https://itviec.com/viec-lam-it/mid-senior-fullstack-developer-reactjs-nodejs-alphasphere-0137
+https://itviec.com/it-jobs/mid-senior-fullstack-developer-reactjs-nodejs-alphasphere-0137
+https://javascript.jobs/job/senior-full-stack-developer-typescript-react-nodejs
