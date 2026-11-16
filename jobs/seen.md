@@ -288,3 +288,9 @@ https://itviec.com/it-jobs/remote-fullstack-software-engineer-nextjs-revve-ai-20
 https://itviec.com/viec-lam-it/mid-senior-fullstack-developer-reactjs-nodejs-alphasphere-0137
 https://itviec.com/it-jobs/mid-senior-fullstack-developer-reactjs-nodejs-alphasphere-0137
 https://javascript.jobs/job/senior-full-stack-developer-typescript-react-nodejs
+https://itviec.com/it-jobs/senior-full-stack-developer-nodejs-reactjs-net-restaff-house-of-norway-3228
+https://itviec.com/it-jobs/senior-software-engineer-hifriendz-3514
+https://itviec.com/it-jobs/full-stack-developer-nodejs-nextjs-cong-ty-co-phan-smileviet-3847
+https://builtin.com/job/senior-full-stack-developer-next-js-nestjs/8299389
+https://topdev.vn/viec-lam/fullstack-developer-reactjs-nodejs-cong-ty-tnhh-trident-digital-tech-2090121
+https://vn.joboko.com/viec-lam-remote-fullstack-engineer-hardcore-nodejs-english-fluently-xvi6710941
