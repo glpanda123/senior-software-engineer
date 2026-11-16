@@ -1,6 +1,6 @@
 # Bắt đầu từ đây: thứ tự đọc toàn bộ tài liệu
 
-**Đang chờ bạn ngay bây giờ:** buổi tiếp theo là Thành viên 1 (17/11), theo lịch mới ở mục "Cập nhật 16/11" trong `docs/plan-4-tuan.md`. Realtime phần 1 đã chạy trên https://taskflow-u8sb.vercel.app.
+**Đang chờ bạn ngay bây giờ:** phần Thành viên (làm trong 16/11), rồi AI từ 17/11, theo lịch ở mục "Cập nhật 16/11" trong `docs/plan-4-tuan.md`. Realtime phần 1 đã chạy trên https://taskflow-u8sb.vercel.app.
 
 Quy tắc chung: file nào có bản `.vi.md` thì **chỉ đọc bản `.vi.md`**; bản `.md` tiếng Anh cùng tên là bản sao để công khai. Thứ tự dưới đây đi theo đúng câu chuyện của dự án: kế hoạch → sản phẩm → prototype → kiến thức backend → thiết kế → phỏng vấn.
 

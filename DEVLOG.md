@@ -203,7 +203,7 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Câu hỏi đã trả lời: Q14 (hàng đợi promise mất `.catch`). Mình mới thấy phần "mất log"; phần chính là các tin sau bị bỏ qua và tiến trình Node có thể thoát.
 - Hình minh hoạ realtime: https://claude.ai/artifact/PpdBsW9srLEo5TowyksYFL. Bản dịch comment: `docs/learning/backend-code.vi.md` mục 9.
 - Giới hạn còn lại: chỉ đúng với 1 máy chủ; mất tin nếu máy sập giữa lúc ghi và lúc phát; chưa tự nối lại khi rớt mạng.
-- Lịch: giai đoạn A chậm khoảng 4–5 buổi. **Chốt (16/11): chỉ làm thêm Members (17–18/11), rồi sang AI từ 19/11.** Realtime 2, email lời mời thật, Today/Activity dời sau 12/12. Lịch mới: mục "Cập nhật 16/11" trong `docs/plan-4-tuan.md`.
+- Lịch: giai đoạn A chậm khoảng 4–5 buổi. **Chốt (16/11): làm trọn Members ngay hôm nay, AI trọn vẹn 17–22/11, ôn CCAF từ 23/11.** Realtime 2, email lời mời thật, Today/Activity dời sau 12/12. Lịch mới: mục "Cập nhật 16/11" trong `docs/plan-4-tuan.md`.
 - Tự chấm:
 
 ## Điều chỉnh plan — 17/10
