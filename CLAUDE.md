@@ -23,7 +23,7 @@ Every interview-style question I answer gets added to `docs/interview/qa-review.
 - 22/10 (mentor feedback): work in stages with gates — problem → prototype + present → system design → code last; no back-and-forth between stages. Schedule: section "Cập nhật 22/10" in `docs/plan-4-tuan.md`. End every session by updating `DEVLOG.md` and the public `/status` page data (`progress.json` in the taskflow repo).
 - 03/11: Finish the mock project first (everything except AI, then AI as hands-on CCAF prep), then study for CCAF (Claude Certified Architect – Foundations), exam on 12/12. Applications, CV/LinkedIn and interview practice start after 12/12: keep scanning jobs daily, but don't remind me to apply before then. Schedule: section "Cập nhật 03/11" in `docs/plan-4-tuan.md`.
 - 16/11: Stage A is running 4–5 sessions late and the CCAF date (12/12) is fixed. Finish Members in full on 16/11 (invitations by link, no real email yet), do stage B (AI) in full from 17/11 to 22/11, then study for CCAF from 23/11. Realtime 2 (Redis + outbox), real invitation emails, Today/activity/rate limit/cache move to after 12/12. Schedule from 16/11: section "Cập nhật 16/11" in `docs/plan-4-tuan.md`.
-- 16/11: Stage B (AI) — I write the code myself; Claude guides (concepts, steps, hints, test list) and reviews, and shows code only when I ask or after I've been stuck a while. This overrides "I do → we do → you do" for stage B.
+- 16/11: Stage B (AI) — I write the implementation myself; Claude guides (concepts, steps, hints), writes the tests (after I approve the test list) and reviews, and shows implementation code only when I ask or after I've been stuck a while. This overrides "I do → we do → you do" for stage B.
 
 ## Conventions
 
