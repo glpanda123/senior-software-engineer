@@ -2,6 +2,48 @@
 
 Oct 13, 2026 · @Hoang Nguyen Duong · bản rút gọn từ plan 60 ngày
 
+## Cập nhật 16/11: chỉ làm thêm Members, rồi sang AI
+
+Quyết định của mình (16/11): giai đoạn A chậm khoảng 4–5 buổi (deploy và realtime lâu hơn dự tính). Ngày thi CCAF 12/12 không dời. Vì vậy **chỉ làm thêm phần Thành viên**, rồi chuyển sang giai đoạn B (AI). Phần này **thay cho lịch từ 16/11** ở mục "Cập nhật 03/11"; các phần khác của mục đó (nhịp học, giai đoạn D, nguyên tắc) giữ nguyên.
+
+Vì sao là Members: nó làm cho realtime vừa xong nhìn thấy được trọn vẹn khi demo (hai người thật trên cùng một bảng, có thông báo và "online"). Realtime 2 chủ yếu có giá trị khi nói về thiết kế, và đã có sơ đồ + ADR.
+
+### Đã xong của giai đoạn A (tính đến 16/11)
+
+Tasks (tạo, sửa với 409, kéo-thả) · giao diện chạy API thật · deploy API lên AWS (1 máy EC2) · web nối API production · Realtime 1 (WebSocket, presence, `task.changed`, 1 máy chủ).
+
+### Giai đoạn A, phần còn lại (17/11 → 18/11)
+
+| Ngày | Buổi | Ai viết lõi |
+| --- | --- | --- |
+| T3 17/11 | Thành viên 1: xem danh sách thành viên, đổi vai trò, xoá thành viên | Làm cùng |
+| T4 18/11 | Thành viên 2: mời bằng email qua **link mời** (chưa gửi email thật), nhận lời mời; demo 2 người thật trên 1 bảng | Làm cùng |
+
+**Gate A (đã điều chỉnh):** hai tài khoản khác nhau cùng làm việc trên một bảng ở bản production, thấy thay đổi của nhau ngay. Các màn Today và Activity vẫn hiện "Coming soon".
+
+### Giai đoạn B: AI trong project (19/11 → 23/11)
+
+| Ngày | Buổi | Mảng CCAF |
+| --- | --- | --- |
+| T5 19/11 | AI soạn task gọi Claude thật (tool use, structured output) | Ứng dụng Claude, tool use |
+| T6 20/11 | Kiểm output theo schema, retry, timeout, 429 | Độ tin cậy, xử lý lỗi |
+| T7 21/11 (4 h) | Eval trong CI; bắt đầu MCP server cho TaskFlow | Đánh giá output, MCP |
+| CN 22/11 (4 h) | MCP (tiếp): mình tự thêm 1 tool; skill + hook + subagent trong repo | MCP, cấu hình Claude Code, agent |
+| T2 23/11 | **Dự phòng**; README, `/status`; đối chiếu với 5 mảng đề thi | — |
+
+**Gate B:** phần AI của project chạy thật; kể được 5 mảng CCAF bằng ví dụ từ chính project.
+
+### Giai đoạn C: ôn và thi CCAF (24/11 → 12/12)
+
+Giữ nguyên bảng ở mục "Cập nhật 03/11", chỉ bắt đầu chậm 1 ngày: đề thử 1 ngày 28/11, đề thử 2 ngày 05/12, đề thử 3 ngày 09/12, **thi 12/12**.
+
+### Dời sang sau 12/12
+
+- Realtime 2: Redis pub/sub nhiều máy chủ + outbox.
+- Gửi email lời mời thật (BullMQ + SES); hiện dùng link mời.
+- Today, nhật ký hoạt động, giới hạn đăng nhập, cache board.
+- Video demo mới.
+
 ## Cập nhật 03/11: làm xong project → CCAF (thi 12/12) → rồi mới nộp CV
 
 Quyết định của mình (03/11): tập trung làm xong mock project, rồi ôn và thi **CCAF (Claude Certified Architect – Foundations) ngày 12/12**, **nộp CV và luyện phỏng vấn để sau 12/12**. Phần này **thay cho lịch từ 04/11** ở mục "Cập nhật 22/10" (Giai đoạn 4 phần còn lại và Giai đoạn 5). Mục tiêu offer trước 12/12 không còn là mốc của plan này.

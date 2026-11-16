@@ -1,6 +1,6 @@
 # Bắt đầu từ đây: thứ tự đọc toàn bộ tài liệu
 
-**Đang chờ bạn ngay bây giờ:** merge taskflow PR #29 (cập nhật trang `/status`), và chốt lại lịch: giai đoạn A còn Realtime 2, Members, Today/Activity, trong khi giai đoạn B (AI) lẽ ra bắt đầu 16/11. Realtime phần 1 đã chạy trên https://taskflow-u8sb.vercel.app.
+**Đang chờ bạn ngay bây giờ:** buổi tiếp theo là Thành viên 1 (17/11), theo lịch mới ở mục "Cập nhật 16/11" trong `docs/plan-4-tuan.md`. Realtime phần 1 đã chạy trên https://taskflow-u8sb.vercel.app.
 
 Quy tắc chung: file nào có bản `.vi.md` thì **chỉ đọc bản `.vi.md`**; bản `.md` tiếng Anh cùng tên là bản sao để công khai. Thứ tự dưới đây đi theo đúng câu chuyện của dự án: kế hoạch → sản phẩm → prototype → kiến thức backend → thiết kế → phỏng vấn.
 
@@ -12,7 +12,7 @@ Ký hiệu: **Đọc** = đọc kỹ · **Lướt** = xem tiêu đề và ý ch�
 | --- | --- | --- | --- |
 | 1 | `CLAUDE.md` | Lướt | Luật làm việc giữa bạn và AI |
 | 2 | `docs/how-i-learn.md` | Lướt | Cách học: mình làm mẫu → làm cùng → bạn tự làm |
-| 3 | `docs/plan-4-tuan.md`, **chỉ mục "Cập nhật 22/10"** | Đọc | Lịch 5 giai đoạn đang theo |
+| 3 | `docs/plan-4-tuan.md`, **mục "Cập nhật 16/11"** (rồi "Cập nhật 03/11") | Đọc | Lịch đang theo: Members → AI → ôn CCAF, thi 12/12 |
 
 ## B. Sản phẩm và business: giai đoạn 0–1 (~40 phút)
 
