@@ -215,6 +215,10 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - taskflow PR #30: 20 test mới (156 test API). Đã thử ở máy bằng 3 trình duyệt: mời → đăng ký qua link → vào workspace; tài khoản khác bị từ chối; link dùng rồi thì hết hiệu lực.
 - Không làm (không có trong contract v1): đổi vai trò, xoá thành viên, huỷ lời mời. Email lời mời thật: sau 12/12.
 - Bản dịch comment: `docs/learning/backend-code.vi.md` mục 10.
+- PR #30 merge, deploy xong (migration `invitations` chạy trên production).
+- Xem dữ liệu production: cân nhắc chuyển Postgres sang Neon (PR #31, đóng), mở cổng 5432 theo IP (không chọn). **Chốt: giữ Postgres trên EC2, vào bằng SSM port forwarding** (PR #32): Postgres chỉ nghe `127.0.0.1` trên server, máy mình chạy `aws ssm start-session ... AWS-StartPortForwardingSession` rồi Navicat nối `localhost:5433`. Không mở cổng nào, không SSH. Đã kết nối được.
+- Bài học: Git Bash giữ nguyên dấu `\` trong nháy đơn, nên JSON viết cho PowerShell bị hỏng; dùng dạng `--parameters portNumber=5432,localPortNumber=5433` chạy được mọi shell.
+- Bài học git: sau khi nhánh bị force-push, máy khác phải `git fetch` + `git reset --hard origin/<nhánh>`, không `git pull` (pull trộn lại commit cũ).
 - Mai (17/11): giai đoạn B bắt đầu: gọi Claude thật, tool use, structured output.
 - Tự chấm:
 
