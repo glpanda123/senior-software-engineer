@@ -263,8 +263,26 @@ Spoken version (~60 s):
 
 ---
 
+## Q14. Node.js: a promise chain used as a per-socket queue
+
+**Question:** "In the WebSocket gateway each message is chained onto `connection.queue` with `.then(() => this.onMessage(...)).catch(log)`. If you remove the `.catch` and `onMessage` throws once, what happens to the later messages on that socket?"
+
+**My answer (15/11):**
+> nếu bỏ .catch(...) ở dòng 32 và onMessage throw một lần, các tin nhắn sau đó trên socket này sẽ bị mất log, không biết được lỗi do auth hay do sai message
+
+**What was off:** ✅ the error would no longer go through our logger. But logging is the small part. The real effect is on **control flow**: the queue is now a rejected promise, and `.then(fn)` on a rejected promise skips `fn`, so every later message on that socket is **never handled**. And since nothing handles the rejection, Node (15+) treats it as an uncaught error and **exits the process**, which drops every user's socket, not just this one.
+
+<details><summary>Model answer</summary>
+
+> "Two things, and the second is worse. First, the queue is stuck: `connection.queue` is now a rejected promise, and `.then(fn)` on a rejected promise never calls `fn`, it just passes the rejection along. So every later message on that socket is silently skipped; the socket looks open but is dead. Second, nobody handles that rejection, and since Node 15 an unhandled rejection is thrown as an uncaught exception, so the whole API process exits and every connected user is dropped. The `.catch` does two jobs: it logs the error, and it turns the chain back into a resolved promise so the next message still runs. One bad message costs one message, not the socket and not the server."
+
+**Takeaway:** in a promise chain, `.catch` is not only for logging: it **resets the chain to resolved**. A rejected chain skips every later `.then`, and an unhandled rejection kills the Node process.
+</details>
+
+---
+
 ## Review log
 
-| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 | Notes |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | | | | | | |
+| Date | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 | Q14 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | | |

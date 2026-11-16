@@ -330,3 +330,26 @@ Vậy quy mô không phải vấn đề: một Postgres primary là quá đủ. 
 
 **Bài học:** kiểm tra rồi mới ghi trong 2 bước là race condition. Đặt điều kiện vào `WHERE` của một câu `UPDATE` duy nhất rồi đọc số dòng bị sửa: giống hệt cách kiểm tra version của luật 409.
 </details>
+
+---
+
+## Q14. Node.js: chuỗi promise dùng làm hàng đợi cho từng socket
+
+*"In the WebSocket gateway each message is chained onto `connection.queue` with `.then(() => this.onMessage(...)).catch(log)`. If you remove the `.catch` and `onMessage` throws once, what happens to the later messages on that socket?"*
+
+**Câu hỏi:** Trong WebSocket gateway, mỗi tin nhắn được nối vào `connection.queue` bằng `.then(() => this.onMessage(...)).catch(log)`. Nếu bỏ `.catch` và `onMessage` throw một lần, các tin nhắn sau đó trên socket này sẽ ra sao?
+
+**Câu trả lời của mình (15/11):**
+> nếu bỏ .catch(...) ở dòng 32 và onMessage throw một lần, các tin nhắn sau đó trên socket này sẽ bị mất log, không biết được lỗi do auth hay do sai message
+
+**Chỗ chưa ổn:** ✅ đúng là lỗi sẽ không còn đi qua logger của mình. Nhưng log chỉ là phần nhỏ. Hậu quả thật nằm ở **luồng chạy**: hàng đợi giờ là một promise bị reject, mà `.then(fn)` trên promise bị reject thì bỏ qua `fn`, nên mọi tin nhắn sau trên socket đó **không bao giờ được xử lý**. Và vì không ai bắt lỗi reject này, Node (từ bản 15) coi nó là lỗi không được bắt và **tắt cả process**, làm rớt socket của mọi user chứ không riêng socket này.
+
+<details><summary>Đáp án mẫu</summary>
+
+> "Two things, and the second is worse. First, the queue is stuck: `connection.queue` is now a rejected promise, and `.then(fn)` on a rejected promise never calls `fn`, it just passes the rejection along. So every later message on that socket is silently skipped; the socket looks open but is dead. Second, nobody handles that rejection, and since Node 15 an unhandled rejection is thrown as an uncaught exception, so the whole API process exits and every connected user is dropped. The `.catch` does two jobs: it logs the error, and it turns the chain back into a resolved promise so the next message still runs. One bad message costs one message, not the socket and not the server."
+
+**Nghĩa:**
+Có hai chuyện, chuyện thứ hai nặng hơn. Một: hàng đợi bị kẹt. `connection.queue` giờ là promise bị reject, mà `.then(fn)` trên promise bị reject thì không bao giờ gọi `fn`, chỉ chuyền lỗi reject đi tiếp. Nên mọi tin nhắn sau trên socket đó bị bỏ qua trong im lặng; socket trông vẫn mở nhưng thực ra đã chết. Hai: không ai bắt lỗi reject đó, và từ Node 15 một rejection không được bắt sẽ bị ném ra như uncaught exception, nên cả process API tắt và mọi user đang kết nối đều bị rớt. `.catch` làm hai việc: ghi log lỗi, và đưa chuỗi trở lại trạng thái resolved để tin nhắn kế tiếp vẫn chạy. Một tin nhắn lỗi chỉ mất đúng một tin nhắn, không mất socket và không mất server.
+
+**Bài học:** trong chuỗi promise, `.catch` không chỉ để ghi log: nó **đưa chuỗi về lại trạng thái resolved**. Chuỗi bị reject sẽ bỏ qua mọi `.then` phía sau, và rejection không được bắt sẽ làm chết process Node.
+</details>
