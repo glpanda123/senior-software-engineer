@@ -206,6 +206,18 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Lịch: giai đoạn A chậm khoảng 4–5 buổi. **Chốt (16/11): làm trọn Members ngay hôm nay, AI trọn vẹn 17–22/11, ôn CCAF từ 23/11.** Realtime 2, email lời mời thật, Today/Activity dời sau 12/12. Lịch mới: mục "Cập nhật 16/11" trong `docs/plan-4-tuan.md`.
 - Tự chấm:
 
+## Ngày 35 (tiếp) — T2 16/11/2026 · Giai đoạn A, Members
+
+- Trọn phần Members theo contract v1: xem thành viên + lời mời đang chờ, mời theo email (owner/admin; chỉ owner mời được admin; viewer phải kèm project).
+- Lỗ hổng thiết kế phát hiện hôm nay: contract v1 tạo được lời mời nhưng không có cách nào nhận lời mời. Bổ sung vào contract trước rồi mới code: `GET /invitations/{token}` (xem trước, không cần đăng nhập) và `POST /invitations/{token}/accept`.
+- Chưa gửi email thật: trang Members hiện link mời để copy (hiện đúng một lần). Database chỉ lưu mã băm SHA-256 của token, hạn 7 ngày.
+- Hai ý đáng nhớ cho phỏng vấn: (1) có link chưa đủ, phải đăng nhập đúng email được mời (link bị chuyển tiếp không cho người khác vào); (2) "giành" lời mời bằng một câu `updateMany ... WHERE accepted_at IS NULL`, cùng kiểu với refresh token và khoá lạc quan.
+- taskflow PR #30: 20 test mới (156 test API). Đã thử ở máy bằng 3 trình duyệt: mời → đăng ký qua link → vào workspace; tài khoản khác bị từ chối; link dùng rồi thì hết hiệu lực.
+- Không làm (không có trong contract v1): đổi vai trò, xoá thành viên, huỷ lời mời. Email lời mời thật: sau 12/12.
+- Bản dịch comment: `docs/learning/backend-code.vi.md` mục 10.
+- Mai (17/11): giai đoạn B bắt đầu: gọi Claude thật, tool use, structured output.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.

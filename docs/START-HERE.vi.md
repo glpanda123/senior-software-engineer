@@ -39,6 +39,7 @@ Ký hiệu: **Đọc** = đọc kỹ · **Lướt** = xem tiêu đề và ý ch�
 | 11b | `docs/learning/backend-code.vi.md` | Đọc song song với code | Bản dịch tiếng Việt toàn bộ comment và tên test trong `apps/api` (repo taskflow), theo từng file |
 | 11c | Repo taskflow: `infra/aws/README.md` + trang minh hoạ [luồng deploy](https://claude.ai/artifact/EWVjYXphY7gq7q456Kkgdr) và [OIDC](https://claude.ai/artifact/MP2LjgmbX5KECR1mN1pC3M) | Đọc | Deploy API lên AWS: bước nào, ai chạy, dùng file nào; vì sao không cần SSH hay AWS key |
 | 11d | Trang minh hoạ [realtime](https://claude.ai/artifact/PpdBsW9srLEo5TowyksYFL) + `docs/learning/backend-code.vi.md` mục 9 | Đọc song song với code | Realtime phần 1: đường dây, cuốn sổ, báo tin khi task thay đổi |
+| 11e | `docs/learning/backend-code.vi.md` mục 10 | Đọc song song với code | Thành viên và lời mời: link mời dùng một lần, vì sao chỉ lưu mã băm, vì sao phải đúng email |
 | 12 | `docs/architecture/01-requirements-and-estimates.vi.md` | Đọc | Yêu cầu và ước lượng quy mô của TaskFlow |
 | 13 | `docs/system-design/01-url-shortener.vi.md` | Đọc | Bài mẫu khung system design 7 bước |
 

@@ -452,3 +452,53 @@ Một client WebSocket nhỏ cho test: thu những gì máy chủ gửi, theo th
 | when the write is refused with 409 (stale version) | Không gửi khi bị từ chối 409 (phiên bản cũ). |
 | when the write is refused with 403 (a viewer) or 422 (bad input) | Không gửi khi bị từ chối 403 (viewer) hoặc 422 (dữ liệu sai). |
 
+
+## 10. Thành viên và lời mời
+
+Luồng: chủ workspace nhập email → máy chủ trả về một **link mời** (hiện đúng một lần) → người được mời mở link, đăng ký hoặc đăng nhập bằng đúng email đó → bấm Join → thành thành viên.
+
+### `src/members/invitation-token.ts`
+
+Đầu file: bí mật nằm trong link mời. Giống refresh token: một chuỗi ngẫu nhiên dài mà máy chủ không bao giờ lưu. Database chỉ giữ mã băm SHA-256, nên ai đọc được database cũng không vào được workspace.
+
+### `src/members/members.service.ts`
+
+| Chỗ | Nghĩa |
+| --- | --- |
+| `list`, comment ở `projectViewer.findMany` | Mỗi viewer được xem project nào. Lọc theo workspace: một người có thể là viewer ở hai workspace, danh sách này không được lộ project của workspace kia. |
+| `invite`, comment đầu | Nếu không chặn, một admin tạo được admin khác, rồi người đó tạo người thứ ba. Chỉ owner mời được admin. |
+| `// citext: case-insensitive` | Cột email kiểu citext: `A@x.com` và `a@x.com` là một. |
+| comment trước `deleteMany` | Lời mời hết hạn mà chưa dùng sẽ chặn lời mời mới (chỉ mục unique chỉ biết "chưa được nhận"), nên xoá nó trước. |
+| `// The only moment the token exists outside the link` | Khoảnh khắc duy nhất token tồn tại ngoài cái link: nó không bao giờ được lưu. |
+| comment ở `catch` (P2002) | Chỉ mục unique một phần `(workspace, email) WHERE accepted_at IS NULL`: hai admin mời cùng một người cùng lúc thì không thể cả hai thành công. |
+| `checkedProjects` | Luật mà schema không diễn tả được: viewer phải có project, vai trò khác thì không được có. |
+| `// Tenant rule` | Mọi project phải thuộc đúng workspace này. |
+| `accept`, comment ở chỗ so email | Có link thôi chưa đủ: link gửi tới một địa chỉ, chỉ tài khoản có địa chỉ đó mới dùng được. |
+| comment ở `updateMany` | "Giành" lời mời bằng một câu lệnh (cùng kiểu với refresh token và kiểm tra phiên bản 409): hai request cùng lúc thì chỉ một cái cập nhật được dòng. |
+| `// A project may have been deleted…` | Project có thể đã bị xoá sau khi gửi lời mời. |
+| `findUsable` | Token lạ, hết hạn, đã dùng: từ bên ngoài nhìn giống hệt nhau, đều là 404. |
+
+### `test/members.e2e.test.ts`
+
+| Test | Nghĩa |
+| --- | --- |
+| shows every member with role and join date, and the pending invitations | Hiện mọi thành viên kèm vai trò, ngày tham gia, và các lời mời đang chờ. |
+| lists the projects a viewer was invited to; other roles have null | Viewer có danh sách project được mời; vai trò khác là null. |
+| hides the workspace (404) from someone outside it, and needs a login (401) | Người ngoài thấy 404; chưa đăng nhập thì 401. |
+| lets the owner invite: 201 with the invitation and a token, valid for 7 days | Owner mời được: 201, có lời mời và token, hạn 7 ngày. |
+| lets an admin invite a member or a viewer, but only the owner invites an admin | Admin mời được member/viewer; chỉ owner mời được admin. |
+| refuses a member and a viewer (403), an outsider (404) and no login (401) | Member và viewer bị từ chối 403, người ngoài 404, chưa đăng nhập 401. |
+| needs projects for a viewer and refuses them for other roles (422) | Viewer bắt buộc có project; vai trò khác gửi project thì 422. |
+| refuses a project that isn't in this workspace (422) | Project không thuộc workspace này: 422. |
+| refuses a malformed email, an unknown role and the owner role (422) | Email sai dạng, vai trò lạ, vai trò owner: 422. |
+| answers 409 for someone who is already a member or already invited | Người đã là thành viên hoặc đã được mời: 409. |
+| treats emails that differ only by case as the same | Email chỉ khác hoa/thường coi là một. |
+| stores only a hash of the token | Chỉ lưu mã băm của token. |
+| tells what the link is for, without a login | Cho biết link dùng để làm gì, không cần đăng nhập. |
+| answers 404 for an unknown token | Token lạ: 404. |
+| makes the invited person a member with the invited role | Người được mời thành thành viên đúng vai trò. |
+| gives an invited viewer exactly the invited projects | Viewer được đúng các project đã mời. |
+| refuses an account with another email (403) and leaves the invitation usable | Tài khoản email khác bị 403, lời mời vẫn còn dùng được. |
+| works once: the same token is 404 afterwards, for the preview too | Chỉ dùng một lần: sau đó token là 404, kể cả xem trước. |
+| is 404 after it expired, and the same email can then be invited again | Hết hạn thì 404, và mời lại được email đó. |
+| needs a login (401) and a real token (404) | Cần đăng nhập (401) và token thật (404). |
