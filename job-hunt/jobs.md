@@ -280,3 +280,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Full-stack Developer | Easia Travel | Hà Nội; 5–7 năm, TypeScript + Node.js chạy production; công ty du lịch; hạn nộp 19/11/2026 | [careerviet](https://careerviet.vn/en/search-job/senior-full-stack-developer.35C8B3BB.html) | saved |
+
+## 2026-11-16
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Software Engineer | SAPI (fintech, cho vay gắn với thanh toán) | Hà Nội, hybrid, full-time; backend Node.js + TypeScript, frontend React + Next.js + TailwindCSS; công ty sản phẩm; ngày đăng chưa xác minh | [flexa](https://flexa.careers/jobs/sapi-senior-software-engineer-693c31f76d9e974b1bfc9505) | saved |
