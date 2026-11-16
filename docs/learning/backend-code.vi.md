@@ -349,3 +349,106 @@ Tên mỗi test (`it('…')`) là một quy tắc viết bằng câu. Đọc tê
 | rejects two neighbours that are not next to each other (stale board) | Từ chối hai hàng xóm không sát nhau (board cũ). (Dòng 56–57: client tưởng A và C sát nhau, nhưng giờ B nằm giữa. Khóa "giữa A và C" có thể trùng khóa của B, và hai thẻ sẽ cùng vị trí.) |
 | rejects neighbours given in the wrong order | Từ chối hàng xóm gửi sai thứ tự. |
 | keeps working when the same gap is used again and again | Vẫn đúng khi cùng một khe được dùng đi dùng lại. (Dòng 68: thả 20 thẻ liên tiếp ngay dưới A: khóa dài dần ra nhưng thứ tự vẫn đúng.) |
+
+## 9. Realtime (WebSocket)
+
+Hình minh hoạ: https://claude.ai/artifact/PpdBsW9srLEo5TowyksYFL. Từ dùng trong phần này: **đường dây** = WebSocket; **cuốn sổ** = `RealtimeHub`.
+
+### `src/realtime/protocol.ts`
+
+Đầu file: giao thức realtime là các tin nhắn JSON đi qua một WebSocket tại `/api/v1/realtime`. Web có một bản sao các kiểu này ở `apps/web/src/lib/realtime/protocol.ts`; đặc tả nằm ở `docs/architecture/03-sequences.md`.
+
+| Chỗ | Nghĩa |
+| --- | --- |
+| `ClientMessage` | Tin trình duyệt gửi: `auth` (kèm thẻ) và `subscribe` (kèm id project). |
+| `ServerMessage` | Tin máy chủ gửi: `presence` (ai đang xem bảng), `task.changed`, `error`. |
+| `task` trong `task.changed` | Task đúng như REST trả về: client ghi thẳng vào cache được. |
+| `actor` | Ai thực hiện thay đổi. |
+| `from` | Với thao tác kéo: cột task nằm trước đó. |
+
+### `src/realtime/realtime.hub.ts` (cuốn sổ)
+
+Đầu class: ai đang xem project nào, lưu trong bộ nhớ của tiến trình này. Thế là đủ cho một máy chủ API. Có hai máy thì thay đổi do máy A xử lý không tới được đường dây do máy B giữ; Redis pub/sub lấp khoảng trống đó (Realtime phần 2).
+
+| Chỗ | Nghĩa |
+| --- | --- |
+| `Subscriber` | Một đường dây đang xem một project. |
+| `leave()` | Phòng trống thì xoá đi, không thì map sẽ phình ra theo mọi project từng được mở. |
+| `people()` | Những người trên bảng, theo thứ tự đến; hai tab của một người chỉ tính một lần. |
+| `publish()` | Gửi một tin cho mọi đường dây đang xem project. |
+
+### `src/realtime/realtime.gateway.ts`
+
+Đầu class: phía WebSocket của API. Trình duyệt không gắn được header Authorization vào WebSocket, nên tin đầu tiên phải là `{ type: 'auth', token }`. Sau đó đường dây được theo dõi một project tại một thời điểm, theo đúng luật đọc project qua REST.
+
+| Chỗ | Nghĩa |
+| --- | --- |
+| `Connection.user` | `null` cho tới khi có tin `auth` hợp lệ. |
+| `Connection.watching` | Project đường dây này đang xem (mỗi lúc một cái) và dòng của nó trong cuốn sổ. |
+| `Connection.queue` | Tin của một đường dây được xử lý từng cái một, theo thứ tự đến. |
+| Trong `handleConnection` | Trình duyệt gửi `auth` và `subscribe` liền nhau. Kiểm tra thẻ là việc bất đồng bộ, nên không có hàng đợi này thì `subscribe` có thể chạy trước khi `auth` xong. |
+| Trong `onMessage` | Tin lạ hoặc sai định dạng thì bỏ qua, để client cũ và server mới (hoặc ngược lại) vẫn nói chuyện được. |
+| Trong `onAuth` | Mỗi đường dây một lần thử: client có thẻ sai phải nối lại. |
+| Trong `onSubscribe` (1) | Cùng phép kiểm tra với GET project. Ai không được đọc thì không được biết nó tồn tại, nên mọi lần từ chối trông giống nhau. |
+| Trong `onSubscribe` (2) | Bị từ chối (403 hoặc 404 bên REST). Lỗi khác là hỏng thật: để nó được ghi log. |
+| Trong `onSubscribe` (3) | Đường dây có thể đã đóng trong lúc database đang trả lời. |
+| `stopWatching()` | Rời project hiện tại (nếu có) và báo cho những người còn ở đó. |
+| `parse()` | Tin nhắn dưới dạng object có `type` là chuỗi, hoặc `null` nếu không phải. |
+| `text()` | Thư viện `ws` đưa tin nhắn dưới dạng một Buffer, một danh sách Buffer, hoặc ArrayBuffer. |
+
+### `src/realtime/task-events.ts`
+
+Đầu class: báo một lần ghi task cho những người đang xem project. Controller chỉ gọi hàm này sau khi ghi thành công, nên 409, 403 hay 422 không bao giờ phát tin. Hiện tại tin được gửi thẳng tới các đường dây của tiến trình này. Khi có outbox (Realtime phần 2), sự kiện sẽ được ghi trong cùng transaction với task và chuyển qua Redis, nên tới được cả đường dây do máy khác giữ.
+
+| Chỗ | Nghĩa |
+| --- | --- |
+| `if (!actor) return` | Tài khoản bị xoá giữa lúc ghi và lúc tới đây. |
+
+### `test/realtime-client.ts`
+
+Một client WebSocket nhỏ cho test: thu những gì máy chủ gửi, theo thứ tự. `listen()` bật app trên một cổng trống (WebSocket cần máy chủ đang lắng nghe). `next()` trả tin kế tiếp, hoặc `'closed'` / `'nothing'` (sau một khoảng im lặng). `closeAll()` gọi trong `afterEach`, đóng mọi đường dây test để lại.
+
+### `test/realtime.e2e.test.ts` (phần 1: nối và `auth`)
+
+| Test | Nghĩa |
+| --- | --- |
+| accepts a WebSocket at /api/v1/realtime | Nhận đường dây tại `/api/v1/realtime`. |
+| refuses a WebSocket on any other path | Từ chối đường dây ở đường dẫn khác. |
+| a valid access token: no error, the socket stays open | Thẻ đúng: không lỗi, đường dây vẫn mở. |
+| a wrong token: error unauthorized, then the server closes the socket | Thẻ sai: báo `unauthorized` rồi máy chủ đóng đường dây. |
+| an expired token: error unauthorized, then the server closes the socket | Thẻ hết hạn: cũng vậy. |
+| an auth message without a token is treated as a wrong token | Tin `auth` không kèm thẻ được coi như thẻ sai. |
+| subscribe is answered with error unauthorized | Chưa `auth` mà `subscribe`: nhận `unauthorized`. |
+| text that is not JSON is ignored: no reply, no crash, the socket still works | Chữ không phải JSON bị bỏ qua: không trả lời, không sập, đường dây vẫn dùng được. |
+| an unknown message type is ignored | Loại tin lạ bị bỏ qua. |
+
+### `test/realtime-subscribe.e2e.test.ts` (phần 2: `subscribe` và ai đang xem)
+
+Đầu file: `subscribe` theo đúng luật của GET project: ai không được đọc thì nhận `not_found`. Mọi người đang xem một bảng được báo ai khác đang ở đó.
+
+| Test | Nghĩa |
+| --- | --- |
+| a member gets presence with only themselves when nobody else is watching | Thành viên nhận `presence` chỉ có chính mình khi chưa ai khác xem. |
+| when a second person joins, both get presence with both names | Người thứ hai vào: cả hai nhận `presence` có hai tên. |
+| when someone closes their socket, the others get presence without them | Ai đó đóng đường dây: người còn lại nhận `presence` không còn tên đó. |
+| one person with two tabs on the same board is listed once | Một người mở hai tab cùng bảng chỉ được liệt kê một lần. |
+| someone outside the workspace gets not_found and is not listed | Người ngoài workspace nhận `not_found` và không có tên trong sổ. |
+| a project that does not exist, or a malformed id, gets not_found | Project không tồn tại hoặc id sai định dạng: `not_found`. |
+| a viewer may watch the project they were invited to, and no other | Viewer xem được project mình được mời, không xem được project khác. |
+| subscribing to another project leaves the first one | `subscribe` project khác thì rời project đầu. |
+
+### `test/realtime-tasks.e2e.test.ts` (phần 3: `task.changed`)
+
+Đầu file: mọi lần ghi task thành công được báo cho những người đang xem project. Task trong tin nhắn chính là object REST vừa trả về.
+
+| Test | Nghĩa |
+| --- | --- |
+| a move: change "moved", the task as REST returned it, who did it, and the old column | Kéo task: `change` là `moved`, task đúng như REST trả, ai làm, và cột cũ. |
+| a new task: change "created" | Task mới: `created`. |
+| an edit: change "updated" | Sửa task: `updated`. |
+| the person who made the change gets it too (their other tab needs it) | Người thực hiện cũng nhận tin (tab khác của họ cần). |
+| a viewer who is watching gets it as well | Viewer đang xem cũng nhận. |
+| to someone watching another project | Không gửi cho người đang xem project khác. |
+| when the write is refused with 409 (stale version) | Không gửi khi bị từ chối 409 (phiên bản cũ). |
+| when the write is refused with 403 (a viewer) or 422 (bad input) | Không gửi khi bị từ chối 403 (viewer) hoặc 422 (dữ liệu sai). |
+

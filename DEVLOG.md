@@ -194,6 +194,18 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Tiếp theo: Realtime 1 (WebSocket gateway, 1 instance).
 - Tự chấm:
 
+## Ngày 32–35 — T5 12/11 → T2 16/11/2026 · Giai đoạn A, Realtime phần 1
+
+- Làm theo 4 lát, mỗi lát: mình duyệt danh sách test → AI viết test đỏ → code cho xanh. 13–14/11 không học.
+- Lát 1 (12/11): gateway WebSocket tại `/api/v1/realtime`, tin `auth` đầu tiên mang access token. Lát 2 (15/11): `subscribe` dùng lại `requireProject` của REST, `presence`. Lát 3 (16/11): `task.changed` sau khi tạo/sửa/kéo task thành công. Lát 4 (16/11): web nối thẳng tới API vì Vercel không chuyển tiếp WebSocket.
+- taskflow PR #28: 25 test mới (126 test API). Đã chạy trên production: kéo task ở cửa sổ này, cửa sổ kia tự đổi.
+- Bài học thật (Codex bắt được): có realtime thì form sửa task gửi bản nháp cũ kèm số phiên bản mới nhất → ghi đè thay đổi của người khác mà không có 409. Sửa: form nhớ phiên bản lúc bắt đầu sửa. Khoá lạc quan chỉ đúng khi gửi phiên bản mà người dùng đã nhìn thấy.
+- Câu hỏi đã trả lời: Q14 (hàng đợi promise mất `.catch`). Mình mới thấy phần "mất log"; phần chính là các tin sau bị bỏ qua và tiến trình Node có thể thoát.
+- Hình minh hoạ realtime: https://claude.ai/artifact/PpdBsW9srLEo5TowyksYFL. Bản dịch comment: `docs/learning/backend-code.vi.md` mục 9.
+- Giới hạn còn lại: chỉ đúng với 1 máy chủ; mất tin nếu máy sập giữa lúc ghi và lúc phát; chưa tự nối lại khi rớt mạng.
+- Lịch: giai đoạn A chậm khoảng 4–5 ngày so với "Cập nhật 03/11" (còn Realtime 2, Members, Today/Activity). Cần chốt lại thứ tự với giai đoạn B (AI) và C (CCAF, thi 12/12).
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
