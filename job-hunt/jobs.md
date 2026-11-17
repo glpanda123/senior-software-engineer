@@ -286,3 +286,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Software Engineer | SAPI (fintech, cho vay gắn với thanh toán) | Hà Nội, hybrid, full-time; backend Node.js + TypeScript, frontend React + Next.js + TailwindCSS; công ty sản phẩm; ngày đăng chưa xác minh | [flexa](https://flexa.careers/jobs/sapi-senior-software-engineer-693c31f76d9e974b1bfc9505) | saved |
+
+## 2026-11-17
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Backend Engineer (NodeJS, TypeScript) | Vạn Hải Group (team LogiUP) | SaaS multi-tenant quản lý xuất nhập khẩu; TypeScript, Node.js, ưu tiên NestJS, PostgreSQL sâu; công ty logistics 1–50 người; thành phố và ngày đăng chưa xác minh | [itviec](https://itviec.com/it-jobs/senior-backend-engineer-nodejs-typescript-van-hai-group-0026) | saved |
