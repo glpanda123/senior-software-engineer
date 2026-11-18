@@ -309,3 +309,9 @@ https://topdev.vn/viec-lam/senior-full-stack-developer-namitech-2090931
 https://www.123job.vn/viec-lam/senior-fullstack-node-js-react-js-G9xYnaKmrN
 https://jobs.insightpartners.com/companies/employment-hero/jobs/62343430-remote-senior-software-engineer-frontend-typescript-react
 https://jobs.workable.com/jobs/2de1fd86-9df7-4306-8496-6f4fd89bf0bc.md
+https://builtin.com/job/senior-front-end-react-software-engineer-vt/8063361
+https://builtin.com/job/senior-front-end-react-software-engineer-tl/8063365
+https://builtin.com/job/senior-engineer-front-end/8194372
+https://itviec.com/it-jobs/senior-front-end-developer-javascript-html-css-outpost24-5203
+https://jobs.y-axis.com/jobs/front-end-engineer-lead-principal-reactjs-nextjs-husa-client-greenfix-property-care
+https://transperfect.recruitee.com/o/senior-software-engineer-java-react
