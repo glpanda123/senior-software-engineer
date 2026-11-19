@@ -222,6 +222,17 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Mai (17/11): giai đoạn B bắt đầu: gọi Claude thật, tool use, structured output.
 - Tự chấm:
 
+## Ngày 36–38 — T3 17/11 → T5 19/11/2026 · Giai đoạn B, AI tạo task nháp
+
+- Cách làm giai đoạn B (chốt 16/11): mình viết code chính, Claude hướng dẫn, viết test (sau khi mình duyệt danh sách) và review. Thực tế: mình làm bước 1–2 (script gọi Claude, structured output, system prompt); bước 4 (endpoint) mình nhờ Claude viết mẫu.
+- Bước 1: gọi Claude lần đầu (Opus 5.5). Response là mảng block (`thinking`, `text`) nên phải lọc theo `type`; token suy nghĩ cũng tính tiền.
+- Bước 2: structured output (`output_config.format` + JSON Schema). Lần đầu JSON đúng hình dạng nhưng mọi `dueDate` đều null: **schema ép được hình dạng, không ép được ý nghĩa**. Sửa bằng system prompt có ngày hôm nay và luật ngày ("next Friday" = thứ Sáu tuần sau → 27/11). Khoảng 1,2 cent mỗi lần gọi.
+- Bước 4 (taskflow PR #33, đã lên production): `POST /projects/{id}/task-drafts`. Kiểm tra quyền và dữ liệu trước khi gọi Claude (không tốn tiền cho request bị từ chối); kiểm tra lại từng task nháp bằng Ajv theo contract, bỏ task hỏng, tối đa 20, không lưu gì; Claude lỗi hoặc quá 20 giây → 503; thiếu key thì API vẫn chạy. 10 test e2e dùng Claude giả (166 test API xanh). Contract thêm 503.
+- Đã thử trên production: đoạn mô tả Acme ra 5 task, đúng ngày 27/11, bảng giá và ra mắt là High.
+- Môi trường cloud: tạo môi trường riêng "TaskFlow" cho 2 repo; key Claude không lưu được qua network secret (Anthropic chặn), chỉ đặt được bằng biến môi trường.
+- Còn lại của giai đoạn B: eval trong CI (đoạn mô tả Acme là ca eval đầu tiên), MCP server, skill/hook/subagent. Rate limit cho tính năng AI vẫn dời sau 12/12; tạm dùng giới hạn chi tiêu trên Claude Console.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
