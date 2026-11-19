@@ -315,3 +315,14 @@ https://builtin.com/job/senior-engineer-front-end/8194372
 https://itviec.com/it-jobs/senior-front-end-developer-javascript-html-css-outpost24-5203
 https://jobs.y-axis.com/jobs/front-end-engineer-lead-principal-reactjs-nextjs-husa-client-greenfix-property-care
 https://transperfect.recruitee.com/o/senior-software-engineer-java-react
+https://careers.sourceofasia.com/en/jobs/senior-frontend-developer-AX7IGWiDkfmX.html
+https://careers.sourceofasia.com/jobs/senior-frontend-developer-AX7IGWiDkfmX.html
+https://careers.sourceofasia.com/jobs/senior-frontend-developer-QVAc3EfvkCde.html
+https://vinrobotics.net/career/fasd-senior-frontend-engineer-robotics-platform
+https://vinrobotics.net/career/senior-fullstack-engineer
+https://arc.dev/remote-jobs/j/airtasker-senior-software-engineer-react-n8woc9wpnu
+https://jobr.pro/job/30331636/senior-software-engineer-react
+https://builtin.com/job/senior-fullstack-ui-developer/9375953
+https://builtin.com/job/senior-frontend-developer/8225574
+https://itviec.com/it-jobs/sr-fullstack-lead-backend-nodejs-javascript-silicon-prime-labs-0846
+https://itviec.com/it-jobs/sr-fullstack-lead-backend-nodejs-javascript-silicon-prime-labs-3322
