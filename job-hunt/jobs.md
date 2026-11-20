@@ -292,3 +292,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Backend Engineer (NodeJS, TypeScript) | Vạn Hải Group (team LogiUP) | SaaS multi-tenant quản lý xuất nhập khẩu; TypeScript, Node.js, ưu tiên NestJS, PostgreSQL sâu; công ty logistics 1–50 người; thành phố và ngày đăng chưa xác minh | [itviec](https://itviec.com/it-jobs/senior-backend-engineer-nodejs-typescript-van-hai-group-0026) | saved |
+
+## 2026-11-20
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Backend Developer (NodeJS/Typescript) | Legatcy Singapore | Hybrid, Mỹ Đình 2 (Nam Từ Liêm, Hà Nội) hoặc Bình Thạnh (HCM); 5+ năm backend, TypeScript/Node.js, thiết kế kiến trúc; công ty sản phẩm 1–50 người, không OT; đăng ~1 ngày trước khi index, chưa kiểm tra lại | [itviec](https://itviec.com/it-jobs/senior-backend-developer-nodejs-typescript-legatcy-singapore-1249) | saved |
