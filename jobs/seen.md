@@ -326,3 +326,13 @@ https://builtin.com/job/senior-fullstack-ui-developer/9375953
 https://builtin.com/job/senior-frontend-developer/8225574
 https://itviec.com/it-jobs/sr-fullstack-lead-backend-nodejs-javascript-silicon-prime-labs-0846
 https://itviec.com/it-jobs/sr-fullstack-lead-backend-nodejs-javascript-silicon-prime-labs-3322
+https://ats.rippling.com/inspectoriocareers/jobs/0d160523-6921-462b-a361-ee518f95fb5d
+https://builtin.com/job/senior-fullstack-engineer/8018455
+https://forum.uit.edu.vn/t/senior-full-stack-engineer-nodejs-typescript-reactjs/154066
+https://builtin.com/job/senior-full-stack-developer-nodejs-reactjs/8633809
+https://careers-page.com/usobi/job/5WVR584R
+https://ampup.breezy.hr/p/2e66604603d6-senior-frontend-developer
+https://itviec.com/it-jobs/senior-frontend-engineer-nextjs-reactjs-ai-di-2842
+https://itviec.com/viec-lam-it/senior-frontend-engineer-nextjs-reactjs-ai-di-2842
+https://itviec.com/viec-lam-it/fullstack-developer-nodejs-reactjs-ai-hds-services-vietnam-0555
+https://careers-page.com/talent-search-adviors/job/L34864XV
