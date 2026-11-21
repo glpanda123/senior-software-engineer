@@ -298,3 +298,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Backend Developer (NodeJS/Typescript) | Legatcy Singapore | Hybrid, Mỹ Đình 2 (Nam Từ Liêm, Hà Nội) hoặc Bình Thạnh (HCM); 5+ năm backend, TypeScript/Node.js, thiết kế kiến trúc; công ty sản phẩm 1–50 người, không OT; đăng ~1 ngày trước khi index, chưa kiểm tra lại | [itviec](https://itviec.com/it-jobs/senior-backend-developer-nodejs-typescript-legatcy-singapore-1249) | saved |
+
+## 2026-11-21
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Technical Lead / Senior Software Engineer (LangchainJS & LangFlow) | Khách hàng ẩn (qua Navigos Search) | Hà Nội, làm việc remote-first; LangChainJS pipelines, agent có tool, JS/TS, system design, review code; tiếng Anh tốt; 3.000–5.000 USD; hạn nộp chưa chắc (hai bản tin ghi khác nhau) | [navigossearch](https://navigossearch.com/technical-lead-langchainjs-langflow) | saved |
+| Tech Lead (NextJS & NestJS) – Remote | Khách hàng ẩn (qua Navigos Search) | Tiêu đề ghi remote nhưng địa điểm ghi Hà Nội; Next.js, NestJS, PostgreSQL, kiến trúc + làm tay, có phần làm việc với khách; 3.000–5.000 USD; chưa kiểm tra còn tuyển | [navigossearch](https://navigossearch.com/tech-lead-nextjs-nestjs_remote) | saved |
