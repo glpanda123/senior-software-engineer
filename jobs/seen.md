@@ -353,3 +353,6 @@ https://itviec.com/it-jobs/senior-react-frontend-developer-aperia-solutions-viet
 https://itviec.com/it-jobs/fullstack-engineer-typescript-javascript-nodejs-papaya-insurtech-3208
 https://itviec.com/it-jobs/seinor-sw-developer-typescript-react-native-ai-llm-papaya-insurtech-3423
 https://123job.vn/viec-lam/senior-frontend-developer-reactjs-nextjs-59y7ZBd4qL
+https://jobs.lever.co/gradion/2a76b2e9-720b-4a56-a20d-1c5d241f7ec0
+https://careers-page.com/nodeflair23/job/QYXR986V
+https://job-boards.greenhouse.io/hyphenconnect/jobs/4977822007
