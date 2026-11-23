@@ -356,3 +356,9 @@ https://123job.vn/viec-lam/senior-frontend-developer-reactjs-nextjs-59y7ZBd4qL
 https://jobs.lever.co/gradion/2a76b2e9-720b-4a56-a20d-1c5d241f7ec0
 https://careers-page.com/nodeflair23/job/QYXR986V
 https://job-boards.greenhouse.io/hyphenconnect/jobs/4977822007
+https://topdev.vn/viec-lam/senior-front-end-developer-react-nextjs-cong-ty-tnhh-unstatic-2053587
+https://itviec.com/it-jobs/senior-fullstack-developer-nodejs-reactjs-ai-ml-electhq-0316
+https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-ai-ml-electhq-0316
+https://startup.jobs/senior-ai-platform-engineer-ai-full-stack-engineer-qode-8052784
+https://remotefirstjobs.com/companies/qode-world/jobs/senior-fullstack-engineer-777601
+https://careerviet.vn/en/search-job/senior-full-stack-engineer.35C8A80A.html
