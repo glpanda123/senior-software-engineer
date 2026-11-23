@@ -233,6 +233,19 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Còn lại của giai đoạn B: eval trong CI (đoạn mô tả Acme là ca eval đầu tiên), MCP server, skill/hook/subagent. Rate limit cho tính năng AI vẫn dời sau 12/12; tạm dùng giới hạn chi tiêu trên Claude Console.
 - Tự chấm:
 
+## Ngày 39–42 — T6 20/11 → T2 23/11/2026 · Giai đoạn B, eval
+
+- Eval là "test cho prompt": viết sẵn đầu vào + đáp án mong đợi **trước khi** chạy model, chạy model thật, chấm điểm. Test e2e dùng Claude giả nên không nói gì về chất lượng task nháp; eval thì có.
+- 18 ca (`apps/api/evals/task-drafts/cases.json`), mỗi ca có `today` cố định, việc bắt buộc / tuỳ chọn / cấm, luật ngày, khoảng số task và một "bẫy" (prompt injection, hạn bị dời, khách đổi ý, mail chuyển tiếp, trộn Việt–Anh, nhắc trùng, brief mơ hồ, brief không có việc). Mình duyệt danh sách ca; thay 5 ca na ná nhau bằng ca "bẩn" hơn.
+- Chấm 2 lớp: **code** chấm những gì chấm chính xác được (ngày, độ ưu tiên, số task, ngôn ngữ, đúng contract); **model khác (Sonnet 5.5)** chỉ chấm nghĩa (task nào ứng với việc nào, việc bịa, việc cấm, trùng). Không để model tự chấm bài của chính nó.
+- Bài học lớn: lần chạy đầu fail 2 ca, và **cả 2 đều do eval sai, không phải model** (đáp án ngày của priority-words sai; luật judge cho vague-redesign không nhất quán). Phải đọc trace của ca fail trước khi tin con số.
+- Kết quả (1 lần/ca): Opus 18/18 (khoảng 95%: 82–100%), Haiku 17/18 (74–99%), Haiku rẻ hơn ~4,5 lần. Hai khoảng chồng nhau → 18 ca × 1 lần chưa phân biệt được hai model; production giữ Opus. Muốn so cho chắc: `--reps 3`. Khoảng Wilson thay cho "p ± 1,96·√…" vì cái sau ra "± 0%" khi đạt 100%.
+- CI (taskflow PR #35, đã merge): PR nào đụng `apps/api/src/ai/**` hoặc eval thì tự chạy eval (~0,3 $), có thể chạy tay với `reps`. Key CI riêng trong GitHub secret.
+- Codex bắt 3 lỗ hổng đều cùng một kiểu: **grader làm điểm đẹp hơn thực tế** (bỏ ca bị cụt khỏi mẫu số; >20 task thì bỏ qua kiểm tra hợp lệ; request judge chạy quá trần thời gian). Thêm: key sai thì runner exit 1 thay vì xanh giả. Câu hỏi luôn phải hỏi: "ca nào bị loại khỏi mẫu số?"
+- Trang /status: taskflow PR #36.
+- Chưa làm của giai đoạn B: MCP server, skill/hook/subagent. Theo lịch 16/11 hôm nay (23/11) bắt đầu ôn CCAF, nên phần này **cần mình chốt**: dời sau 12/12 hay chen vào lúc ôn (MCP cũng là một mảng của đề CCAF).
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
