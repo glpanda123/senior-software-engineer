@@ -305,3 +305,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | --- | --- | --- | --- | --- |
 | Technical Lead / Senior Software Engineer (LangchainJS & LangFlow) | Khách hàng ẩn (qua Navigos Search) | Hà Nội, làm việc remote-first; LangChainJS pipelines, agent có tool, JS/TS, system design, review code; tiếng Anh tốt; 3.000–5.000 USD; hạn nộp chưa chắc (hai bản tin ghi khác nhau) | [navigossearch](https://navigossearch.com/technical-lead-langchainjs-langflow) | saved |
 | Tech Lead (NextJS & NestJS) – Remote | Khách hàng ẩn (qua Navigos Search) | Tiêu đề ghi remote nhưng địa điểm ghi Hà Nội; Next.js, NestJS, PostgreSQL, kiến trúc + làm tay, có phần làm việc với khách; 3.000–5.000 USD; chưa kiểm tra còn tuyển | [navigossearch](https://navigossearch.com/tech-lead-nextjs-nestjs_remote) | saved |
+
+## 2026-11-23
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Fullstack/ Backend Engineer | CBTW (Collaboration Betters The World) | Hà Nội; TypeScript + frontend framework (ưu tiên Angular), AWS Lambda/serverless, SQL (ưu tiên SQL Server); không thấy ghi Node.js; công ty tư vấn, môi trường tiếng Anh; chưa kiểm tra còn tuyển | [icims](https://careers-collaborationbetterstheworldvi.icims.com/jobs/1951/senior-fullstack--backend-engineer/job) | saved |
