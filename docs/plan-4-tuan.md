@@ -35,6 +35,8 @@ Khoảng 16 giờ, bằng khối lượng của lịch 03/11 (bắt đầu chậ
 
 **Gate B:** phần AI của project chạy thật; kể được 5 mảng CCAF bằng ví dụ từ chính project.
 
+**Điều chỉnh 23/11 (mình chốt):** eval xong 23/11 (trễ 1 ngày so với lịch). MCP server + skill/hook/subagent làm luôn trong T2 23/11 (ngày nghỉ, ~4 h) để đóng giai đoạn B; **ôn CCAF bắt đầu từ T3 24/11**.
+
 ### Giai đoạn C: ôn và thi CCAF (23/11 → 12/12)
 
 Giữ nguyên bảng ở mục "Cập nhật 03/11": đề thử 1 ngày 28/11, đề thử 2 ngày 05/12, đề thử 3 ngày 09/12, **thi 12/12**.
