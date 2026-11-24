@@ -41,6 +41,8 @@ Khoảng 16 giờ, bằng khối lượng của lịch 03/11 (bắt đầu chậ
 
 Giữ nguyên bảng ở mục "Cập nhật 03/11": đề thử 1 ngày 28/11, đề thử 2 ngày 05/12, đề thử 3 ngày 09/12, **thi 12/12**.
 
+**Cập nhật 24/11:** đã có Exam Guide chính thức (v1.1). Lịch ôn chi tiết theo từng task statement: `docs/ccaf/README.md` (đề thử 1 dời sang CN 29/11 để học xong 5 mảng trước). MCP còn dở (list_tasks, create_task, skill/hook/subagent) tạm dừng trên nhánh `feat/mcp-server` của taskflow; dùng lại ở tuần 2 làm bài tập thực hành exercise 2 của guide.
+
 ### Dời sang sau 12/12
 
 - Realtime 2: Redis pub/sub nhiều máy chủ + outbox.

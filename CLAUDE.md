@@ -25,6 +25,7 @@ Every interview-style question I answer gets added to `docs/interview/qa-review.
 - 16/11: Stage A is running 4–5 sessions late and the CCAF date (12/12) is fixed. Finish Members in full on 16/11 (invitations by link, no real email yet), do stage B (AI) in full from 17/11 to 22/11, then study for CCAF from 23/11. Realtime 2 (Redis + outbox), real invitation emails, Today/activity/rate limit/cache move to after 12/12. Schedule from 16/11: section "Cập nhật 16/11" in `docs/plan-4-tuan.md`.
 - 16/11: Stage B (AI) — I write the implementation myself; Claude guides (concepts, steps, hints), writes the tests (after I approve the test list) and reviews, and shows implementation code only when I ask or after I've been stuck a while. This overrides "I do → we do → you do" for stage B.
 - 23/11: Evals finished 23/11. MCP server + skill/hook/subagent are done on 23/11 (a day off, ~4 h) to close stage B; CCAF study starts 24/11.
+- 24/11: Switched to CCAF study now. The unfinished MCP work (list_tasks, create_task, skill/hook/subagent) is paused on taskflow branch `feat/mcp-server`; it may come back as hands-on practice in week 2. CCAF schedule and tracker: `docs/ccaf/README.md`.
 
 ## Conventions
 
