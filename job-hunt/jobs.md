@@ -311,3 +311,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Fullstack/ Backend Engineer | CBTW (Collaboration Betters The World) | Hà Nội; TypeScript + frontend framework (ưu tiên Angular), AWS Lambda/serverless, SQL (ưu tiên SQL Server); không thấy ghi Node.js; công ty tư vấn, môi trường tiếng Anh; chưa kiểm tra còn tuyển | [icims](https://careers-collaborationbetterstheworldvi.icims.com/jobs/1951/senior-fullstack--backend-engineer/job) | saved |
+
+## 2026-11-24
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Node.js Developer | Zenify (Công ty CP Giải pháp Công nghệ Zenify) | Hà Nội; sản phẩm tổng đài đa kênh + CRM + AI; team Agile; 30–40 triệu; tin không ghi TypeScript, khả năng môi trường tiếng Việt; chưa rõ ngày đăng, chưa kiểm tra còn tuyển | [123job](https://123job.vn/viec-lam/senior-nodejs-developer-vrzBo266r0) | saved |
