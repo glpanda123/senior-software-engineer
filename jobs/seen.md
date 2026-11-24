@@ -362,3 +362,8 @@ https://itviec.com/viec-lam-it/senior-fullstack-developer-nodejs-reactjs-ai-ml-e
 https://startup.jobs/senior-ai-platform-engineer-ai-full-stack-engineer-qode-8052784
 https://remotefirstjobs.com/companies/qode-world/jobs/senior-fullstack-engineer-777601
 https://careerviet.vn/en/search-job/senior-full-stack-engineer.35C8A80A.html
+https://careers.epam.com/en/vacancy/senior-platform-engineer-ai-sdlc-blt1yl3qkr43n3o8b26_en
+https://topdev.vn/viec-lam/senior-front-end-developer-cong-ty-tnhh-samsung-sds-viet-nam-2034987
+https://itviec.com/it-jobs/javascript-engineer-nodejs-reactjs-toshiba-software-development-viet-nam-co-ltd-3537
+https://itviec.com/it-jobs/senior-front-end-developer-it-consultis-5809
+https://www.careers-page.com/skaleart/job/L438YX9V
