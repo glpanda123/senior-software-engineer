@@ -233,14 +233,6 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Còn lại của giai đoạn B: eval trong CI (đoạn mô tả Acme là ca eval đầu tiên), MCP server, skill/hook/subagent. Rate limit cho tính năng AI vẫn dời sau 12/12; tạm dùng giới hạn chi tiêu trên Claude Console.
 - Tự chấm:
 
-## Ngày 43–44 — T3 24/11 → T4 25/11/2026 · Giai đoạn C, CCAF
-
-- Chuyển sang ôn CCAF (24/11). MCP còn dở để trên nhánh `feat/mcp-server` (có `list_projects` + test); `list_tasks`, `create_task`, skill/hook/subagent tạm dừng, có thể quay lại làm bài thực hành tuần 2.
-- Có Exam Guide chính thức v1.1: 60 câu, 120 phút, 4/6 scenario, đậu 720/1000. Lịch ôn theo từng task statement: `docs/ccaf/README.md`; câu sai/phân vân: `docs/ccaf/practice-log.md`.
-- Domain 1 (27%) xong cả 7 task statement: 12/12 câu luyện. Chỗ phân vân duy nhất: prompt caching không phải "bộ nhớ", API stateless, lịch sử hội thoại là việc của mình.
-- Cách đề nghĩ (rút từ câu mẫu): luật bắt buộc + hậu quả lớn → code (hook/gate), không phải prompt; chọn cách vừa đủ sửa đúng gốc; đọc manh mối trong đề ("log không lỗi", "làm đúng phần được giao", "không phụ thuộc nhau").
-- Tự chấm:
-
 ## Ngày 39–42 — T6 20/11 → T2 23/11/2026 · Giai đoạn B, eval
 
 - Eval là "test cho prompt": viết sẵn đầu vào + đáp án mong đợi **trước khi** chạy model, chạy model thật, chấm điểm. Test e2e dùng Claude giả nên không nói gì về chất lượng task nháp; eval thì có.
@@ -252,6 +244,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Codex bắt 3 lỗ hổng đều cùng một kiểu: **grader làm điểm đẹp hơn thực tế** (bỏ ca bị cụt khỏi mẫu số; >20 task thì bỏ qua kiểm tra hợp lệ; request judge chạy quá trần thời gian). Thêm: key sai thì runner exit 1 thay vì xanh giả. Câu hỏi luôn phải hỏi: "ca nào bị loại khỏi mẫu số?"
 - Trang /status: taskflow PR #36.
 - Chưa làm của giai đoạn B: MCP server, skill/hook/subagent. Theo lịch 16/11 hôm nay (23/11) bắt đầu ôn CCAF, nên phần này **cần mình chốt**: dời sau 12/12 hay chen vào lúc ôn (MCP cũng là một mảng của đề CCAF).
+- Tự chấm:
+
+## Ngày 43–44 — T3 24/11 → T4 25/11/2026 · Giai đoạn C, CCAF
+
+- Chuyển sang ôn CCAF (24/11). MCP còn dở để trên nhánh `feat/mcp-server` (có `list_projects` + test); `list_tasks`, `create_task`, skill/hook/subagent tạm dừng, có thể quay lại làm bài thực hành tuần 2.
+- Có Exam Guide chính thức v1.1: 60 câu, 120 phút, 4/6 scenario, đậu 720/1000. Lịch ôn theo từng task statement: `docs/ccaf/README.md`; câu sai/phân vân: `docs/ccaf/practice-log.md`.
+- Domain 1 (27%) xong cả 7 task statement: 12/12 câu luyện. Chỗ phân vân duy nhất: prompt caching không phải "bộ nhớ", API stateless, lịch sử hội thoại là việc của mình.
+- Cách đề nghĩ (rút từ câu mẫu): luật bắt buộc + hậu quả lớn → code (hook/gate), không phải prompt; chọn cách vừa đủ sửa đúng gốc; đọc manh mối trong đề ("log không lỗi", "làm đúng phần được giao", "không phụ thuộc nhau").
 - Tự chấm:
 
 ## Điều chỉnh plan — 17/10
