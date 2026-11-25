@@ -367,3 +367,13 @@ https://topdev.vn/viec-lam/senior-front-end-developer-cong-ty-tnhh-samsung-sds-v
 https://itviec.com/it-jobs/javascript-engineer-nodejs-reactjs-toshiba-software-development-viet-nam-co-ltd-3537
 https://itviec.com/it-jobs/senior-front-end-developer-it-consultis-5809
 https://www.careers-page.com/skaleart/job/L438YX9V
+https://careers-page.com/people-profilers-vietnam/job/845X63
+https://itviec.com/it-jobs/fullstack-developer-nodejs-reactjs-mid-to-senior-codelink-0313
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1943/cw-%7c-senior-frontend-engineer-%28ai-assisted-development%29/job
+https://jobs.smartrecruiters.com/KMSTechnology1/744000099467175-senior-front-end-software-engineer-
+https://jobs.workable.com/jobs/2a8f31fc-530b-47aa-a8eb-a29ba639f162.md
+https://apply.workable.com/qodeworld/jobs/view/F00BA1CB29.md
+https://apply.workable.com/qodeworld/jobs/view/93D490A81F.md
+https://www.thoughtworks.com/en-us/careers/jobs/7920282
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1950/senior-frontend-engineer/job
+https://www.careerjet.vn/jobad/vn8decb4667513e59ea7a47dda353d8ce0
