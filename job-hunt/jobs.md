@@ -317,3 +317,9 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Node.js Developer | Zenify (Công ty CP Giải pháp Công nghệ Zenify) | Hà Nội; sản phẩm tổng đài đa kênh + CRM + AI; team Agile; 30–40 triệu; tin không ghi TypeScript, khả năng môi trường tiếng Việt; chưa rõ ngày đăng, chưa kiểm tra còn tuyển | [123job](https://123job.vn/viec-lam/senior-nodejs-developer-vrzBo266r0) | saved |
+
+## 2026-11-25
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior Full-Stack Engineer (GenAI) | Jitera | Tin ghi "Vietnam", đăng khoảng 7 ngày trước; công ty tự mô tả làm việc remote toàn cầu (chưa xác nhận nhận ứng viên Hà Nội); TypeScript + React, NestJS (kèm Ruby/Python); GenAI/LLM; bản tin cùng tên trên Monster ghi HCM và đã cũ; chưa kiểm tra còn tuyển | [careerjet](https://www.careerjet.vn/jobad/vn3b832cd00d211b8132c9aecf03d02192) | saved |
