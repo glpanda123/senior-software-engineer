@@ -233,6 +233,14 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Còn lại của giai đoạn B: eval trong CI (đoạn mô tả Acme là ca eval đầu tiên), MCP server, skill/hook/subagent. Rate limit cho tính năng AI vẫn dời sau 12/12; tạm dùng giới hạn chi tiêu trên Claude Console.
 - Tự chấm:
 
+## Ngày 43–44 — T3 24/11 → T4 25/11/2026 · Giai đoạn C, CCAF
+
+- Chuyển sang ôn CCAF (24/11). MCP còn dở để trên nhánh `feat/mcp-server` (có `list_projects` + test); `list_tasks`, `create_task`, skill/hook/subagent tạm dừng, có thể quay lại làm bài thực hành tuần 2.
+- Có Exam Guide chính thức v1.1: 60 câu, 120 phút, 4/6 scenario, đậu 720/1000. Lịch ôn theo từng task statement: `docs/ccaf/README.md`; câu sai/phân vân: `docs/ccaf/practice-log.md`.
+- Domain 1 (27%) xong cả 7 task statement: 12/12 câu luyện. Chỗ phân vân duy nhất: prompt caching không phải "bộ nhớ", API stateless, lịch sử hội thoại là việc của mình.
+- Cách đề nghĩ (rút từ câu mẫu): luật bắt buộc + hậu quả lớn → code (hook/gate), không phải prompt; chọn cách vừa đủ sửa đúng gốc; đọc manh mối trong đề ("log không lỗi", "làm đúng phần được giao", "không phụ thuộc nhau").
+- Tự chấm:
+
 ## Ngày 39–42 — T6 20/11 → T2 23/11/2026 · Giai đoạn B, eval
 
 - Eval là "test cho prompt": viết sẵn đầu vào + đáp án mong đợi **trước khi** chạy model, chạy model thật, chấm điểm. Test e2e dùng Claude giả nên không nói gì về chất lượng task nháp; eval thì có.

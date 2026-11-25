@@ -59,7 +59,7 @@ Mocks are written by Claude against the blueprint weights (not real exam items).
 | Task statement | Studied | Questions right |
 | --- | --- | --- |
 | D1 1.1–1.4 | 24–25/11 | 8/8 |
-| D1 1.5–1.7 | | |
+| D1 1.5–1.7 | 25/11 | 4/4 |
 | D2 2.1–2.5 | | |
 | D3 3.1–3.6 | | |
 | D4 4.1–4.6 | | |
