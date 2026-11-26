@@ -377,3 +377,16 @@ https://apply.workable.com/qodeworld/jobs/view/93D490A81F.md
 https://www.thoughtworks.com/en-us/careers/jobs/7920282
 https://careers-collaborationbetterstheworldvi.icims.com/jobs/1950/senior-frontend-engineer/job
 https://www.careerjet.vn/jobad/vn8decb4667513e59ea7a47dda353d8ce0
+https://careers-page.com/talent-search-adviors/job/L679W49R
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1787/cwd-%7c-senior-frontend-engineer/job
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1528/ps-%7c-senior-backend-engineer---nodejs-preferred/job
+https://www.careers-page.com/findicia/job/L8V993XR
+https://careers-page.com/findicia/job/LR835RXX
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1780/mt-%7c-senior-frontend-engineer/job
+https://careers-collaborationbetterstheworldvi.icims.com/jobs/1780/mt-%7c-senior--medior-frontend-engineer/job
+https://employmenthero.com/jobs/position/hello-clever-midsenior-frontend-engineer-reactjs-00fhr
+https://www.monster.com.vn/job/sr-front-end-react-js-software-developer-engineer-100-remote-saas-construction-tech-clue-insights-hanoi-32049764
+https://www.careers-page.com/dikshatek-3/job/QX7W3WY3
+https://www.hirebase.org/company/dikshatek/jobs/senior-reactjs-f66bf35c
+https://apply.workable.com/qodeworld/jobs/view/7EA9FCDEB9.md
+https://transperfect.recruitee.com/o/react-developer
