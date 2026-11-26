@@ -323,3 +323,10 @@ Mỗi lần scan job, thêm job mới vào mục ngày tương ứng. Trạng th
 | Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
 | --- | --- | --- | --- | --- |
 | Senior Full-Stack Engineer (GenAI) | Jitera | Tin ghi "Vietnam", đăng khoảng 7 ngày trước; công ty tự mô tả làm việc remote toàn cầu (chưa xác nhận nhận ứng viên Hà Nội); TypeScript + React, NestJS (kèm Ruby/Python); GenAI/LLM; bản tin cùng tên trên Monster ghi HCM và đã cũ; chưa kiểm tra còn tuyển | [careerjet](https://www.careerjet.vn/jobad/vn3b832cd00d211b8132c9aecf03d02192) | saved |
+
+## 2026-11-26
+
+| Vị trí | Công ty | Địa điểm / ghi chú | Nguồn | Status |
+| --- | --- | --- | --- | --- |
+| Senior/Expert AI Engineer (ML, LLM, Agentic AI, RAG) | 2Click Next | Tin ITviec ghi "Ha Noi - Ho Chi Minh", at office (phần mô tả công ty lại ghi văn phòng Quận 1 HCM, cần xác nhận có chỗ ngồi Hà Nội); viết Python + TypeScript hằng ngày, agent workflow, tool integration, RAG; startup giai đoạn đầu (sự kiện, hội chợ); chưa kiểm tra còn tuyển | [itviec](https://itviec.com/it-jobs/ai-engineer-llm-agentic-ai-2click-next-2141) | saved |
+| Senior AI Engineer (LLM, AI Agent) | Creative Force | Hà Nội (một bản tin ghi remote, 4 ngày × 10 h; bản ITviec ghi at office); agentic architecture, multi-agent, RAG, **AI evaluation**; stack chủ yếu Python/FastAPI/AWS/LangChain, có nhắc Claude Code; nhiều bản tin cũ hoặc đã đóng, chưa kiểm tra còn tuyển | [itviec](https://itviec.com/it-jobs/senior-ai-engineer-llm-ai-agent-creative-force-2550) | saved |
