@@ -1,8 +1,8 @@
 # CCAF study (Claude Certified Architect – Foundations, CCAR-F)
 
-> Next: **Professional (CCAR-P) on Thu 31/12/2026**, studied 13/12–30/12 after Foundations. Plan to be written from its official exam guide.
+> Next: **Professional (CCAR-P) on Thu 31/12/2026**, studied 07/12–30/12 after Foundations. Plan to be written from its official exam guide.
 
-Exam: **Sat 12/12/2026**. 60 items (single- and multiple-response), 120 minutes, 4 scenarios drawn from a bank of 6, pass at 720 on a 100–1,000 scale. Source: the official Exam Guide v1.1 (Nov 2026), downloaded from the Partner Academy (not committed; keep the PDF locally).
+Exam: **Sun 06/12/2026** (booked 27/11; moved from 12/12). 60 items (single- and multiple-response), 120 minutes, 4 scenarios drawn from a bank of 6, pass at 720 on a 100–1,000 scale. Source: the official Exam Guide v1.1 (Nov 2026), downloaded from the Partner Academy (not committed; keep the PDF locally).
 
 ## Domains
 
@@ -33,28 +33,26 @@ The right answer is usually the **proportionate fix for the root cause**:
 - Self-reported confidence from the model is poorly calibrated; don't route on it alone.
 - Watch for "first step" and "most effective": the cheapest change that fixes the actual cause wins.
 
-## Schedule
+## Schedule (from 27/11, exam Sun 06/12)
 
-Weekday ~2 h, weekend ~4 h. Each session: concepts (from what I know, with TaskFlow examples) → 8–10 scenario questions → review the misses → log them in `practice-log.md`.
+Weekday ~2 h, weekend ~4 h. Each session: concepts (from what I know, with TaskFlow examples) → scenario questions → review the misses → log them in `practice-log.md`.
 
 | Day | Session |
 | --- | --- |
-| Tue 24/11 | D1 part 1: 1.1–1.4 (agentic loop, coordinator–subagent, Task tool, enforcement) |
-| Wed 25/11 | D1 part 2: 1.5–1.7 (hooks, decomposition, sessions) |
-| Thu 26/11 | D2: tools and MCP (2.1–2.5) |
-| Fri 27/11 | D3: Claude Code configuration (3.1–3.6) |
-| Sat 28/11 (4 h) | D4: prompts and structured output (4.1–4.6) + D5: context and reliability (5.1–5.6) |
-| Sun 29/11 (4 h) | **Mock 1** (60 items, 120 min) + review |
-| Mon 30/11 – Fri 04/12 | Weak task statements from mock 1; hands-on: guide exercise 1 (agent with Agent SDK, hook, escalation) and exercise 2 (Claude Code config, reuses the TaskFlow MCP branch) |
-| Sat 05/12 (4 h) | **Mock 2** + review |
-| Sun 06/12 | Weak areas |
-| Mon 07/12 – Tue 08/12 | Light review of the log |
-| Wed 09/12 | **Mock 3** |
-| Thu 10/12 | Review mock 3 misses only |
-| Fri 11/12 | Rest |
-| **Sat 12/12** | **Exam** |
+| Tue 24/11 – Wed 25/11 | D1 (1.1–1.7) — done, 12/12 |
+| Thu 26/11 – Fri 27/11 | D2: tools and MCP (2.1–2.5) |
+| Sat 28/11 (4 h) | D3: Claude Code configuration (3.1–3.6) + D4: prompts and structured output (4.1–4.6) |
+| Sun 29/11 (4 h) | D5: context and reliability (5.1–5.6) + review the practice log |
+| Mon 30/11 | **Mock 1** (60 items, 120 min) |
+| Tue 01/12 | Review mock 1 |
+| Wed 02/12 – Thu 03/12 | Weak task statements from mock 1 |
+| Fri 04/12 | **Mock 2** |
+| Sat 05/12 | Review mock 2, light review, sleep early |
+| **Sun 06/12** | **CCAF exam** |
+| Mon 07/12 – Wed 30/12 | Professional (CCAR-P) study |
+| **Thu 31/12** | **CCAR-P exam** |
 
-Mocks are written by Claude against the blueprint weights (not real exam items). If the Partner Academy offers the official practice test, it replaces mock 1 or 2.
+Mocks are written by Claude against the blueprint weights (not real exam items); the official Foundations practice test was retired in June 2026. The guide's hands-on exercises are dropped for time.
 
 ## Progress
 
