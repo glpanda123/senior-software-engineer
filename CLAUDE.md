@@ -26,6 +26,7 @@ Every interview-style question I answer gets added to `docs/interview/qa-review.
 - 16/11: Stage B (AI) — I write the implementation myself; Claude guides (concepts, steps, hints), writes the tests (after I approve the test list) and reviews, and shows implementation code only when I ask or after I've been stuck a while. This overrides "I do → we do → you do" for stage B.
 - 23/11: Evals finished 23/11. MCP server + skill/hook/subagent are done on 23/11 (a day off, ~4 h) to close stage B; CCAF study starts 24/11.
 - 24/11: Switched to CCAF study now. The unfinished MCP work (list_tasks, create_task, skill/hook/subagent) is paused on taskflow branch `feat/mcp-server`; it may come back as hands-on practice in week 2. CCAF schedule and tracker: `docs/ccaf/README.md`.
+- 27/11: Also taking Claude Certified Architect – Professional (CCAR-P) on 31/12. Foundations stays the only focus until 12/12; Professional study runs 13/12–30/12. Daily job-application cadence for that window is still to be decided.
 
 ## Conventions
 

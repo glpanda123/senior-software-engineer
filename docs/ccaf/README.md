@@ -1,5 +1,7 @@
 # CCAF study (Claude Certified Architect – Foundations, CCAR-F)
 
+> Next: **Professional (CCAR-P) on Thu 31/12/2026**, studied 13/12–30/12 after Foundations. Plan to be written from its official exam guide.
+
 Exam: **Sat 12/12/2026**. 60 items (single- and multiple-response), 120 minutes, 4 scenarios drawn from a bank of 6, pass at 720 on a 100–1,000 scale. Source: the official Exam Guide v1.1 (Nov 2026), downloaded from the Partner Academy (not committed; keep the PDF locally).
 
 ## Domains
