@@ -60,7 +60,7 @@ Mocks are written by Claude against the blueprint weights (not real exam items);
 | --- | --- | --- |
 | D1 1.1–1.4 | 24–25/11 | 8/8 |
 | D1 1.5–1.7 | 25/11 | 4/4 |
-| D2 2.1–2.5 | | |
+| D2 2.1–2.5 | 26–28/11 | 8/8 |
 | D3 3.1–3.6 | | |
 | D4 4.1–4.6 | | |
 | D5 5.1–5.6 | | |
