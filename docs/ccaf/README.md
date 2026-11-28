@@ -41,8 +41,8 @@ Weekday ~2 h, weekend ~4 h. Each session: concepts (from what I know, with TaskF
 | --- | --- |
 | Tue 24/11 – Wed 25/11 | D1 (1.1–1.7) — done, 12/12 |
 | Thu 26/11 – Fri 27/11 | D2: tools and MCP (2.1–2.5) |
-| Sat 28/11 (4 h) | D3: Claude Code configuration (3.1–3.6) + D4: prompts and structured output (4.1–4.6) |
-| Sun 29/11 (4 h) | D5: context and reliability (5.1–5.6) + review the practice log |
+| Sat 28/11 (4 h) | D2 (rest) + D3: Claude Code configuration (3.1–3.6) — done |
+| Sun 29/11 (4 h) | D4: prompts and structured output (4.1–4.6) + D5: context and reliability (5.1–5.6) |
 | Mon 30/11 | **Mock 1** (60 items, 120 min) |
 | Tue 01/12 | Review mock 1 |
 | Wed 02/12 – Thu 03/12 | Weak task statements from mock 1 |
@@ -61,6 +61,6 @@ Mocks are written by Claude against the blueprint weights (not real exam items);
 | D1 1.1–1.4 | 24–25/11 | 8/8 |
 | D1 1.5–1.7 | 25/11 | 4/4 |
 | D2 2.1–2.5 | 26–28/11 | 8/8 |
-| D3 3.1–3.6 | | |
+| D3 3.1–3.6 | 28/11 | 8/8 |
 | D4 4.1–4.6 | | |
 | D5 5.1–5.6 | | |

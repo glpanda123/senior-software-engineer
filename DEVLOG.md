@@ -254,6 +254,13 @@ Mỗi ngày: làm được gì, chỗ sai / agent làm hỏng và bài học, t�
 - Cách đề nghĩ (rút từ câu mẫu): luật bắt buộc + hậu quả lớn → code (hook/gate), không phải prompt; chọn cách vừa đủ sửa đúng gốc; đọc manh mối trong đề ("log không lỗi", "làm đúng phần được giao", "không phụ thuộc nhau").
 - Tự chấm:
 
+## Ngày 45–48 — T5 26/11 → T7 28/11/2026 · Giai đoạn C, CCAF
+
+- 27/11: nhận thông báo layoff. Đăng ký thi sớm khi còn tài khoản partner: **CCAF dời lên CN 06/12** (đã đặt lịch), **Professional (CCAR-P) T5 31/12**. Lịch ôn mới: `docs/ccaf/README.md`. Việc cần làm: đổi email Credly sang email cá nhân, lưu exam guide + xác nhận đăng ký, hỏi điều khoản khi nghỉ việc ở công ty partner.
+- Domain 2 (tool & MCP) 8/8, Domain 3 (Claude Code) 8/8. Tổng 28/28 câu luyện, chưa sai câu nào; đề thử 1 (T2 30/11) mới là phép thử thật.
+- Ý nhớ: mô tả tool là cách model chọn tool; lỗi có phân loại (transient/validation/business/permission) + isRetryable; "0 kết quả" không phải lỗi; tool_choice ép đúng tool chạy trước; `.mcp.json` (team) vs `~/.claude.json` (cá nhân); CLAUDE.md 3 tầng, user-level không lên git; `context: fork`; rule theo glob cho file rải rác; `-p` trong CI; instance độc lập review tốt hơn session tự viết.
+- Tự chấm:
+
 ## Điều chỉnh plan — 17/10
 - DSA tạm hoãn.
 - Nộp CV + chỉnh CV/LinkedIn dời sang tuần 4 (từ 04/11). Scan job vẫn chạy hằng ngày.
